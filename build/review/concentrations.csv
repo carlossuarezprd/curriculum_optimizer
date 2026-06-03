@@ -1,0 +1,17 @@
+concentration,total_units_required,n_qualifying_courses,n_buckets,special,buckets,notes
+Accounting,400,17,1,,list:400u,
+Applied Artificial Intelligence,300,11,1,Y,list:300u,…Note: Students can count only 100 units toward both the App
+Behavioral Science,400,25,1,,list:400u,
+Business Analytics,500,27,3,Y,data science:100u | decision models and optimization:100u | elective:300u cap200,…Note: Students can count only 100 units toward both the App
+"Business, Society and Sustainability",400,23,1,,list:400u,
+Econometrics and Statistics,300,17,1,Y,list:300u,quality-grade / GPA rule applies
+Economics,400,26,1,,list:400u,
+Entrepreneurship,300,60,1,Y,list:300u,…Note: Students can count only 100 units of credit toward bo
+Finance,400,57,3,Y,asset pricing:100u | corporate finance:100u | list:200u,…50 and 33451 jointly count as 100 units towards the finance
+Analytic Finance,600,35,1,Y,list:600u,must also satisfy the Finance requirements
+General Management,1100,0,5,Y,list:800u | list:300u | list:1100u | list:300u | list:1000u,
+Healthcare,400,22,3,,list:400u | list:300u | list:100u,
+International Business,300,8,1,,list:300u,
+Marketing Management,400,22,1,Y,list:300u,requires base course 37000 plus 300 elective units
+Operations Management,300,11,1,,list:300u,
+Strategic Management,400,38,1,Y,list:400u,…Note: Students can count only 100 units toward both the ent
