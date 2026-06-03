@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Feasibility</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Spline+Sans+Mono:wght@400;500;600&display=swap');
+  :root{
+    --bg:#0d0f11;--panel:#15181b;--panel2:#1c2024;--ink:#eef0f2;--dim:#959ea7;--line:#2a2f35;
+    --fin:#3b6fe0;--ai:#11a87e;--soft:#c9883a;--none:#6b7480;
+    --ok:#11a87e;--warn:#d9683f;--flag:#e0b341;--prereq:#c264d6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:radial-gradient(900px 480px at 88% -12%,#1a2330 0,transparent 60%),var(--bg);color:var(--ink);font-family:'Spline Sans Mono',monospace;padding:22px 18px 90px}
+  h1{font-family:'Fraunces',serif;font-weight:900;font-size:28px;letter-spacing:-.02em}
+  .sub{color:var(--dim);font-size:11.5px;max-width:820px;line-height:1.5;margin:4px 0 14px}
+  .layout{display:grid;grid-template-columns:330px 1fr;gap:16px}
+  @media(max-width:1000px){.layout{grid-template-columns:1fr}}
+  /* filters + list */
+  .side{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:13px;align-self:start;max-height:88vh;overflow-y:auto}
+  .side h2{font-family:'Fraunces',serif;font-size:15px;font-weight:600;margin-bottom:8px}
+  .filters{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+  .fbtn{font-size:10px;padding:3px 8px;border-radius:20px;border:1px solid var(--line);background:var(--panel2);color:var(--dim);cursor:pointer;user-select:none}
+  .fbtn.on{background:var(--ai);border-color:var(--ai);color:#04130d;font-weight:600}
+  .fbtn.elec.on{background:var(--fin);border-color:var(--fin);color:#fff}
+  .course{background:var(--panel2);border:1px solid var(--line);border-left-width:4px;border-radius:9px;padding:7px 9px;margin-bottom:6px;cursor:grab;user-select:none;position:relative}
+  .course:active{cursor:grabbing}.course.dragging{opacity:.4}
+  .course.fin{border-left-color:var(--fin)}.course.ai{border-left-color:var(--ai)}.course.soft{border-left-color:var(--soft)}.course.none{border-left-color:var(--none)}
+  .course.placed{opacity:.3}
+  .course .nm{font-size:11px;line-height:1.25;padding-right:30px}
+  .course .meta{font-size:9px;color:var(--dim);margin-top:2px;letter-spacing:.04em}
+  .course .ic{position:absolute;top:7px;right:8px;display:flex;gap:4px;align-items:center}
+  .pq{color:var(--prereq);font-size:12px;cursor:pointer;font-weight:700}
+  .fl{color:var(--flag);font-size:11px}
+  .course.flagship{box-shadow:inset 0 0 0 1px rgba(224,179,65,.35)}
+  /* board */
+  .board{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+  @media(max-width:680px){.board{grid-template-columns:1fr}}
+  .q{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px;min-height:90px;display:flex;flex-direction:column;transition:border-color .14s,background .14s}
+  .q h3{font-family:'Fraunces',serif;font-size:13.5px;font-weight:600;display:flex;justify-content:space-between;align-items:baseline}
+  .q .cnt{font-size:9.5px;color:var(--dim)}
+  .q .drop{flex:1;display:flex;flex-direction:column;gap:5px;padding:3px;border-radius:7px;min-height:44px;margin-top:5px;transition:background .12s}
+  .q.dragover.valid{border-color:var(--ok)}.q.dragover.valid .drop{background:rgba(17,168,126,.08)}
+  .q.dragover.invalid{border-color:var(--warn)}.q.dragover.invalid .drop{background:rgba(217,104,63,.10)}
+  .pc{background:var(--panel2);border:1px solid var(--line);border-left-width:4px;border-radius:7px;padding:5px 7px;font-size:10.5px;cursor:grab;display:flex;justify-content:space-between;align-items:center;gap:5px;position:relative}
+  .pc.fin{border-left-color:var(--fin)}.pc.ai{border-left-color:var(--ai)}.pc.soft{border-left-color:var(--soft)}.pc.none{border-left-color:var(--none)}
+  .pc .pcic{display:flex;gap:3px;align-items:center;flex-shrink:0}
+  /* checks */
+  .checks{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px}
+  @media(max-width:900px){.checks{grid-template-columns:1fr}}
+  .cbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:11px 13px;font-size:11px}
+  .cbox h2{font-family:'Fraunces',serif;font-size:13px;font-weight:600;margin-bottom:7px}
+  .ri{display:flex;align-items:center;gap:6px;margin-bottom:3px;font-size:10.5px}
+  .ri .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;background:var(--warn)}
+  .ri.met .dot{background:var(--ok)}.ri.met{color:var(--ink)}.ri:not(.met){color:var(--dim)}
+  .summary{margin-top:7px;padding-top:7px;border-top:1px solid var(--line);font-size:11px;font-weight:600}
+  .summary.ok{color:var(--ok)}.summary.no{color:var(--warn)}
+  .flagcount{font-family:'Fraunces',serif;font-size:26px;font-weight:900;color:var(--flag)}
+  .concbar{height:6px;background:var(--panel2);border:1px solid var(--line);border-radius:4px;overflow:hidden;margin:3px 0 7px}
+  .concbar .f{height:100%;background:var(--prereq)}
+  .conc.met .concbar .f{background:var(--ok)}
+  .conc{margin-bottom:8px;font-size:10.5px}
+  .conc .t{display:flex;justify-content:space-between}
+  .conc.met .s{color:var(--ok)}.conc:not(.met) .s{color:var(--dim)}
+  /* modal */
+  .modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:80;padding:20px}
+  .modal.show{display:flex}
+  .modal .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;max-width:440px;width:100%}
+  .modal h3{font-family:'Fraunces',serif;font-size:17px;margin-bottom:4px}
+  .modal .code{font-size:11px;color:var(--dim);margin-bottom:10px}
+  .modal .pqlist{font-size:12px;line-height:1.6}
+  .modal .pqlist .lab{color:var(--prereq);font-weight:600}
+  .modal .x{float:right;cursor:pointer;color:var(--dim);font-size:18px;line-height:1}
+  .toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(140%);background:var(--warn);color:#fff;padding:9px 15px;border-radius:8px;font-size:12px;transition:transform .25s;z-index:90}
+  .toast.show{transform:translateX(-50%) translateY(0)}
+  .legend{font-size:10px;color:var(--dim);display:flex;gap:13px;flex-wrap:wrap;margin-bottom:10px;align-items:center}
+  .legend .sw{width:11px;height:11px;border-radius:3px;display:inline-block;margin-right:4px;vertical-align:-1px}
+  .topbtns{display:flex;gap:7px}
+  .btn{background:none;border:1px solid var(--line);color:var(--dim);font-family:inherit;font-size:10.5px;padding:5px 10px;border-radius:7px;cursor:pointer}
+  .btn:hover{border-color:var(--dim);color:var(--ink)}
+</style>
+</head>
+<body>
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:10px">
+    <div><h1>Curriculum Feasibility</h1>
+    <div class="sub">Filter courses by core area or electives, drag into any quarter where they're offered (rejected otherwise). Drag out or between quarters freely. Checks update live: core areas covered, 10-of-11 rule, your 3 concentrations, and flagship count. Courses with prereqs show a <span style="color:var(--prereq)">⬡</span> — click to see them.</div></div>
+    <div class="topbtns"><button class="btn" id="clear">clear board</button></div>
+  </div>
+
+  <div class="legend">
+    <span><span class="sw" style="background:var(--fin)"></span>Finance</span>
+    <span><span class="sw" style="background:var(--ai)"></span>AI/Tech/Entrep</span>
+    <span><span class="sw" style="background:var(--soft)"></span>Soft</span>
+    <span><span class="sw" style="background:var(--none)"></span>Uncat.</span>
+    <span><span style="color:var(--prereq)">⬡</span> has prereqs (click)</span>
+    <span><span style="color:var(--flag)">★</span> flagship</span>
+  </div>
+
+  <div class="layout">
+    <div class="side">
+      <h2>Courses</h2>
+      <div class="filters" id="filters"></div>
+      <div id="courselist"></div>
+    </div>
+    <div>
+      <div class="board" id="board"></div>
+      <div class="checks">
+        <div class="cbox">
+          <h2>Core areas</h2>
+          <div id="coreChecks"></div>
+          <div class="summary" id="coreSummary"></div>
+        </div>
+        <div class="cbox">
+          <h2>Concentrations</h2>
+          <div id="concChecks"></div>
+        </div>
+        <div class="cbox">
+          <h2>Flagship courses</h2>
+          <div class="flagcount"><span id="flagN">0</span> <span style="font-size:12px;color:var(--dim)">/ 15 placed</span></div>
+          <div id="flagList" style="font-size:10px;color:var(--dim);margin-top:6px;line-height:1.5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal"><div class="card">
+    <span class="x" id="modalX">×</span>
+    <h3 id="mTitle"></h3><div class="code" id="mCode"></div>
+    <div class="pqlist" id="mBody"></div>
+  </div></div>
+  <div class="toast" id="toast"></div>
+
+<script>
+// ---- DATA ----
+// area: fin|ai|soft|none ; core: requirement area or null ; terms ; conc: [] ; flag:true ; prereq: text or null
+const C=[
+{id:'30000',nm:"Financial Accounting",area:'fin',core:"Accounting",terms:'AWS',conc:[],flag:false,pq:null},
+{id:'30005',nm:"Internal Information For Strategic Decisions",area:'fin',core:"Decisions",terms:'AWS',conc:[],flag:false,pq:"Business 30000, 33001, 41000 (or 41100). Cannot enroll if BUSN 20101 or 30001 taken previously. Non-Booth students require faculty permission."},
+{id:'30116',nm:"Accounting And Financial Analysis",area:'fin',core:"Accounting",terms:'A',conc:[],flag:false,pq:null},
+{id:'30118',nm:"Taxes And Business Strategy",area:'ai',core:null,terms:'AWS',conc:["EN"],flag:false,pq:null},
+{id:'30121',nm:"Accounting For Entrepreneurship: From Start-Up Through Ipo",area:'ai',core:null,terms:'AS',conc:["EN"],flag:false,pq:null},
+{id:'30122',nm:"Deal Structuring And Financial Reporting Implications",area:'fin',core:"Accounting",terms:'S',conc:[],flag:false,pq:null},
+{id:'30130',nm:"Financial Statement Analysis",area:'fin',core:"Accounting",terms:'AWS',conc:["AF"],flag:false,pq:null},
+{id:'30131',nm:"Advanced Financial Analysis And Valuation For Global Firms",area:'fin',core:"Accounting",terms:'AS',conc:["AF"],flag:true,pq:null},
+{id:'30135',nm:"Ai And Financial Information",area:'ai',core:null,terms:'W',conc:["AI"],flag:false,pq:null},
+{id:'30906',nm:"Contracting On Accounting Information",area:'fin',core:null,terms:'W',conc:[],flag:false,pq:"PhD students only: strict."},
+{id:'30907',nm:"Disclosure, Reporting And Transparency: Analysis Of Markets And Regulation",area:'fin',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'30908',nm:"Accounting For Private Entities & Non-Investor Stakeholders",area:'fin',core:null,terms:'S',conc:[],flag:false,pq:"PhD students only: strict"},
+{id:'31401',nm:"Interpersonal Dynamics",area:'ai',core:null,terms:'AWS',conc:["EN"],flag:true,pq:"Written application (~60% admit; no bidding)"},
+{id:'31403',nm:"Leadership Studio",area:'ai',core:"People",terms:'A',conc:["EN"],flag:false,pq:null},
+{id:'31404',nm:"Leadership Lab",area:'soft',core:null,terms:'WS',conc:[],flag:false,pq:null},
+{id:'31405',nm:"Leading With Authenticity",area:'soft',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'32120',nm:"Data Analysis With Python And Sql",area:'none',core:null,terms:'AW',conc:[],flag:false,pq:null},
+{id:'32130',nm:"Data Visualization For Decision-Making",area:'none',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'32210',nm:"Generative Thinking",area:'ai',core:null,terms:'W',conc:["AI"],flag:false,pq:null},
+{id:'33001',nm:"Microeconomics",area:'none',core:"Micro",terms:'AW',conc:[],flag:false,pq:"Section: 33001-02 Understanding of algebra and basic calculus (derivatives). M 1:30 PM-4:30 PM Harper Center C02"},
+{id:'33002',nm:"Accelerated Microeconomics",area:'none',core:"Micro",terms:'A',conc:[],flag:false,pq:null},
+{id:'33032',nm:"Managing The Workplace",area:'none',core:"People",terms:'AS',conc:[],flag:false,pq:"Gleacher Center 206 Though not a strict prerequisite, students are strongly encouraged to have In-Person Only taken Business 33001 (or a higher level micro course) prior to enrolli"},
+{id:'33112',nm:"Business In Historical Perspective",area:'none',core:"Economy",terms:'W',conc:[],flag:false,pq:null},
+{id:'33230',nm:"The Economics Of Companies",area:'none',core:null,terms:'A',conc:[],flag:false,pq:"Microeconomics background/33001 (or equivalent)."},
+{id:'33250',nm:"Perspectives On Capitalism",area:'none',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'33251',nm:"Perspectives On Capitalism Seminar",area:'none',core:"Society",terms:'S',conc:[],flag:false,pq:null},
+{id:'33320',nm:"Financing The Grid: Valuing Transmission & Storage Capacity",area:'none',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'33350',nm:"Health Economics",area:'none',core:null,terms:'S',conc:[],flag:false,pq:"The recommended prerequisites for this class are 33001 (Microeconomics) and 41000 (Business Statistics)."},
+{id:'33351',nm:"The Business Of Pharmaceuticals",area:'none',core:null,terms:'A',conc:[],flag:false,pq:null},
+{id:'33401',nm:"Money And Banking",area:'none',core:"Economy",terms:'AS',conc:[],flag:true,pq:null},
+{id:'33450',nm:"Real Estate Investments I",area:'none',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'33451',nm:"Real Estate Investments Ii",area:'none',core:null,terms:'S',conc:[],flag:false,pq:"Business 33450: strict"},
+{id:'33471',nm:"Business, Politics, And Ethics",area:'none',core:"Society",terms:'W',conc:[],flag:true,pq:null},
+{id:'33501',nm:"International Commercial Policy",area:'none',core:"Economy",terms:'W',conc:[],flag:false,pq:"There is no strict requirement, but I assume familiarity with the concepts taught in Microeconomics (Bus 33001). This course employs quantitative reasoning. Cannot enroll in BUSN 3"},
+{id:'33502',nm:"International Financial Policy",area:'none',core:"Economy",terms:'S',conc:[],flag:false,pq:null},
+{id:'33520',nm:"The Wealth Of Nations",area:'none',core:"Economy",terms:'WS',conc:[],flag:false,pq:"Harper Center Business 33001 recommended, but not required. C07 In-Person Only"},
+{id:'33914',nm:"Topics In Information Economics",area:'none',core:null,terms:'A',conc:[],flag:false,pq:"In-Person Only First year PhD micro. PhD students only: strict. BUSN 33914=ECON 30680"},
+{id:'33918',nm:"Topics In Labor Economics",area:'none',core:null,terms:'S',conc:[],flag:false,pq:"First-year micro theory, especially game theory and basic theory of consumer/producer demand. The problem sets will involve some statistical programming (in the language of your ch"},
+{id:'33921',nm:"Advanced Industrial Organization I",area:'none',core:null,terms:'A',conc:[],flag:false,pq:"Solid background in microeconomics (e.g., Business 33001, 33002, 33101, or Economics 30000, 30100, or 30200) and preferably econometrics at the PhD level. PhD students only. BUSN 3"},
+{id:'33930',nm:"Economics Of Education",area:'none',core:null,terms:'S',conc:[],flag:false,pq:"Students should be comfortable with the core material from the first-year economics PhD sequence, especially econometrics, price theory, and basic game theory. Cannot enroll in BUS"},
+{id:'33931',nm:"The Economics Of Contracts",area:'none',core:null,terms:'WS',conc:[],flag:false,pq:"BUSN 33931 = ECON 30540 Students are expected to be familiar with Price Theory I - III (ECON 30100, 30200, 30300)."},
+{id:'33942',nm:"Applied Macroeconomics: Micro Data For Macro Models",area:'none',core:null,terms:'S',conc:[],flag:false,pq:"PhD Students only. BUSN 33942=ECON 38001."},
+{id:'33946',nm:"International Macroeconomics And Trade",area:'none',core:null,terms:'A',conc:[],flag:false,pq:"In-Person Only BUSN 33946=ECON 35101. PhD-level course. Non-Booth PhD students may enroll. Undergraduates and master\u2019s students require faculty permission."},
+{id:'34101',nm:"Entrepreneurial Finance And Private Equity",area:'fin',core:"Finance",terms:'S',conc:["AF", "EN"],flag:true,pq:"One corporate finance course (35200 or 35201), or 34106/30130 or equivalent"},
+{id:'34102',nm:"New Venture Strategy",area:'ai',core:null,terms:'AW',conc:["EN"],flag:false,pq:null},
+{id:'34103',nm:"Building The New Venture",area:'ai',core:null,terms:'AWS',conc:["EN"],flag:false,pq:null},
+{id:'34104',nm:"Special Topics In Entrepreneurship: Developing A New Venture (New Venture Challenge)",area:'ai',core:null,terms:'S',conc:["EN"],flag:false,pq:"Advancement to NVC round 2, or instructor consent (application-gated)"},
+{id:'34106',nm:"Commercializing Innovation: Tools To Research And Analyze Private Enterprises",area:'ai',core:null,terms:'A',conc:["EN"],flag:true,pq:null},
+{id:'34108',nm:"Innovation Leadership",area:'ai',core:null,terms:'S',conc:["EN"],flag:false,pq:null},
+{id:'34111',nm:"Entrepreneurial Selling",area:'ai',core:null,terms:'A',conc:["EN"],flag:false,pq:null},
+{id:'34113',nm:"Impact Investing",area:'ai',core:"Society",terms:'S',conc:["EN"],flag:false,pq:null},
+{id:'34115',nm:"New Social Ventures",area:'ai',core:null,terms:'S',conc:["EN"],flag:false,pq:null},
+{id:'34117',nm:"Social Entrepreneurship And Innovation",area:'ai',core:"Society",terms:'A',conc:["EN"],flag:false,pq:null},
+{id:'34206',nm:"Women As Ceos, Entrepreneurs, Investors, Executives & Directors",area:'ai',core:null,terms:'W',conc:["EN"],flag:false,pq:null},
+{id:'34211',nm:"Value Creation In Small Businesses",area:'ai',core:null,terms:'S',conc:["EN"],flag:false,pq:null},
+{id:'34219',nm:"Institutional Private Capital Investing",area:'ai',core:null,terms:'S',conc:["EN"],flag:false,pq:null},
+{id:'34302',nm:"Entrepreneurship Through Acquisition",area:'ai',core:null,terms:'AWS',conc:["EN"],flag:false,pq:null},
+{id:'34702',nm:"Private Equity/Venture Capital Lab",area:'ai',core:null,terms:'WS',conc:["EN"],flag:true,pq:"Polsky application + secured PE/VC internship (application-gated, no bidding)"},
+{id:'34704',nm:"Real Estate Lab: Real Estate Challenge",area:'ai',core:null,terms:'A',conc:["EN"],flag:false,pq:null},
+{id:'34705',nm:"Entrepreneurial Discovery",area:'ai',core:null,terms:'A',conc:["EN"],flag:false,pq:null},
+{id:'34709',nm:"Lab To Launch",area:'ai',core:null,terms:'W',conc:["EN"],flag:false,pq:null},
+{id:'34712',nm:"Innovation Lab",area:'fin',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'34715',nm:"Hacking For Defense",area:'ai',core:null,terms:'W',conc:["EN"],flag:false,pq:"Application"},
+{id:'34901',nm:"Asset Pricing I",area:'fin',core:"Finance",terms:'A',conc:["AF"],flag:false,pq:"PhD-level; quantitative maturity"},
+{id:'34902',nm:"Asset Pricing Ii",area:'fin',core:"Finance",terms:'W',conc:["AF"],flag:false,pq:"Builds on Asset Pricing I (soft); PhD-level"},
+{id:'34903',nm:"Corporate Finance I",area:'fin',core:"Finance",terms:'A',conc:["AF"],flag:false,pq:"Econ 30100, Econ 30200, & Econ 30300: strict. BUSN 34903=ECON 35070."},
+{id:'34904',nm:"Corporate Finance Ii",area:'fin',core:"Finance",terms:'W',conc:["AF"],flag:false,pq:"Business 34903 (or 35902): strict. A solid background in advanced microeconomics is highly recommended. MBA students must get instructor consent to enroll: strict. BUSN 34904=ECON "},
+{id:'34906',nm:"Corporate Finance Iii",area:'fin',core:null,terms:'S',conc:["AF"],flag:false,pq:"Business 34903 Corporate Finance I and Business 34904 Corporate Finance II: strict. A solid background in advanced microeconomics is highly recommended. BUSN 34906=ECON 35090"},
+{id:'35000',nm:"Investments",area:'fin',core:"Finance",terms:'AWS',conc:["AF"],flag:false,pq:"Stats background (41000/41100-level); calculus, linear algebra, Excel"},
+{id:'35001',nm:"Introductory Finance",area:'fin',core:"Finance",terms:'W',conc:[],flag:false,pq:null},
+{id:'35010',nm:"Managerial Finance",area:'fin',core:null,terms:'W',conc:[],flag:false,pq:"Business 30000, not enforced. MiM Only. All Non-Booth students require instructor permission to enroll. Cannot enroll in 35010 if 35001 taken previously: strict."},
+{id:'35100',nm:"Financial Instruments",area:'fin',core:"Finance",terms:'W',conc:["AF"],flag:false,pq:"35000 Investments (strict). Cannot enroll if took undergrad 20405"},
+{id:'35118',nm:"Healthcare Finance",area:'fin',core:null,terms:'A',conc:[],flag:false,pq:"Prerequisites for this course are a course in Statistics such as 41000 (or equivalent), and either a course on Investments such as 35000 (or equivalent), or Corporate Finance such "},
+{id:'35120',nm:"Portfolio Management",area:'fin',core:"Finance",terms:'S',conc:["AF"],flag:true,pq:"35000 Investments"},
+{id:'35121',nm:"Behavioral Finance",area:'fin',core:null,terms:'A',conc:["AF"],flag:false,pq:null},
+{id:'35126',nm:"Quantitative Portfolio Management",area:'fin',core:null,terms:'W',conc:["AF"],flag:false,pq:"Reviews Investments (35000) framework; no formal prereq"},
+{id:'35130',nm:"Fixed Income Asset Pricing",area:'fin',core:"Finance",terms:'S',conc:["AF"],flag:false,pq:"35000 Investments"},
+{id:'35136',nm:"Blockchains And Decentralized Finance",area:'fin',core:null,terms:'A',conc:[],flag:false,pq:"Cannot enroll if BUSN 35135 taken previously: strict."},
+{id:'35137',nm:"Machine Learning In Finance",area:'ai',core:null,terms:'W',conc:["AI"],flag:false,pq:"41000 or 41100 or 41210 (stats); Python exposure expected"},
+{id:'35141',nm:"Advanced Models Of Security Pricing And Credit Risk",area:'fin',core:null,terms:'A',conc:[],flag:false,pq:"Calculus, PDEs, Black-Scholes familiarity (or instructor approval)"},
+{id:'35146',nm:"The Family Office",area:'fin',core:null,terms:'S',conc:[],flag:false,pq:"Cannot enroll in BUSN 35146 if 35145 taken previously."},
+{id:'35150',nm:"Advanced Investments",area:'fin',core:"Finance",terms:'S',conc:[],flag:false,pq:"35000 Investments"},
+{id:'35155',nm:"The Public And Private Lending Markets: Investment Opportunities And Risks",area:'fin',core:null,terms:'A',conc:[],flag:false,pq:null},
+{id:'35200',nm:"Corporation Finance",area:'fin',core:"Finance",terms:'AWS',conc:["AF"],flag:false,pq:"35000 (strict) + 30000 + 33001 + 41000/41100; \"or equivalent\" for 35000"},
+{id:'35201',nm:"Cases In Financial Management",area:'fin',core:"Finance",terms:'AS',conc:["AF"],flag:true,pq:"35000 + 35200 (strict); waivers at instructor discretion"},
+{id:'35207',nm:"Consumer Finance",area:'fin',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'35210',nm:"International Corporate Finance",area:'fin',core:"Finance",terms:'S',conc:["AF"],flag:false,pq:null},
+{id:'35214',nm:"Debt, Distress, And Restructuring",area:'fin',core:"Finance",terms:'S',conc:["AF"],flag:false,pq:"35000 Investments"},
+{id:'35215',nm:"Behavioral And Institutional Finance",area:'fin',core:null,terms:'A',conc:["AF"],flag:false,pq:"Gleacher Center 308 Bus 35000 and 35200 or equivalent. In-Person Only"},
+{id:'35218',nm:"Financial Crises",area:'fin',core:null,terms:'A',conc:[],flag:false,pq:null},
+{id:'35222',nm:"Corporate Governance And Activism - Board And Director Roles In Critical Decisions",area:'fin',core:null,terms:'A',conc:[],flag:false,pq:null},
+{id:'35223',nm:"Global Entrepreneurship, Venture Capital And Private Equity",area:'fin',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'35224',nm:"Distressed Debt Investing",area:'fin',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'35600',nm:"Seminar: Finance",area:'fin',core:null,terms:'AWS',conc:[],flag:false,pq:"C03 In-Person Only PhD students only. Instructor permission required for MBA students. BUSN 35600=ECON 55600"},
+{id:'35908',nm:"Research Projects: Finance",area:'fin',core:null,terms:'S',conc:["AF"],flag:false,pq:"are (i) my approval of the research topic, (ii) my W 1:30 PM-5:00 PM judgment that the student has sufficient background to complete the project, Building: TBD and (iii) the topic "},
+{id:'36106',nm:"Managerial Decision Modeling",area:'none',core:"Decisions",terms:'AWS',conc:[],flag:false,pq:null},
+{id:'36109',nm:"Advanced Decision Models With Python",area:'none',core:"Decisions",terms:'W',conc:[],flag:false,pq:"LP + probability/stats + programming (36106 suggested, skippable)"},
+{id:'36110',nm:"Application Development",area:'ai',core:null,terms:'A',conc:["EN"],flag:false,pq:null},
+{id:'36111',nm:"Application Development Ii",area:'none',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'36900',nm:"Linear Programming",area:'none',core:null,terms:'S',conc:[],flag:false,pq:"PhD students only."},
+{id:'36905',nm:"Approximate Dynamic Programming",area:'none',core:null,terms:'A',conc:[],flag:false,pq:null},
+{id:'36906',nm:"Stochastic Processes",area:'none',core:null,terms:'A',conc:[],flag:false,pq:", basic Harper Center familiarity with probability theory and stochastic processes will be assumed. 3A - Seminar Room The exposition will be (mostly) rigorous, yet intentionally sk"},
+{id:'36914',nm:"Queueing Theory",area:'none',core:null,terms:'W',conc:[],flag:false,pq:"Basic probability theory and stochastic processes. PhD students (Booth and Non-Booth) only. Non-Booth master's students require instructor permission: strict."},
+{id:'37000',nm:"Marketing Strategy",area:'soft',core:"Marketing",terms:'AWS',conc:[],flag:false,pq:null},
+{id:'37101',nm:"Consumer Behavior",area:'soft',core:"Marketing",terms:'AWS',conc:[],flag:false,pq:null},
+{id:'37103',nm:"Data-Driven Marketing",area:'soft',core:"Marketing",terms:'W',conc:[],flag:false,pq:null},
+{id:'37202',nm:"Pricing Strategies",area:'soft',core:"Marketing",terms:'WS',conc:[],flag:true,pq:null},
+{id:'37209',nm:"Brand Management In A Digital Age",area:'soft',core:"Marketing",terms:'WS',conc:[],flag:false,pq:null},
+{id:'37212',nm:"Business With Purpose",area:'soft',core:"Society",terms:'W',conc:[],flag:false,pq:null},
+{id:'37215',nm:"Product Management",area:'soft',core:null,terms:'S',conc:[],flag:false,pq:"37000 Marketing Strategy"},
+{id:'37301',nm:"Digital Marketing",area:'ai',core:"Marketing",terms:'A',conc:["EN"],flag:false,pq:null},
+{id:'37703',nm:"Digital Marketing Lab",area:'ai',core:"Marketing",terms:'A',conc:["EN"],flag:false,pq:null},
+{id:'37902',nm:"Foundations Of Advanced Quantitative Marketing",area:'soft',core:null,terms:'W',conc:[],flag:false,pq:"PhD Students. MBA students with permission: strict"},
+{id:'37904',nm:"Advanced Quantitative Marketing",area:'soft',core:null,terms:'W',conc:[],flag:false,pq:"PhD students only. BUSN 37904=ECON 40902"},
+{id:'37905',nm:"Marketing Literature Seminar",area:'soft',core:null,terms:'W',conc:[],flag:false,pq:"In-Person Only PhD Students Only."},
+{id:'38000',nm:"Managerial Psychology",area:'soft',core:null,terms:'W',conc:[],flag:false,pq:"In-Person Only MiM Only"},
+{id:'38001',nm:"Managing In Organizations",area:'soft',core:"People",terms:'AWS',conc:[],flag:false,pq:null},
+{id:'38002',nm:"Managerial Decision Making",area:'soft',core:"Decisions",terms:'WS',conc:[],flag:false,pq:null},
+{id:'38003',nm:"Power And Influence In Organizations",area:'soft',core:"People",terms:'A',conc:[],flag:false,pq:null},
+{id:'38103',nm:"Strategies And Processes Of Negotiation",area:'soft',core:null,terms:'AWS',conc:[],flag:true,pq:"Mandatory to attend first class."},
+{id:'38105',nm:"Advanced Negotiations",area:'soft',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'38115',nm:"Ethics Of Business",area:'soft',core:"Society",terms:'W',conc:[],flag:false,pq:null},
+{id:'38119',nm:"Designing A Good Life",area:'soft',core:"Society",terms:'W',conc:[],flag:true,pq:null},
+{id:'38120',nm:"The Study Of Behavioral Economics",area:'soft',core:"Decisions",terms:'AW',conc:[],flag:true,pq:"Autumn 2025 Cannot enroll in BUSN 38120 if BUSN 20710 taken previously. Section: 38120-85 S 9:00 AM-12:00 PM Gleacher Center"},
+{id:'38122',nm:"Diversity In Organizations",area:'soft',core:"People",terms:'W',conc:[],flag:false,pq:null},
+{id:'38126',nm:"Culture (And Why It Matters)",area:'soft',core:"Society",terms:'A',conc:[],flag:false,pq:null},
+{id:'38901',nm:"Current Topics In Behavioral Science I",area:'soft',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'38914',nm:"Foundations Of Social Psychology",area:'soft',core:null,terms:'S',conc:[],flag:false,pq:"PhD students only."},
+{id:'38916',nm:"Behavioral Economics - Development & Observational Data",area:'soft',core:null,terms:'A',conc:[],flag:false,pq:"PhD students only. MBA students require instructor permission: strict. BUSN 38916 = ECON 41175"},
+{id:'39101',nm:"Technology Strategy",area:'ai',core:"Strategy",terms:'A',conc:["EN"],flag:false,pq:null},
+{id:'40000',nm:"Operations Management: Business Process Fundamentals",area:'none',core:"Operations",terms:'WS',conc:[],flag:false,pq:null},
+{id:'40101',nm:"Supply Chain Strategy And Practice",area:'none',core:"Operations",terms:'W',conc:[],flag:false,pq:null},
+{id:'40108',nm:"Revenue Management",area:'none',core:"Operations",terms:'S',conc:[],flag:false,pq:null},
+{id:'40110',nm:"Managing Service Operations",area:'ai',core:"Operations",terms:'A',conc:["EN"],flag:false,pq:null},
+{id:'40111',nm:"Project Management",area:'none',core:null,terms:'AWS',conc:[],flag:false,pq:null},
+{id:'40206',nm:"Healthcare Business Analytics",area:'none',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'40721',nm:"Healthcare Analytics Lab",area:'none',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'41000',nm:"Business Statistics",area:'none',core:"Stats",terms:'AWS',conc:[],flag:false,pq:null},
+{id:'41100',nm:"Applied Regression Analysis",area:'none',core:"Stats",terms:'AW',conc:[],flag:false,pq:null},
+{id:'41203',nm:"Financial Econometrics",area:'fin',core:"Stats",terms:'W',conc:["AF"],flag:false,pq:"Cannot enroll in BUSN 41203 if BUSN 20820 taken previously."},
+{id:'41204',nm:"Machine Learning",area:'none',core:"Stats",terms:'S',conc:[],flag:false,pq:"BUSN 41000, 41100, or equivalent. Cannot enroll if 20810 taken previously."},
+{id:'41210',nm:"Financial Analytics",area:'none',core:null,terms:'A',conc:[],flag:false,pq:null},
+{id:'41215',nm:"Data Intelligence",area:'none',core:"Stats",terms:'A',conc:[],flag:false,pq:null},
+{id:'41600',nm:"Econometrics And Statistics Colloquium",area:'none',core:null,terms:'AS',conc:[],flag:false,pq:"3B - Seminar Room In-Person Only PhD students only. Instructor permission required for MBA students. BUSN 41600=ECON 51400."},
+{id:'41901',nm:"Probability And Statistics",area:'none',core:"Stats",terms:'A',conc:[],flag:false,pq:"Undergraduate-level real analysis, linear algebra, and statistics (or econometrics). BUSN 41901=STAT 32400"},
+{id:'41902',nm:"Statistical Inference",area:'none',core:"Stats",terms:'W',conc:[],flag:false,pq:"Business 41901"},
+{id:'41903',nm:"Applied Econometrics",area:'none',core:"Stats",terms:'S',conc:[],flag:false,pq:"Business 41901 and 41902."},
+{id:'41910',nm:"Time-Series Analysis For Forecasting And Model Building",area:'none',core:"Stats",terms:'W',conc:[],flag:false,pq:"PhD-level statistics"},
+{id:'41916',nm:"Bayes, Ai And Deep Learning",area:'none',core:"Stats",terms:'A',conc:[],flag:false,pq:null},
+{id:'41919',nm:"Contemporary Bayesian Inference",area:'none',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'42001',nm:"Competitive Strategy",area:'soft',core:"Strategy",terms:'AWS',conc:[],flag:false,pq:"Business 33001. Cannot enroll in BUSN 42001 if BUSN 20900 taken previously."},
+{id:'42005',nm:"Literature And Leadership",area:'soft',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'42108',nm:"Corporate Governance",area:'soft',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'42116',nm:"Game Theory",area:'soft',core:"Strategy",terms:'A',conc:[],flag:false,pq:"Section: 42116-81 Non-Booth students require instructor consent: strict No auditors. M 6:00 PM-9:00 PM Gleacher Center 404"},
+{id:'42121',nm:"Merger & Acquisition Strategy",area:'soft',core:null,terms:'AW',conc:[],flag:true,pq:null},
+{id:'42124',nm:"Storytelling And Narratives In Business",area:'soft',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'42129',nm:"The Political Economy Of Climate Change",area:'soft',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'42133',nm:"Media Power: How Media Influences Business, Markets And Regulations",area:'soft',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'42135',nm:"Platforms And Market Design",area:'soft',core:"Strategy",terms:'S',conc:[],flag:false,pq:null},
+{id:'42136',nm:"Social Impact Strategy",area:'soft',core:"Society",terms:'S',conc:[],flag:false,pq:null},
+{id:'42201',nm:"The Legal Infrastructure Of Business",area:'soft',core:"Society",terms:'A',conc:[],flag:false,pq:"S 1:30 PM-4:30 PM Gleacher Center None. 304 In-Person Only"},
+{id:'42708',nm:"Corporate Social Responsibility (Csr) Social Impact Practicum",area:'soft',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'42709',nm:"Consulting Lab",area:'soft',core:null,terms:'S',conc:[],flag:false,pq:null},
+{id:'42710',nm:"Social Impact Lab",area:'soft',core:null,terms:'W',conc:[],flag:false,pq:null},
+{id:'42711',nm:"Global Social Entrepreneurship Lab",area:'ai',core:null,terms:'W',conc:["EN"],flag:false,pq:null},
+{id:'42715',nm:"Strategy Simulation: Creating Value In Complex And Ambiguous Settings",area:'soft',core:"Strategy",terms:'W',conc:[],flag:false,pq:null},
+{id:'43100',nm:"Ai Essentials",area:'ai',core:null,terms:'W',conc:["AI"],flag:false,pq:null},
+{id:'43120',nm:"Building An Ai Company",area:'ai',core:null,terms:'AW',conc:["AI", "EN"],flag:false,pq:null},
+{id:'43130',nm:"Ai For Good",area:'ai',core:null,terms:'S',conc:["AI"],flag:false,pq:"One prior AI course (30135/32210/35137/41204/43100/43120)"},
+{id:'43950',nm:"Research Topics In Generative Ai",area:'ai',core:null,terms:'W',conc:["AI"],flag:false,pq:"Non-Booth students require instructor permission to enroll: strict."},
+{id:'44101',nm:"Voice Of A Leader: Speaking With Executive Presence",area:'soft',core:null,terms:'W',conc:[],flag:false,pq:null},
+];
+
+// flagship set (from Sergio's screenshot) by course id
+const FLAGSHIPS=new Set(['35201','34101','42121','37202','38119','34106','38120','33401','33471','33305','35120','30131','38103','34702','31401']);
+C.forEach(c=>{ if(FLAGSHIPS.has(c.id)) c.flag=true; });
+
+const CORE_AREAS=['Accounting','Micro','Stats','Finance','Marketing','Operations','Strategy','Decisions','People','Economy','Society'];
+const CONCS=[{k:'AF',n:'Analytic Finance',need:6},{k:'AI',n:'Applied AI',need:3},{k:'EN',n:'Entrepreneurship',need:3}];
+const QS=[{id:'y1a',l:'Y1 · Autumn',t:'A'},{id:'y1w',l:'Y1 · Winter',t:'W'},{id:'y1s',l:'Y1 · Spring',t:'S'},
+          {id:'y2a',l:'Y2 · Autumn',t:'A'},{id:'y2w',l:'Y2 · Winter',t:'W'},{id:'y2s',l:'Y2 · Spring',t:'S'}];
+
+let place={}; C.forEach(c=>place[c.id]='list');
+let activeFilters=new Set(); let dragId=null;
+const toast=document.getElementById('toast');let tt;
+function showToast(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove('show'),2200);}
+
+// filters
+const FILTER_DEFS=[...CORE_AREAS.map(a=>({key:a,label:a})),{key:'__ELEC__',label:'Electives',elec:true}];
+function buildFilters(){
+  const f=document.getElementById('filters');f.innerHTML='';
+  FILTER_DEFS.forEach(fd=>{
+    const b=document.createElement('span');b.className='fbtn'+(fd.elec?' elec':'');b.textContent=fd.label;
+    b.onclick=()=>{ if(activeFilters.has(fd.key))activeFilters.delete(fd.key); else activeFilters.add(fd.key); b.classList.toggle('on'); renderList(); };
+    f.appendChild(b);
+  });
+}
+function courseVisible(c){
+  if(activeFilters.size===0) return true;
+  for(const f of activeFilters){
+    if(f==='__ELEC__'){ if(c.core===null) return true; }
+    else if(c.core===f) return true;
+  }
+  return false;
+}
+function termStr(t){return t.split('').join('/');}
+function renderList(){
+  const wrap=document.getElementById('courselist');wrap.innerHTML='';
+  C.filter(courseVisible).forEach(c=>{
+    const el=document.createElement('div');
+    el.className='course '+c.area+(place[c.id]!=='list'?' placed':'')+(c.flag?' flagship':'');
+    el.draggable=true;el.dataset.cid=c.id;
+    el.innerHTML=`<div class="nm">${c.nm}</div><div class="meta">${c.id} · ${termStr(c.terms)}${c.core?' · '+c.core:' · elective'}</div>
+      <div class="ic">${c.flag?'<span class="fl">★</span>':''}${c.pq?'<span class="pq" data-pq="'+c.id+'">⬡</span>':''}</div>`;
+    el.addEventListener('dragstart',e=>{dragId=c.id;el.classList.add('dragging');e.dataTransfer.setData('text/plain',c.id);e.dataTransfer.effectAllowed='move';});
+    el.addEventListener('dragend',()=>{dragId=null;el.classList.remove('dragging');clearHl();});
+    wrap.appendChild(el);
+  });
+  wrap.querySelectorAll('.pq').forEach(p=>p.addEventListener('click',e=>{e.stopPropagation();openModal(p.dataset.pq);}));
+}
+function clearHl(){document.querySelectorAll('.q').forEach(q=>q.classList.remove('dragover','valid','invalid'));}
+
+function buildBoard(){
+  const b=document.getElementById('board');b.innerHTML='';
+  QS.forEach(q=>{
+    const card=document.createElement('div');card.className='q';card.id='q-'+q.id;
+    card.innerHTML=`<h3>${q.l}<span class="cnt" id="cnt-${q.id}"></span></h3><div class="drop" id="drop-${q.id}"></div>`;
+    b.appendChild(card);
+    card.addEventListener('dragover',e=>{e.preventDefault();if(!dragId)return;const c=C.find(x=>x.id===dragId);const ok=c.terms.includes(q.t);card.classList.add('dragover');card.classList.toggle('valid',ok);card.classList.toggle('invalid',!ok);e.dataTransfer.dropEffect=ok?'move':'none';});
+    card.addEventListener('dragleave',e=>{if(!card.contains(e.relatedTarget))card.classList.remove('dragover','valid','invalid');});
+    card.addEventListener('drop',e=>{e.preventDefault();card.classList.remove('dragover','valid','invalid');const cid=e.dataTransfer.getData('text/plain');const c=C.find(x=>x.id===cid);if(!c)return;if(!c.terms.includes(q.t)){showToast(`${c.nm.split('(')[0].trim()} isn't offered in ${q.t==='A'?'Autumn':q.t==='W'?'Winter':'Spring'} (only ${termStr(c.terms)})`);return;}place[cid]=q.id;render();});
+  });
+  const side=document.querySelector('.side');
+  side.addEventListener('dragover',e=>{e.preventDefault();e.dataTransfer.dropEffect='move';});
+  side.addEventListener('drop',e=>{e.preventDefault();const cid=e.dataTransfer.getData('text/plain');if(cid){place[cid]='list';render();}});
+}
+function pcEl(c){
+  const el=document.createElement('div');el.className='pc '+c.area;el.draggable=true;el.dataset.cid=c.id;
+  el.innerHTML=`<span>${c.nm.split('(')[0].trim()}</span><span class="pcic">${c.flag?'<span class="fl">★</span>':''}${c.pq?'<span class="pq" data-pq="'+c.id+'">⬡</span>':''}</span>`;
+  el.addEventListener('dragstart',e=>{dragId=c.id;e.dataTransfer.setData('text/plain',c.id);e.dataTransfer.effectAllowed='move';});
+  el.addEventListener('dragend',()=>{dragId=null;clearHl();});
+  el.querySelectorAll('.pq').forEach(p=>p.addEventListener('click',ev=>{ev.stopPropagation();openModal(p.dataset.pq);}));
+  return el;
+}
+function render(){
+  QS.forEach(q=>document.getElementById('drop-'+q.id).innerHTML='');
+  const per={};QS.forEach(q=>per[q.id]=[]);
+  C.forEach(c=>{if(place[c.id]!=='list')per[place[c.id]].push(c);});
+  QS.forEach(q=>{const d=document.getElementById('drop-'+q.id);per[q.id].forEach(c=>d.appendChild(pcEl(c)));document.getElementById('cnt-'+q.id).textContent=per[q.id].length;});
+  renderList();
+  // core areas
+  const placed=C.filter(c=>place[c.id]!=='list');
+  const covered=new Set(placed.filter(c=>c.core).map(c=>c.core));
+  const cc=document.getElementById('coreChecks');cc.innerHTML='';
+  CORE_AREAS.forEach(a=>{const met=covered.has(a);const d=document.createElement('div');d.className='ri'+(met?' met':'');d.innerHTML=`<span class="dot"></span>${a}`;cc.appendChild(d);});
+  const n=covered.size;
+  const cs=document.getElementById('coreSummary');
+  const enough=n>=10;
+  cs.className='summary '+(enough?'ok':'no');
+  cs.textContent=`${n}/11 areas covered — ${enough?'10-of-11 rule met ✓':'need '+(10-n)+' more'}`;
+  // concentrations
+  const conc=document.getElementById('concChecks');conc.innerHTML='';
+  CONCS.forEach(co=>{const list=placed.filter(c=>c.conc.includes(co.k));const cnt=list.length;const met=cnt>=co.need;
+    const div=document.createElement('div');div.className='conc'+(met?' met':'');
+    div.innerHTML=`<div class="t"><span>${co.n}</span><span class="s">${cnt}/${co.need} ${met?'✓':''}</span></div><div class="concbar"><div class="f" style="width:${Math.min(100,cnt/co.need*100)}%"></div></div>`;
+    conc.appendChild(div);});
+  // flagships
+  const fl=placed.filter(c=>c.flag);
+  document.getElementById('flagN').textContent=fl.length;
+  document.getElementById('flagList').textContent=fl.map(c=>c.nm.split('(')[0].trim()).join(', ')||'none placed yet';
+}
+function openModal(cid){
+  const c=C.find(x=>x.id===cid);if(!c)return;
+  document.getElementById('mTitle').textContent=c.nm.split('(')[0].trim();
+  document.getElementById('mCode').textContent=c.id+' · offered '+termStr(c.terms);
+  document.getElementById('mBody').innerHTML=`<span class="lab">Prerequisites:</span><br>${c.pq||'None'}`;
+  document.getElementById('modal').classList.add('show');
+}
+document.getElementById('modalX').onclick=()=>document.getElementById('modal').classList.remove('show');
+document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')document.getElementById('modal').classList.remove('show');};
+document.getElementById('clear').onclick=()=>{C.forEach(c=>place[c.id]='list');render();};
+
+buildFilters();buildBoard();render();
+</script>
+</body>
+</html>
