@@ -1,0 +1,1000 @@
+﻿key;Course;Title;Quarter;Year;Day and Time;Instructor;Total Enrollment after  Phase 1;Seats Available after Phase 1;Phase 1 Price;Total Enrollment after  Phase 2;Seats Available after Phase 2;Phase 2 Price;Total Enrollment after  New Students;Seats Available after New Students;New Students Price;Total Enrollment after  Phase 3;Seats Available after Phase 3;Phase 3 Price
+30000;30000-81;Financial Accounting;Spring;2026;Thursday, 6:00 pm - 9:00 pm;Le, Anthony;5;60;0;6;59;0;23;42;0;28;37;0
+30000;30000-85;Financial Accounting;Spring;2026;Saturday, 1:30 pm - 4:30 pm;Le, Anthony;7;58;0;7;58;0;14;51;0;20;45;0
+30005;30005-01;Internal Information for Strategic Decisions;Spring;2026;Monday, 8:30 am - 11:30 am;Stewart, Christopher;65;CLO;0;65;CLO;3000;;;N/A;65;CLO;0
+30005;30005-02;Internal Information for Strategic Decisions;Spring;2026;Monday, 1:30 pm - 4:30 pm;Stewart, Christopher;65;CLO;2083;65;CLO;4800;;;N/A;65;CLO;16334
+30005;30005-03;Internal Information for Strategic Decisions;Spring;2026;Monday, 05:00 pm - 08:00 pm;Stewart, Christopher;28;37;0;46;19;0;;;N/A;60;5;0
+30118;30118-01;Taxes and Business Strategy;Spring;2026;Tuesday, 01:30 pm - 04:30 pm;Welsch, Anthony;63;2;0;65;CLO;723;65;CLO;0;65;CLO;417
+30121;30121-02;Accounting for Entrepreneurship: From Start-Up through IPO;Spring;2026;Thursday, 08:30 am - 11:30 am;Berger, Philip;19;46;0;18;47;0;;;N/A;22;43;0
+30121;30121-01;Accounting for Entrepreneurship: From Start-Up through IPO;Spring;2026;Wednesday, 01:30 pm - 04:30 pm;Berger, Philip;52;13;0;60;5;0;;;N/A;65;CLO;1
+30121;30121-81;Accounting for Entrepreneurship: From Start-Up through IPO;Spring;2026;Wednesday, 6:00 pm - 9:00 pm;Berger, Philip;12;53;0;12;53;0;12;53;0;17;21;0
+30122;30122-01;Deal Structuring and Financial Reporting Implications;Spring;2026;Wednesday, 08:30 am - 11:30 am;Sapra, Haresh;57;8;0;65;CLO;200;65;CLO;0;65;CLO;17556
+30130;30130-01;Financial Statement Analysis;Spring;2026;Friday, 08:30 am - 11:30 am;Hand, John;63;2;0;65;CLO;100;;;N/A;65;CLO;1000
+30130;30130-02;Financial Statement Analysis;Spring;2026;Wednesday, 08:30 am - 11:30 am;Urcan, Oktay;43;22;0;54;11;0;;;N/A;56;9;0
+30130;30130-03;Financial Statement Analysis;Spring;2026;Tuesday, 01:30 pm - 04:30 pm;Urcan, Oktay;21;44;0;22;43;0;;;N/A;21;44;0
+30130;30130-81;Financial Statement Analysis;Spring;2026;Thursday, 6:00 pm - 9:00 pm;Hand, John;36;29;0;35;30;0;38;27;0;65;CLO;3
+30131;30131-01;Advanced Financial Analysis and Valuation for Global Firms;Spring;2026;Tuesday, 01:30 pm - 04:30 pm;Leuz, Christian;65;CLO;2177;65;CLO;8119;65;CLO;0;65;CLO;0
+30131;30131-81;Advanced Financial Analysis and Valuation for Global Firms;Spring;2026;Tuesday, 6:00 pm - 9:00 pm;Leuz, Christian;23;42;0;22;43;0;22;43;0;65;CLO;1000
+30600;30600-60;Workshop in Accounting Research;Spring;2026;Thursday, 01:20 pm - 02:50 pm;"Stewart, Christopher; Tomy, Rimmy";7;23;0;7;23;0;;;N/A;7;23;0
+30907;30907-50;Disclosure, Reporting and Transparency: Analysis of Markets and Regulation;Spring;2026;Wednesday, 03:00 pm - 06:30 pm;Leuz, Christian;11;11;0;11;11;0;11;11;0;10;12;0
+30908;30908-50;Accounting for Private Entities & Non-Investor Stakeholders;Spring;2026;Thursday, 9:00 am - 12:00 pm;"Costello, Anna; Minnis, Michael";7;13;0;7;13;0;;;N/A;7;13;0
+30931;30931-50;Research Seminar in Accounting;Spring;2026;Wednesday, 10:00 am - 11:30 am;"McClure, Charles; Stewart, Christopher";3;17;0;3;17;0;;;N/A;3;17;0
+31403;31403-01;Leadership Studio;Spring;2026;Wednesday, 01:30 pm - 04:30 pm;"Davis, Harry; Tennant, Nancy";24;6;0;29;1;0;;;N/A;24;6;0
+31403;31403-81;Leadership Studio;Spring;2026;Tuesday, 6:00 pm - 9:00 pm;"Davis, Harry; Tennant, Nancy";17;13;0;18;12;0;18;12;0;23;7;0
+31405;31405-01;Leading with Authenticity;Spring;2026;Thursday, 8:30 am - 11:30 am;Coleman, Samantha;25;13;0;24;14;0;24;14;0;24;14;0
+32120;32120-01;Data Analysis with Python and SQL;Spring;2026;Tuesday, 08:30 am - 11:30 am;Kattan, Lara;33;2;0;32;3;0;;;N/A;35;CLO;3001
+32120;32120-85;Data Analysis with Python and SQL;Spring;2026;Saturday, 1:30 pm - 4:30 pm;Kattan, Lara;15;20;0;14;21;0;16;19;0;27;8;0
+32130;32130-81;Data Visualization for Decision-Making;Spring;2026;Wednesday, 6:00 pm - 9:00 pm;Kattan, Lara;28;17;0;31;14;0;35;10;0;45;CLO;1000
+33032;33032-01;Managing the Workplace;Spring;2026;Tuesday, 08:30 am - 11:30 am;Prendergast, Canice;70;CLO;3999;70;CLO;11470;70;CLO;0;70;CLO;19289
+33032;33032-02;Managing the Workplace;Spring;2026;Thursday, 08:30 am - 11:30 am;Prendergast, Canice;70;CLO;2200;70;CLO;5060;70;CLO;0;70;CLO;0
+33032;33032-81;Managing the Workplace;Spring;2026;Tuesday, 6:00 pm - 9:00 pm;Prendergast, Canice;48;17;0;55;10;0;63;2;0;65;CLO;5412
+33050;33050-01;Macroeconomics and the Business Environment;Spring;2026;Tuesday, 08:30 am - 11:30 am;Hurst, Erik;70;CLO;0;70;CLO;871;;;N/A;70;CLO;2500
+33050;33050-02;Macroeconomics and the Business Environment;Spring;2026;Tuesday, 01:30 pm - 04:30 pm;Hurst, Erik;70;CLO;499;70;CLO;2014;;;N/A;70;CLO;5227
+33251;33251-01;Perspectives on Capitalism Seminar;Spring;2026;Thursday, 10:00 am - 11:30 am;Gertner, Robert;13;CLO;1888;13;CLO;5204;13;CLO;0;13;CLO;21562
+33251;33251-02;Perspectives on Capitalism Seminar;Spring;2026;Thursday, 01:30 pm - 03:00 pm;Gertner, Robert;12;CLO;5;12;CLO;0;12;CLO;0;12;CLO;4217
+33251;33251-07;Perspectives on Capitalism Seminar;Spring;2026;Tuesday, 1:30 pm - 3:00 pm;Vasquez, Susana;12;CLO;813;12;CLO;5343;12;CLO;0;12;CLO;500
+33251;33251-08;Perspectives on Capitalism Seminar;Spring;2026;Tuesday, 03:30 pm - 05:00 pm;Vasquez, Susana;12;CLO;0;12;CLO;2000;12;CLO;0;12;CLO;0
+33251;33251-82;Perspectives on Capitalism Seminar;Spring;2026;Wednesday, 07:00 pm - 08:30 pm;Carmichael, James;15;CLO;3057;15;CLO;50;15;CLO;0;15;CLO;13947
+33251;33251-83;Perspectives on Capitalism Seminar;Spring;2026;Friday, 06:00 pm - 07:30 pm;Carmichael, James;15;CLO;0;15;CLO;0;15;CLO;0;15;CLO;0
+33251;33251-03;Perspectives on Capitalism Seminar;Spring;2026;Wednesday, 10:00 am - 11:30 am;Barry, Brian;13;CLO;7000;13;CLO;0;13;CLO;0;13;CLO;0
+33251;33251-04;Perspectives on Capitalism Seminar;Spring;2026;Thursday, 10:00 am - 11:30 am;Barry, Brian;13;CLO;4843;13;CLO;17067;13;CLO;0;13;CLO;0
+33251;33251-05;Perspectives on Capitalism Seminar;Spring;2026;Thursday, 1:30 pm - 3:00 pm;Barry, Brian;13;CLO;2238;13;CLO;0;13;CLO;0;13;CLO;10000
+33251;33251-06;Perspectives on Capitalism Seminar;Spring;2026;Wednesday, 3:00 pm - 4:30 pm;Grossman, Caroline;13;CLO;3700;13;CLO;21730;13;CLO;0;13;CLO;0
+33251;33251-09;Perspectives on Capitalism Seminar;Spring;2026;Wednesday, 3:00 pm - 4:30 pm;Vasquez, Susana;12;CLO;2021;12;CLO;0;12;CLO;0;11;1;0
+33251;33251-81;Perspectives on Capitalism Seminar;Spring;2026;Wednesday, 06:45 pm - 08:15 pm;Grossman, Caroline;12;CLO;0;12;CLO;12714;12;CLO;0;12;CLO;10571
+33251;33251-85;Perspectives on Capitalism Seminar;Spring;2026;Saturday, 1:30 pm - 3:00 pm;Carmichael, James;15;CLO;0;15;CLO;0;15;CLO;0;15;CLO;0
+33305;33305-01;The Firm and the Non-Market Environment;Spring;2026;Thursday, 08:30 am - 11:30 am;Bertrand, Marianne;70;CLO;5437;70;CLO;0;70;CLO;0;70;CLO;0
+33305;33305-02;The Firm and the Non-Market Environment;Spring;2026;Thursday, 01:30 pm - 04:30 pm;Bertrand, Marianne;70;CLO;3000;70;CLO;0;70;CLO;0;70;CLO;0
+33305;33305-81;The Firm and the Non-Market Environment;Spring;2026;Thursday, 6:00 pm - 9:00 pm;Bertrand, Marianne;54;11;0;58;7;0;59;6;0;65;CLO;11376
+33320;33320-81;Financing the Grid: Valuing Transmission & Storage Capacity;Spring;2026;Tuesday, 6:00 pm - 9:00 pm;"Birge, John; Mordecai, David K.A.";17;48;0;18;47;0;18;47;0;20;45;0
+33350;33350-01;Health Economics;Spring;2026;Monday, 01:30 pm - 04:30 pm;Notowidigdo, Matthew;40;25;0;44;21;0;44;21;0;46;19;0
+33350;33350-81;Health Economics;Spring;2026;Monday, 6:00 pm - 9:00 pm;Notowidigdo, Matthew;32;33;0;31;34;0;33;32;0;33;32;0
+33353;33353-81;Pharmaceutical Launch & Lifecycle Strategy;Spring;2026;Wednesday, 6:00 pm - 9:00 pm;Prasad, Sangeeta;58;7;0;60;5;0;60;5;0;62;3;0
+33401;33401-02;Money and Banking;Spring;2026;Wednesday, 01:30 pm - 04:30 pm;Kroszner, Randall;70;CLO;7492;70;CLO;22725;70;CLO;0;70;CLO;0
+33401;33401-01;Money and Banking;Spring;2026;Tuesday, 01:30 pm - 04:30 pm;Kroszner, Randall;70;CLO;6555;70;CLO;10345;70;CLO;0;70;CLO;8000
+33401;33401-81;Money and Banking;Spring;2026;Tuesday, 6:00 pm - 9:00 pm;Kroszner, Randall;70;CLO;321;70;CLO;569;70;CLO;0;70;CLO;13483
+33451;33451-81;Real Estate Investments II;Spring;2026;Thursday, 6:00 pm - 9:00 pm;Pagliari, Joseph;11;54;0;13;52;0;13;52;0;14;51;0
+33502;33502-01;International Financial Policy;Spring;2026;Thursday, 08:30 am - 11:30 am;Neiman, Brent;52;13;0;65;CLO;1;65;CLO;0;58;7;0
+33502;33502-02;International Financial Policy;Spring;2026;Thursday, 1:30 pm - 4:30 pm;Neiman, Brent;11;54;0;12;53;0;;;N/A;10;28;0
+33502;33502-81;International Financial Policy;Spring;2026;Thursday, 6:00 pm - 9:00 pm;Neiman, Brent;14;51;0;13;52;0;13;52;0;18;20;0
+33520;33520-01;The Wealth of Nations;Spring;2026;Tuesday, 01:30 pm - 04:30 pm;Hsieh, Chang-Tai;65;CLO;1000;65;CLO;7483;65;CLO;0;65;CLO;5022
+33520;33520-85;The Wealth of Nations;Spring;2026;Saturday, 1:30 pm - 4:30 pm;Hsieh, Chang-Tai;39;26;0;43;22;0;44;21;0;65;CLO;103
+33610;33610-60;Applied Economics Workshop;Spring;2026;Wednesday, 01:20 pm - 02:50 pm;"Conway, Jacob; Kamenica, Emir";4;26;0;4;26;0;;;N/A;4;26;0
+33630;33630-60;Workshop: Money and Banking;Spring;2026;Wednesday, 03:00 pm - 05:30 pm;"Hansen, Lars; Rossi-Hansberg, Esteban; Staff, Staff";0;30;0;1;29;0;;;N/A;2;28;0
+33650;33650-60;Workshop in Macro and International Economics;Spring;2026;Monday, 12:00 pm - 01:15 pm;Staff, Staff;0;30;0;1;29;0;;;N/A;2;28;0
+33905;33905-50;Microeconomics Reading and Research Seminar;Spring;2026;Monday, 04:30 pm - 06:00 pm;"Budish, Eric; Notowidigdo, Matthew";0;20;0;0;20;0;;;N/A;0;20;0
+33918;33918-50;Topics in Labor Economics;Spring;2026;Wednesday, 09:00 am - 12:00 pm;"Humlum, Anders; Minni, Virginia; Notowidigdo, Matthew";4;31;0;4;31;0;;;N/A;4;31;0
+33923;33923-50;Advanced Industrial Organization III;Spring;2026;Thursday,Tuesday, 09:30 am - 10:50 am;Richert, Eric;10;5;0;10;5;0;;;N/A;11;4;0
+33930;33930-50;Economics of Education;Spring;2026;Monday, 08:30 am - 11:30 am;"Campos, Christopher; Mountjoy, Jack";11;9;0;14;6;0;14;6;0;13;7;0
+33935;33935-50;Readings in Applied Theory and Market Design;Spring;2026;Friday, 01:00 pm - 02:30 pm;Budish, Eric;1;19;0;2;18;0;;;N/A;3;17;0
+33942;33942-50;Applied Macroeconomics: Micro Data for Macro Models;Spring;2026;Monday, 01:30 pm - 04:30 pm;"Hsieh, Chang-Tai; Hurst, Erik";9;26;0;14;21;0;;;N/A;17;18;0
+34101;34101-01;Entrepreneurial Finance and Private Equity;Spring;2026;Monday, 8:30 am - 11:30 am;Berlin, Larry;37;28;0;43;22;0;;;N/A;48;17;0
+34101;34101-02;Entrepreneurial Finance and Private Equity;Spring;2026;Wednesday, 1:30 pm - 4:30 pm;Fasano, Jim;34;31;0;40;25;0;;;N/A;45;20;0
+34101;34101-81;Entrepreneurial Finance and Private Equity;Spring;2026;Tuesday, 6:00 pm - 9:00 pm;Fasano, Jim;13;52;0;12;53;0;12;53;0;18;20;0
+34102;34102-01;New Venture Strategy;Spring;2026;Wednesday, 1:30 pm - 4:30 pm;Bunch, Gregory;26;39;0;30;35;0;;;N/A;49;16;0
+34103;34103-01;Building the New Venture;Spring;2026;Wednesday, 05:00 pm - 08:00 pm;Breuer, Ale;14;21;0;17;18;0;;;N/A;19;16;0
+34103;34103-81;Building the New Venture;Spring;2026;Wednesday, 6:00 pm - 9:00 pm;"Casey, Bob; Elnick, Thomas";13;32;0;13;32;0;13;32;0;23;22;0
+34106;34106-01;Commercializing Innovation: Tools to Research and Analyze Private Enterprises;Spring;2026;Friday, 08:30 am - 11:30 am;Meadow, Scott;55;CLO;5500;55;CLO;15023;;;N/A;55;CLO;0
+34106;34106-85;Commercializing Innovation: Tools to Research and Analyze Private Enterprises;Spring;2026;Saturday, 9:00 am - 12:00 pm;Meadow, Scott;38;17;0;39;16;0;44;11;0;55;CLO;7004
+34108;34108-01;Innovation Leadership;Spring;2026;Monday, 1:30 pm - 4:30 pm;Janega, James;14;26;0;23;17;0;23;17;0;25;15;0
+34108;34108-85;Innovation Leadership;Spring;2026;Saturday, 1:30 pm - 4:30 pm;Janega, James;23;17;0;25;15;0;27;13;0;26;14;0
+34111;34111-01;Entrepreneurial Selling;Spring;2026;Tuesday, 01:30 pm - 04:30 pm;Alter, Michael;65;CLO;1007;65;CLO;25000;;;N/A;65;CLO;16065
+34111;34111-02;Entrepreneurial Selling;Spring;2026;Tuesday, 08:30 am - 11:30 am;Alter, Michael;20;45;0;25;40;0;;;N/A;65;CLO;10
+34113;34113-01;Impact Investing;Spring;2026;Thursday, 1:30 pm - 4:30 pm;Parrish, Priya;65;CLO;2;65;CLO;18069;65;CLO;0;65;CLO;18978
+34113;34113-81;Impact Investing;Spring;2026;Thursday, 6:00 pm - 9:00 pm;Parrish, Priya;17;48;0;20;45;0;21;44;0;36;29;0
+34211;34211-81;Value Creation in Small Businesses;Spring;2026;Thursday, 6:00 pm - 9:00 pm;"Cremons, Dan; Hodgkin, Alex";65;CLO;8743;65;CLO;20198;65;CLO;0;65;CLO;0
+34219;34219-01;Institutional Private Capital Investing;Spring;2026;Wednesday, 01:30 pm - 04:30 pm;Hepp, Stefan;29;36;0;47;18;0;47;18;0;65;CLO;999
+34220;34220-81;Advanced New Venture Strategy Workshop;Spring;2026;Thursday, 6:00 pm - 9:00 pm;Schrager, James;14;26;0;14;26;0;14;26;0;30;10;0
+34302;34302-01;Entrepreneurship through Acquisition;Spring;2026;Tuesday, 01:30 pm - 04:30 pm;"Burns, Keith; Curry, Michael";65;CLO;5000;65;CLO;15885;65;CLO;0;65;CLO;17063
+34906;34906-50;Corporate Finance III;Spring;2026;Friday, 08:30 am - 11:30 am;"Colonnelli, Emanuele; Rajan, Raghuram";5;15;0;5;15;0;;;N/A;7;13;0
+35000;35000-01;Investments;Spring;2026;Monday, 8:30 am - 11:30 am;Bastianello, Francesca;20;45;0;20;45;0;;;N/A;24;41;0
+35000;35000-02;Investments;Spring;2026;Tuesday, 8:30 am - 11:30 am;Bastianello, Francesca;55;10;0;65;CLO;709;;;N/A;65;CLO;300
+35000;35000-81;Investments;Spring;2026;Tuesday, 6:00 pm - 9:00 pm;Bastianello, Francesca;29;36;0;28;37;0;28;37;0;38;27;0
+35120;35120-01;Portfolio Management;Spring;2026;Friday, 01:30 pm - 04:30 pm;Pastor, Lubos;52;13;0;59;6;0;59;6;0;64;1;0
+35120;35120-02;Portfolio Management;Spring;2026;Friday, 08:30 am - 11:30 am;Pastor, Lubos;39;26;0;40;25;0;;;N/A;42;23;0
+35120;35120-85;Portfolio Management;Spring;2026;Saturday, 9:00 am - 12:00 pm;Pastor, Lubos;32;33;0;33;32;0;33;32;0;34;31;0
+35130;35130-01;Fixed Income Asset Pricing;Spring;2026;Monday, 01:30 pm - 04:30 pm;Heaton, John;33;32;0;34;31;0;;;N/A;37;28;0
+35130;35130-81;Fixed Income Asset Pricing;Spring;2026;Monday, 6:00 pm - 9:00 pm;Heaton, John;13;52;0;15;50;0;15;50;0;14;51;0
+35144;35144-01;Arbitrage and Corporate Securities;Spring;2026;Monday,Wednesday, 10:10 am - 11:30 am;Mitchell, Mark;7;58;0;10;55;0;10;55;0;10;55;0
+35146;35146-01;The Family Office;Spring;2026;Wednesday, 08:30 am - 11:30 am;Heaton, John;65;CLO;3900;65;CLO;0;65;CLO;0;65;CLO;23870
+35150;35150-01;Advanced Investments;Spring;2026;Thursday, 01:30 pm - 04:30 pm;Nagel, Stefan;16;49;0;19;46;0;19;46;0;23;42;0
+35150;35150-02;Advanced Investments;Spring;2026;Thursday, 08:30 am - 11:30 am;Nagel, Stefan;39;26;0;40;25;0;;;N/A;36;29;0
+35200;35200-03;Corporation Finance;Spring;2026;Thursday, 08:30 am - 11:30 am;Ma, Yueran;22;43;0;65;5;0;;;N/A;66;4;0
+35200;35200-02;Corporation Finance;Spring;2026;Wednesday, 01:30 pm - 04:30 pm;Noel, Pascal;70;CLO;3033;70;CLO;0;;;N/A;70;CLO;0
+35200;35200-01;Corporation Finance;Spring;2026;Wednesday, 08:30 am - 11:30 am;Noel, Pascal;70;CLO;2504;70;CLO;10332;;;N/A;70;CLO;10000
+35200;35200-85;Corporation Finance;Spring;2026;Saturday, 9:00 am - 12:00 pm;Ma, Yueran;24;41;0;25;40;0;26;39;0;32;33;0
+35201;35201-01;Cases in Financial Management;Spring;2026;Friday, 01:30 pm - 04:30 pm;Andrade, Gregor;38;27;0;45;20;0;;;N/A;49;16;0
+35201;35201-81;Cases in Financial Management;Spring;2026;Tuesday, 6:00 pm - 9:00 pm;Pierce, Joshua;25;40;0;28;37;0;28;37;0;36;29;0
+35210;35210-01;International Corporate Finance;Spring;2026;Thursday, 08:30 am - 11:30 am;Rajan, Raghuram;65;CLO;604;65;CLO;8000;65;CLO;0;65;CLO;5550
+35210;35210-81;International Corporate Finance;Spring;2026;Wednesday, 6:00 pm - 9:00 pm;Rajan, Raghuram;35;30;0;33;32;0;33;32;0;65;CLO;2
+35214;35214-01;Debt, Distress, and Restructuring;Spring;2026;Monday, 01:30 pm - 04:30 pm;Sufi, Amir;65;CLO;7934;65;CLO;20430;65;CLO;0;65;CLO;0
+35214;35214-81;Debt, Distress, and Restructuring;Spring;2026;Tuesday, 6:00 pm - 9:00 pm;Sufi, Amir;44;21;0;43;22;0;43;22;0;65;CLO;11990
+35224;35224-01;Distressed Debt Investing;Spring;2026;Tuesday, 1:30 pm - 4:30 pm;Mehta, Ravi;28;37;0;33;32;0;;;N/A;48;17;0
+35600;35600-60;Seminar: Finance;Spring;2026;Tuesday, 01:20 pm - 02:50 pm;"Bastianello, Francesca; Noel, Pascal";4;26;0;4;26;0;;;N/A;5;25;0
+35601;35601-60;Applied Theory Workshop;Spring;2026;Tuesday, 03:30 pm - 05:00 pm;Pernoud, Agathe;0;30;0;0;30;0;;;N/A;0;30;0
+35932;35932-02;Research Seminar;Spring;2026;Monday, 3:00 pm - 4:30 pm;"Patterson, Christina; Rossi-Hansberg, Esteban";0;20;0;1;19;0;;;N/A;1;19;0
+35932;35932-50;Research Seminar;Spring;2026;Tuesday, 08:30 am - 11:30 am;"Nagel, Stefan; Noel, Pascal; Zhang, Anthony";2;20;0;2;20;0;;;N/A;2;20;0
+36106;36106-01;Managerial Decision Modeling;Spring;2026;Tuesday, 08:30 am - 11:30 am;Afèche, Philipp;25;20;0;32;13;0;;;N/A;34;11;0
+36106;36106-02;Managerial Decision Modeling;Spring;2026;Tuesday, 01:30 pm - 04:30 pm;Afèche, Philipp;26;19;0;32;13;0;;;N/A;33;12;0
+36110;36110-01;Application Development;Spring;2026;Monday, 1:30 pm - 4:30 pm;Betina, Raghu;21;9;0;24;6;0;24;6;0;22;8;0
+36110;36110-81;Application Development;Spring;2026;Tuesday, 6:00 pm - 9:00 pm;Betina, Raghu;12;18;0;11;19;0;11;19;0;23;7;0
+36111;36111-81;Application Development II;Spring;2026;Monday, 6:00 pm - 9:00 pm;Betina, Raghu;10;20;0;11;19;0;11;19;0;10;20;0
+36600;36600-60;Workshop in Operations/Management Science;Spring;2026;Tuesday, 12:10 pm - 01:10 pm;"Niazadeh, Rad; Taskesen, Bahar";2;28;0;2;28;0;;;N/A;2;28;0
+36900;36900-50;Linear Programming;Spring;2026;Tuesday, 08:30 am - 11:30 am;Birge, John;7;13;0;7;13;0;;;N/A;7;13;0
+36902;36902-50;Dynamic Programming/Markov Decision Processes;Spring;2026;Monday, 08:30 am - 11:30 am;Caldentey, Rene;5;17;0;5;17;0;;;N/A;5;17;0
+36903;36903-01;Convex Optimization;Spring;2026;Thursday,Tuesday, 02:00 pm - 03:20 pm;Staff, Staff;8;32;0;12;28;0;;;N/A;17;23;0
+37000;37000-01;Marketing Strategy;Spring;2026;Thursday, 08:30 am - 11:30 am;Dietvorst, Berkeley;34;31;0;33;32;0;;;N/A;29;36;0
+37000;37000-02;Marketing Strategy;Spring;2026;Thursday, 01:30 pm - 04:30 pm;Dietvorst, Berkeley;31;34;0;41;24;0;;;N/A;43;22;0
+37000;37000-85;Marketing Strategy;Spring;2026;Saturday, 1:30 pm - 4:30 pm;Dietvorst, Berkeley;25;40;0;24;41;0;24;41;0;27;38;0
+37101;37101-01;Consumer Behavior;Spring;2026;Wednesday, 08:30 am - 11:30 am;Donnelly, Kristin;65;CLO;1206;65;CLO;12257;;;N/A;65;CLO;8977
+37101;37101-02;Consumer Behavior;Spring;2026;Thursday, 08:30 am - 11:30 am;Donnelly, Kristin;47;18;0;65;CLO;0;;;N/A;60;5;0
+37101;37101-03;Consumer Behavior;Spring;2026;Wednesday, 01:30 pm - 04:30 pm;Donnelly, Kristin;24;41;0;28;37;0;;;N/A;65;CLO;0
+37202;37202-01;Pricing Strategies;Spring;2026;Wednesday, 01:30 pm - 04:30 pm;Dubé, Jean-Pierre;70;CLO;16032;70;CLO;27291;70;CLO;0;70;CLO;0
+37202;37202-81;Pricing Strategies;Spring;2026;Wednesday, 6:00 pm - 9:00 pm;Dubé, Jean-Pierre;70;CLO;3589;70;CLO;19010;70;CLO;0;70;CLO;0
+37209;37209-81;Brand Management in a Digital Age;Spring;2026;Monday, 6:00 pm - 9:00 pm;Hafen, Tom;33;32;0;35;30;0;37;28;0;65;CLO;7582
+37209;37209-85;Brand Management in a Digital Age;Spring;2026;Saturday, 1:30 pm - 4:30 pm;Hafen, Tom;46;19;0;51;14;0;53;12;0;53;12;0
+37215;37215-01;Product Management;Spring;2026;Monday, 01:30 pm - 04:30 pm;"Taneja, Anshuman; Urminsky, Oleg";65;CLO;42;65;CLO;0;65;CLO;0;65;CLO;17482
+37215;37215-81;Product Management;Spring;2026;Monday, 6:00 pm - 9:00 pm;"Taneja, Anshuman; Urminsky, Oleg";33;32;0;34;31;0;34;31;0;58;7;0
+37601;37601-60;Marketing Workshop;Spring;2026;Tuesday, 10:40 am - 12:00 pm;"Donnelly, Kristin; Kraft, Andreas";4;26;0;4;26;0;;;N/A;5;25;0
+37903;37903-50;Adv Mktg Theory: Behavioral Science Approach;Spring;2026;Wednesday, 1:30 pm - 4:30 pm;Sussman, Abigail;4;16;0;5;15;0;;;N/A;6;14;0
+37912;37912-50;Marketing Research Seminar (Spring);Spring;2026;Tuesday, 01:00 pm - 02:30 pm;Kraft, Andreas;0;20;0;0;20;0;;;N/A;0;20;0
+37912;37912-51;Marketing Research Seminar (Spring);Spring;2026;Tuesday, 09:30 am - 11:00 am;Donnelly, Kristin;1;19;0;1;19;0;;;N/A;1;19;0
+38001;38001-02;Managing in Organizations;Spring;2026;Wednesday, 01:30 pm - 04:30 pm;Fishbach, Ayelet;21;44;0;38;27;0;;;N/A;40;25;0
+38001;38001-01;Managing in Organizations;Spring;2026;Tuesday, 08:30 am - 11:30 am;Fishbach, Ayelet;19;46;0;39;26;0;;;N/A;38;27;0
+38001;38001-81;Managing in Organizations;Spring;2026;Wednesday, 6:00 pm - 9:00 pm;Fishbach, Ayelet;24;41;0;25;40;0;40;25;0;38;27;0
+38001;38001-82;Managing in Organizations;Spring;2026;Friday, 6:00 pm - 9:00 pm;O'Brien, Ed;36;29;0;37;28;0;38;27;0;47;18;0
+38001;38001-85;Managing in Organizations;Spring;2026;Saturday, 9:00 am - 12:00 pm;O'Brien, Ed;14;51;0;15;50;0;15;50;0;30;35;0
+38002;38002-01;Managerial Decision Making;Spring;2026;Wednesday, 01:30 pm - 04:30 pm;Todorov, Alexander;48;17;0;60;5;0;;;N/A;64;1;0
+38002;38002-81;Managerial Decision Making;Spring;2026;Thursday, 6:00 pm - 9:00 pm;Todorov, Alexander;23;42;0;23;42;0;23;42;0;25;40;0
+38002;38002-02;Managerial Decision Making;Spring;2026;Wednesday, 05:00 pm - 08:00 pm;Todorov, Alexander;10;55;0;11;54;0;;;N/A;11;54;0
+38103;38103-01;Strategies and Processes of Negotiation;Spring;2026;Thursday, 01:30 pm - 04:30 pm;Koch, Alex;55;CLO;501;55;CLO;5500;;;N/A;55;CLO;7116
+38103;38103-02;Strategies and Processes of Negotiation;Spring;2026;Tuesday, 01:30 pm - 04:30 pm;Levine, Emma;55;CLO;77;55;CLO;1818;;;N/A;55;CLO;10000
+38103;38103-03;Strategies and Processes of Negotiation;Spring;2026;Wednesday, 08:30 am - 11:30 am;Levine, Emma;55;CLO;363;55;CLO;2683;;;N/A;55;CLO;0
+38103;38103-04;Strategies and Processes of Negotiation;Spring;2026;Thursday, 08:30 am - 11:30 am;Zinchenko, Elena;33;22;0;55;CLO;0;;;N/A;55;CLO;1432
+38103;38103-05;Strategies and Processes of Negotiation;Spring;2026;Thursday, 08:30 am - 11:30 am;Koch, Alex;52;3;0;55;CLO;9500;;;N/A;54;1;0
+38103;38103-85;Strategies and Processes of Negotiation;Spring;2026;Saturday, 1:30 pm - 4:30 pm;Zinchenko, Elena;40;15;0;40;15;0;43;12;0;47;8;0
+38105;38105-01;Advanced Negotiations;Spring;2026;Thursday, 08:30 am - 11:30 am;Wu, George;23;17;0;26;14;0;26;14;0;26;14;0
+38105;38105-02;Advanced Negotiations;Spring;2026;Thursday, 01:30 pm - 04:30 pm;Wu, George;29;11;0;35;5;0;35;5;0;35;5;0
+38105;38105-81;Advanced Negotiations;Spring;2026;Thursday, 6:00 pm - 9:00 pm;Wu, George;10;30;0;10;30;0;10;30;0;14;24;0
+38107;38107-01;Crafting and Delivering Persuasive Narratives;Spring;2026;Tuesday, 05:00 pm - 08:00 pm;Weitzman, Hal;36;CLO;5850;36;CLO;25000;36;CLO;0;36;CLO;19093
+38601;38601-60;Workshop in Behavioral Science;Spring;2026;Monday, 10:10 am - 11:30 am;"Chaudhry, Shereen; Epley, Nicholas";5;25;0;6;24;0;;;N/A;7;23;0
+38914;38914-50;Foundations of Social Psychology;Spring;2026;Monday, 1:30 pm - 4:30 pm;Epley, Nicholas;9;11;0;10;10;0;;;N/A;11;9;0
+38917;38917-50;Topics in Behavioral Economics;Spring;2026;Monday, 05:30 pm - 08:20 pm;Bursztyn, Leo;20;45;0;22;43;0;22;43;0;24;6;0
+39001;39001-85;Strategy and Structure: Markets and Organizations;Spring;2026;Saturday, 1:30 pm - 4:30 pm;Li, Ningzi;23;42;0;21;44;0;22;43;0;20;45;0
+39101;39101-01;Technology Strategy;Spring;2026;Monday, 08:30 am - 11:30 am;Knez, Marc;65;CLO;1;65;CLO;100;;;N/A;65;CLO;823
+39101;39101-85;Technology Strategy;Spring;2026;Saturday, 9:00 am - 12:00 pm;Knez, Marc;36;29;0;37;28;0;37;28;0;51;14;0
+40000;40000-01;Operations Management: Business Process Fundamentals;Spring;2026;Wednesday, 08:30 am - 11:30 am;Zhong, Yuan;32;33;0;41;24;0;;;N/A;42;23;0
+40000;40000-02;Operations Management: Business Process Fundamentals;Spring;2026;Thursday, 01:30 pm - 04:30 pm;Zhong, Yuan;27;38;0;30;35;0;;;N/A;32;33;0
+40000;40000-03;Operations Management: Business Process Fundamentals;Spring;2026;Tuesday, 8:30 am - 11:30 am;Candogan, Ozan;37;28;0;51;14;0;;;N/A;58;7;0
+40000;40000-04;Operations Management: Business Process Fundamentals;Spring;2026;Tuesday, 1:30 pm - 4:30 pm;Candogan, Ozan;52;13;0;64;1;0;;;N/A;65;CLO;2106
+40000;40000-81;Operations Management: Business Process Fundamentals;Spring;2026;Wednesday, 6:00 pm - 9:00 pm;Zhong, Yuan;23;42;0;20;45;0;22;43;0;27;38;0
+40108;40108-85;Revenue Management;Spring;2026;Saturday, 9:00 am - 12:00 pm;Caldentey, Rene;30;35;0;30;35;0;31;34;0;28;37;0
+41000;41000-81;Business Statistics;Spring;2026;Monday, 6:00 pm - 9:00 pm;Kankanala, Sid;30;35;0;31;34;0;38;27;0;52;13;0
+41000;41000-85;Business Statistics;Spring;2026;Saturday, 9:00 am - 12:00 pm;Kankanala, Sid;11;54;0;10;55;0;15;50;0;18;47;0
+41204;41204-01;Machine Learning;Spring;2026;Monday, 01:30 pm - 04:30 pm;Hansen, Christian;50;15;0;53;12;0;54;11;0;65;CLO;300
+41600;41600-60;Econometrics and Statistics Colloquium;Spring;2026;Thursday, 01:20 pm - 02:30 pm;"Kankanala, Sid; Li, Shuangning";5;25;0;5;25;0;;;N/A;5;25;0
+41903;41903-50;Applied Econometrics;Spring;2026;Thursday,Tuesday, 03:30 pm - 05:00 pm;Hansen, Christian;7;17;0;7;17;0;8;16;0;8;16;0
+41919;41919-50;Contemporary Bayesian Inference;Spring;2026;Friday, 1:30 pm - 4:30 pm;Rockova, Veronika;13;7;0;20;CLO;0;;;N/A;20;CLO;0
+42001;42001-01;Competitive Strategy;Spring;2026;Monday, 08:30 am - 11:30 am;Leshno, Jacob;26;39;0;30;35;0;;;N/A;32;33;0
+42001;42001-02;Competitive Strategy;Spring;2026;Monday, 01:30 pm - 04:30 pm;Leshno, Jacob;40;25;0;51;14;0;;;N/A;56;9;0
+42001;42001-81;Competitive Strategy;Spring;2026;Wednesday, 6:00 pm - 9:00 pm;Shivakumar, Ram;40;25;0;43;22;0;43;22;0;65;CLO;500
+42005;42005-81;Literature and Leadership;Spring;2026;Tuesday, 6:00 pm - 9:00 pm;Barry, Brian;62;3;0;65;CLO;2000;65;CLO;0;65;CLO;3167
+42124;42124-01;Storytelling and Narratives in Business;Spring;2026;Thursday, 01:30 pm - 04:30 pm;Rolnik, Guy;65;CLO;6500;65;CLO;15869;;;N/A;65;CLO;0
+42124;42124-81;Storytelling and Narratives in Business;Spring;2026;Thursday, 6:00 pm - 9:00 pm;Rolnik, Guy;40;25;0;46;19;0;48;17;0;65;CLO;7143
+42124;42124-85;Storytelling and Narratives in Business;Spring;2026;Saturday, 9:00 am - 12:00 pm;Rolnik, Guy;52;13;0;52;13;0;56;9;0;65;CLO;1501
+42135;42135-01;Platforms and Market Design;Spring;2026;Monday, 01:30 pm - 04:30 pm;Budish, Eric;65;CLO;1070;65;CLO;12000;65;CLO;0;65;CLO;15000
+42135;42135-81;Platforms and Market Design;Spring;2026;Monday, 6:00 pm - 9:00 pm;Budish, Eric;30;35;0;30;35;0;30;35;0;61;4;0
+42136;42136-01;Social Impact Strategy;Spring;2026;Tuesday, 8:30 am - 11:30 am;Hachikian, Christina;45;20;0;65;CLO;1;65;CLO;0;65;CLO;12000
+43130;43130-01;AI for Good;Spring;2026;Tuesday, 8:30 am - 11:30 am;Ganoza, Carlos;61;4;0;65;CLO;1;65;CLO;0;62;3;0
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
