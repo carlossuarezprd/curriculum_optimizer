@@ -20,9 +20,12 @@ for (const s of bundle.sections) {
   arr.push(s);
   sectionsByCourse.set(s.course_number, arr);
 }
-// courses that have at least one flagship section
-export const flagshipCourseNums = new Set<string>(
-  bundle.sections.filter((s) => s.flagship_course).map((s) => s.course_number),
+export function flagshipKey(course_number: string, professor: string | null): string {
+  return `${course_number}|${professor ?? ""}`;
+}
+// (course, professor) pairs that are flagship by the seeded default.
+export const seedFlagshipKeys = new Set<string>(
+  bundle.sections.filter((s) => s.flagship_course).map((s) => flagshipKey(s.course_number, s.professor)),
 );
 // terms a course is offered in (Autumn/Winter/Spring), ignoring Summer
 export function offeredTerms(course_number: string): Set<string> {
@@ -35,9 +38,14 @@ export function offeredTerms(course_number: string): Set<string> {
 
 interface PlanState {
   placements: Placement[];
+  flagship: Record<string, boolean>;   // overrides on top of the seed
+  notice: string | null;
   addSection: (year: Year, term: Term, section_id: string) => void;
   removeSection: (slot: string, section_id: string) => void;
   setBid: (slot: string, section_id: string, bid: number | null) => void;
+  movePlacement: (fromSlot: string, sectionId: string, toSlot: string, newSectionId: string) => void;
+  toggleFlagship: (course_number: string, professor: string | null) => void;
+  setNotice: (msg: string | null) => void;
   clearAll: () => void;
 }
 
@@ -45,6 +53,8 @@ export const usePlan = create<PlanState>()(
   persist(
     (set) => ({
       placements: [],
+      flagship: {},
+      notice: null,
       addSection: (year, term, section_id) =>
         set((st) => {
           const slot = slotId(year, term);
@@ -64,11 +74,70 @@ export const usePlan = create<PlanState>()(
             p.slot === slot && p.section_id === section_id ? { ...p, actual_bid: bid } : p,
           ),
         })),
+      movePlacement: (fromSlot, sectionId, toSlot, newSectionId) =>
+        set((st) => {
+          const p = st.placements.find((x) => x.slot === fromSlot && x.section_id === sectionId);
+          const bid = p?.actual_bid ?? null;
+          const rest = st.placements.filter((x) => !(x.slot === fromSlot && x.section_id === sectionId));
+          if (rest.some((x) => x.slot === toSlot && x.section_id === newSectionId)) {
+            return { placements: rest };
+          }
+          return { placements: [...rest, { slot: toSlot, section_id: newSectionId, actual_bid: bid }] };
+        }),
+      toggleFlagship: (course_number, professor) =>
+        set((st) => {
+          const key = flagshipKey(course_number, professor);
+          const current = key in st.flagship ? st.flagship[key] : seedFlagshipKeys.has(key);
+          return { flagship: { ...st.flagship, [key]: !current } };
+        }),
+      setNotice: (msg) => set({ notice: msg }),
       clearAll: () => set({ placements: [] }),
     }),
     { name: "booth-curriculum-plan-v2" },
   ),
 );
+
+// ---- flagship helpers (combine seed + user overrides) ----
+export function isFlagship(course_number: string, professor: string | null, overrides: Record<string, boolean>): boolean {
+  const key = flagshipKey(course_number, professor);
+  return key in overrides ? overrides[key] : seedFlagshipKeys.has(key);
+}
+export function flagshipCourseSet(overrides: Record<string, boolean>): Set<string> {
+  const out = new Set<string>();
+  for (const s of bundle.sections) {
+    if (isFlagship(s.course_number, s.professor, overrides)) out.add(s.course_number);
+  }
+  return out;
+}
+// active (course, professor, course_name) flagship pairs for the config panel
+export function flagshipPairs(overrides: Record<string, boolean>): { course_number: string; professor: string; course_name: string }[] {
+  const seen = new Set<string>();
+  const out: { course_number: string; professor: string; course_name: string }[] = [];
+  for (const s of bundle.sections) {
+    const key = flagshipKey(s.course_number, s.professor);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    if (isFlagship(s.course_number, s.professor, overrides)) {
+      out.push({ course_number: s.course_number, professor: s.professor ?? "—", course_name: s.course_name });
+    }
+  }
+  return out.sort((a, b) => a.course_name.localeCompare(b.course_name));
+}
+
+// strict prereqs of a course not satisfied by an earlier quarter in the plan
+export function missingStrictPrereqs(course_number: string, slot: string, placements: Placement[]): string[] {
+  const co = courseByNum.get(course_number);
+  if (!co || co.strict_prereqs.length === 0) return [];
+  const slotIdx = SLOT_ORDER.indexOf(slot);
+  const earlier = new Set<string>();
+  for (const p of placements) {
+    if (SLOT_ORDER.indexOf(p.slot) < slotIdx) {
+      const sec = sectionById.get(p.section_id);
+      if (sec) earlier.add(sec.course_number);
+    }
+  }
+  return co.strict_prereqs.filter((n) => !earlier.has(n));
+}
 
 // ---------- derived helpers (pure) ----------
 

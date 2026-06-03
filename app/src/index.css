@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light; }
+:root { color-scheme: dark; }
 html, body, #root { height: 100%; }
 body {
   margin: 0;
-  background: #f7f7f8;
-  color: #1c1c1e;
+  background: #131216;
+  color: #ECEAEF;
   -webkit-font-smoothing: antialiased;
 }
-* { scrollbar-width: thin; }
+* { scrollbar-width: thin; scrollbar-color: #3a3543 transparent; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #3a3543; border-radius: 8px; }
+input[type="number"] { -moz-appearance: textfield; }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }

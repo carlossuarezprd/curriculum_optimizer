@@ -207,15 +207,22 @@ def _parse_sections(schedule_text: str) -> list[Section]:
                 if not nxt:
                     j += 1
                     continue
+                # stop at the next section, the next term, or a course header
                 if SECTION_RE.search(nxt) or (TERM_RE.search(nxt) and "Section:" not in nxt):
+                    break
+                if ">>" in nxt or re.search(r"\(\d{5}\)", nxt):
                     break
                 detail.append(nxt)
                 j += 1
+            # accept the first detail line as time only if it looks like a schedule
+            time = detail[0] if detail else None
+            if time and not re.search(r"\d{1,2}:\d{2}|\b\d{2}/\d{2}\b", time):
+                time = None
             sections.append(Section(
                 course_number=sm.group(1),
                 section_code=f"{sm.group(1)}-{sm.group(2)}",
                 quarter=cur[0], year=cur[1],
-                time=detail[0] if detail else None,
+                time=time,
                 location=detail[1] if len(detail) > 1 else None,
                 fmt=detail[-1] if len(detail) > 2 else None,
             ))

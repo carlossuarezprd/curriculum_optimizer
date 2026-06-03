@@ -7277,9 +7277,9 @@
       "quarter": "Winter",
       "year": 2026,
       "professor": "Heltzer, Wendy",
-      "time": "FINANCIAL ACCOUNTING (30000) - KLEYMENOVA, ANYA>>",
-      "location": "fundamental accounting concepts and principles. Students learn how the",
-      "format": "related disclosures. The objective of the course is to provide students with",
+      "time": null,
+      "location": null,
+      "format": null,
       "core_area": "Financial Accounting",
       "concentrations": [
         "Accounting"
@@ -7354,7 +7354,7 @@
       "professor": "Kleymenova, Anya",
       "time": "S 1:30 PM-4:30 PM",
       "location": "Gleacher Center",
-      "format": "FINANCIAL ACCOUNTING (30000) - LE, ANTHONY>>",
+      "format": "404",
       "core_area": "Financial Accounting",
       "concentrations": [
         "Accounting"
@@ -7377,9 +7377,9 @@
       "quarter": "Spring",
       "year": 2026,
       "professor": "Le, Anthony",
-      "time": "FINANCIAL ACCOUNTING (30000) - NIKOLAEV, VALERI>>",
-      "location": "This course provides an introduction to financial statements and the financial",
-      "format": "fundamental accounting concepts and principles. Students learn how the",
+      "time": null,
+      "location": null,
+      "format": null,
       "core_area": "Financial Accounting",
       "concentrations": [
         "Accounting"
@@ -7679,7 +7679,7 @@
       "professor": null,
       "time": "W 6:00 PM-9:00 PM",
       "location": "Building: TBD",
-      "format": "INTERNAL INFORMATION FOR STRATEGIC DECISIONS (30005) - STEWART,",
+      "format": "Location: TBD",
       "core_area": "Decisions",
       "concentrations": [
         "Accounting"
@@ -8105,7 +8105,7 @@
       "professor": "Berger, Philip",
       "time": "W 6:00 PM-9:00 PM",
       "location": "Booth 455",
-      "format": "ACCOUNTING FOR ENTREPRENEURSHIP: FROM START-UP THROUGH IPO (30121)",
+      "format": "132",
       "core_area": null,
       "concentrations": [
         "Accounting",
@@ -9216,7 +9216,7 @@
       "quarter": "Autumn",
       "year": 2025,
       "professor": null,
-      "time": "Professor Hugh Cole",
+      "time": null,
       "location": "Course Description",
       "format": "In this class, you will embark on a learning journey different from any you are",
       "core_area": null,
@@ -10173,9 +10173,9 @@
       "quarter": "Winter",
       "year": 2026,
       "professor": "Misra, Sanjog",
-      "time": "MICROECONOMICS (33001) - CAMPOS, CHRISTOPHER>>",
-      "location": "advertising to healthcare and education. A thorough",
-      "format": "implications are going to be necessary conditions of success. This new",
+      "time": null,
+      "location": null,
+      "format": null,
       "core_area": null,
       "concentrations": [
         "Applied Artificial Intelligence"
@@ -10201,9 +10201,9 @@
       "quarter": "Winter",
       "year": 2026,
       "professor": "Campos, Christopher",
-      "time": "MICROECONOMICS (33001) - DIZON-ROSS, REBECCA>>",
-      "location": "broader world. The course covers the following topics: supply and demand;",
-      "format": "different market structures; and the effects of uncertainty.",
+      "time": null,
+      "location": null,
+      "format": null,
       "core_area": "Microeconomics",
       "concentrations": [
         "Economics"
@@ -11083,7 +11083,7 @@
       "professor": "Syverson, Chad",
       "time": "T 8:30 AM-11:30 AM",
       "location": "Harper Center",
-      "format": "PERSPECTIVES ON CAPITALISM (33250) - GERTNER, ROBERT>>",
+      "format": "C05",
       "core_area": "Microeconomics",
       "concentrations": [
         "Economics",
@@ -11242,8 +11242,8 @@
       "year": 2026,
       "professor": "Barry, Brian",
       "time": "TH 1:30 PM-3:00 PM",
-      "location": "PERSPECTIVES ON CAPITALISM SEMINAR (33251) - CARMICHAEL, JAMES>>",
-      "format": "and a faculty member will be taught by Brian Barry, James Carmichael, Rob",
+      "location": null,
+      "format": null,
       "core_area": "Society",
       "concentrations": [
         "Business, Society and Sustainability",
@@ -11581,7 +11581,7 @@
       "professor": "Bertrand, Marianne",
       "time": "TH 6:00 PM-9:00 PM",
       "location": "Gleacher Center",
-      "format": "FINANCING THE GRID: VALUING TRANSMISSION & STORAGE CAPACITY (33320) -",
+      "format": "406",
       "core_area": "Society",
       "concentrations": [
         "Business, Society and Sustainability",
@@ -11996,7 +11996,7 @@
       "professor": "Pagliari, Joseph",
       "time": "S 9:00 AM-12:00 PM",
       "location": "Building: TBD",
-      "format": "REAL ESTATE INVESTMENTS II (33451) - PAGLIARI, JOSEPH>>",
+      "format": "Location: TBD",
       "core_area": null,
       "concentrations": [
         "Finance"
@@ -12135,7 +12135,7 @@
       "professor": "Barry, Brian",
       "time": "T 6:00 PM-9:00 PM",
       "location": "Gleacher Center",
-      "format": "INTERNATIONAL COMMERCIAL POLICY (33501) - ADAO, RODRIGO>>",
+      "format": "304",
       "core_area": "Society",
       "concentrations": [
         "Business, Society and Sustainability"
@@ -12220,8 +12220,8 @@
       "year": 2026,
       "professor": "Neiman, Brent",
       "time": "TH 1:30 PM-4:30 PM",
-      "location": "THE WEALTH OF NATIONS (33520) - HSIEH, CHANG-TAI>>",
-      "format": "Business 33050 or equivalent is recommended, but not required. Cannot enroll",
+      "location": null,
+      "format": null,
       "core_area": "Economy",
       "concentrations": [
         "Economics",
@@ -12279,7 +12279,7 @@
       "quarter": "Winter",
       "year": 2026,
       "professor": "HSIEH, CHANG-TAI",
-      "time": "Day/Time: TBD",
+      "time": null,
       "location": "Building: TBD",
       "format": "In-Person Only",
       "core_area": "Economy",
@@ -12335,9 +12335,9 @@
       "quarter": "Spring",
       "year": 2026,
       "professor": "Hsieh, Chang-Tai",
-      "time": "APPLIED ECONOMICS WORKSHOP (33610) - BERTRAND, MARIANNE>> ;",
-      "location": "KAMENICA, EMIR>>",
-      "format": "EMIR>>",
+      "time": null,
+      "location": null,
+      "format": null,
       "core_area": "Economy",
       "concentrations": [
         "Economics",
@@ -12389,9 +12389,9 @@
       "quarter": "Spring",
       "year": 2026,
       "professor": "Conway, Jacob; Kamenica, Emir",
-      "time": "APPLIED ECONOMICS WORKSHOP (33610) - MINNI, VIRGINIA>> ; ZWICK,",
-      "location": "ERIC>>",
-      "format": "HANSBERG, ESTEBAN ; STAFF",
+      "time": null,
+      "location": null,
+      "format": null,
       "core_area": null,
       "concentrations": [],
       "independent_application_course": false,
@@ -12443,7 +12443,7 @@
       "professor": "Hansen, Lars; Rossi-Hansberg, Esteban; Staff, Staff",
       "time": "W 3:00 PM-5:30 PM",
       "location": "Building: TBD",
-      "format": "WORKSHOP: MONEY AND BANKING (33630) - STAFF",
+      "format": null,
       "core_area": null,
       "concentrations": [],
       "independent_application_course": false,
@@ -12495,7 +12495,7 @@
       "professor": "Staff, Staff",
       "time": "W 3:00 PM-5:30 PM",
       "location": "Building: TBD",
-      "format": "WORKSHOP IN MACRO AND INTERNATIONAL ECONOMICS (33650) - ADAO,",
+      "format": "Location: TBD",
       "core_area": null,
       "concentrations": [],
       "independent_application_course": false,
@@ -12747,7 +12747,7 @@
       "professor": "Shapiro, Bradley",
       "time": "M 1:30 PM-3:00 PM",
       "location": "Harper Center",
-      "format": "37710/PPHA 48050 (\u201cEconomics of Healthcare\u201d) concurrently with or prior to",
+      "format": null,
       "core_area": null,
       "concentrations": [],
       "independent_application_course": false,
@@ -12834,9 +12834,9 @@
       "quarter": "Spring",
       "year": 2026,
       "professor": "Richert, Eric",
-      "time": "ECONOMICS OF EDUCATION (33930) - CAMPOS, CHRISTOPHER>> ; MOUNTJOY,",
-      "location": "JACK>>",
-      "format": "industrial organization and will focus on topics closely related to antitrust",
+      "time": null,
+      "location": null,
+      "format": null,
       "core_area": null,
       "concentrations": [],
       "independent_application_course": false,
@@ -13614,7 +13614,7 @@
       "professor": null,
       "time": "M 6:00 PM-9:00 PM",
       "location": "COMMERCIALIZING INNOVATION: TOOLS TO RESEARCH AND ANALYZE PRIVATE",
-      "format": "plans and are encouraged to meet individually with the class coaches and",
+      "format": null,
       "core_area": null,
       "concentrations": [
         "Entrepreneurship",
@@ -13936,7 +13936,7 @@
       "quarter": "Spring",
       "year": 2026,
       "professor": "Parrish, Priya",
-      "time": "includes both \u201cnon-concessionary\u201d or \u201cmarket-rate\u201d investments that target",
+      "time": null,
       "location": "risk-adjusted market-rate returns and \u201cimpact-first\u201d or \u201ccatalytic\u201d investments",
       "format": "Impact investing presents several intellectually interesting and practically",
       "core_area": "Society",
@@ -14700,7 +14700,7 @@
       "quarter": "Winter",
       "year": 2026,
       "professor": "STROMBERG, PER",
-      "time": "Day/Time: TBD",
+      "time": null,
       "location": "Building: TBD",
       "format": "In-Person Only",
       "core_area": null,
@@ -14869,7 +14869,7 @@
       "professor": "Diamond, Douglas",
       "time": "M 3:00 PM-6:00 PM",
       "location": "Harper Center",
-      "format": "CORPORATE FINANCE II (34904) - SUFI, AMIR>>",
+      "format": "3B - Seminar Room",
       "core_area": "Finance",
       "concentrations": [
         "Finance",
@@ -15094,8 +15094,8 @@
       "year": 2026,
       "professor": "Cassidy, William",
       "time": "M 1:30 PM-4:30 PM",
-      "location": "INVESTMENTS (35000) - DEW-BECKER, IAN>>",
-      "format": "Bus 30000, 33001, & 41000 (or 41100). Comfortable w/ stats, linear & matrix",
+      "location": null,
+      "format": null,
       "core_area": "Finance",
       "concentrations": [
         "Finance"
@@ -15394,7 +15394,7 @@
       "professor": "Vandeweyer, Quentin",
       "time": "TH 6:00 PM-9:00 PM",
       "location": "Gleacher Center",
-      "format": "INVESTMENTS (35000) - ZHANG, ANTHONY>>",
+      "format": "306",
       "core_area": "Finance",
       "concentrations": [
         "Finance"
@@ -15880,7 +15880,7 @@
       "professor": "Heaton, John",
       "time": "M 6:00 PM-9:00 PM",
       "location": "Gleacher Center",
-      "format": "BLOCKCHAINS AND DECENTRALIZED FINANCE (35136) - ZHANG, ANTHONY>>",
+      "format": "206",
       "core_area": "Finance",
       "concentrations": [
         "Finance",
@@ -16789,9 +16789,9 @@
       "quarter": "Spring",
       "year": 2026,
       "professor": "Rajan, Raghuram",
-      "time": "EMERGING MARKETS FINANCE AND ENTREPRENEURSHIP (35213) - COLONNELLI,",
-      "location": "optimally organize the location of production, control, and financing? What",
-      "format": "domestic economy, becomes the arena of decision making? How does",
+      "time": null,
+      "location": null,
+      "format": null,
       "core_area": "Finance",
       "concentrations": [
         "Finance",
@@ -16923,7 +16923,7 @@
       "professor": "Sufi, Amir",
       "time": "T 6:00 PM-9:00 PM",
       "location": "Gleacher Center",
-      "format": "BEHAVIORAL AND INSTITUTIONAL FINANCE (35215) - VISHNY, ROBERT>>",
+      "format": "406",
       "core_area": "Finance",
       "concentrations": [
         "Finance",
@@ -16957,9 +16957,9 @@
       "quarter": "Autumn",
       "year": 2025,
       "professor": "Vishny, Robert",
-      "time": "FINANCIAL CRISES (35218) - CHABOT, BEN>>",
-      "location": "sentiment, anomalies, and market efficiency; The money management",
-      "format": "cross-country institutional differences in explaining differences in financial",
+      "time": null,
+      "location": null,
+      "format": null,
       "core_area": null,
       "concentrations": [
         "Finance",
@@ -17066,7 +17066,7 @@
       "quarter": "Winter",
       "year": 2026,
       "professor": "COLONNELLI, EMANUELE",
-      "time": "Day/Time: TBD",
+      "time": null,
       "location": "Building: TBD",
       "format": "In-Person Only",
       "core_area": null,
@@ -17371,7 +17371,7 @@
       "professor": "Patterson, Christina; Rossi-Hansberg, Esteban",
       "time": "M 10:30 AM-11:50 AM",
       "location": "Building: TBD",
-      "format": "RESEARCH SEMINAR (35931) - NAGEL, STEFAN>> ; NOEL, PASCAL>> ; ZHANG,",
+      "format": "Location: TBD",
       "core_area": null,
       "concentrations": [],
       "independent_application_course": false,
@@ -18169,7 +18169,7 @@
       "professor": "Caldentey, Rene",
       "time": "M 8:30 AM-11:30 AM",
       "location": "Harper Center",
-      "format": "CONVEX OPTIMIZATION (36903) - STAFF",
+      "format": "3SW - Seminar Room",
       "core_area": null,
       "concentrations": [],
       "independent_application_course": false,
@@ -18237,8 +18237,8 @@
       "year": 2025,
       "professor": "Ata, Baris",
       "time": "TH 8:30 AM-11:30 AM",
-      "location": "QUEUEING THEORY (36914) - ZHONG, YUAN>>",
-      "format": "familiarity with probability theory and stochastic processes will be assumed.",
+      "location": null,
+      "format": null,
       "core_area": null,
       "concentrations": [],
       "independent_application_course": false,
@@ -19308,7 +19308,7 @@
       "professor": "Hafen, Tom",
       "time": "M 6:00 PM-9:00 PM",
       "location": "Building: TBD",
-      "format": "BUSINESS WITH PURPOSE (37212) - SUSSMAN, ABIGAIL>>",
+      "format": "Location: TBD",
       "core_area": "Marketing",
       "concentrations": [
         "Marketing Management"
@@ -19515,7 +19515,7 @@
       "professor": "Donnelly, Kristin; Kraft, Andreas",
       "time": "T 10:40 AM-12:00 PM",
       "location": "Harper Center",
-      "format": "ABIGAIL>>",
+      "format": null,
       "core_area": null,
       "concentrations": [],
       "independent_application_course": false,
@@ -19640,7 +19640,7 @@
       "professor": "Sussman, Abigail",
       "time": "W 1:30 PM-4:30 PM",
       "location": "Harper Center",
-      "format": "ADVANCED QUANTITATIVE MARKETING (37904) - DUB\u00c9, JEAN-PIERRE>> ;",
+      "format": "3A - Seminar Room",
       "core_area": null,
       "concentrations": [],
       "independent_application_course": false,
@@ -19831,7 +19831,7 @@
       "professor": "GINZEL, LINDA",
       "time": "TH 8:30 AM-11:30 AM",
       "location": "Gleacher Center",
-      "format": "MANAGING IN ORGANIZATIONS (38001) - FISHBACH, AYELET>>",
+      "format": "204",
       "core_area": null,
       "concentrations": [],
       "independent_application_course": false,
@@ -19927,7 +19927,7 @@
       "professor": "Fishbach, Ayelet",
       "time": "W 6:00 PM-9:00 PM",
       "location": "Gleacher Center",
-      "format": "MANAGING IN ORGANIZATIONS (38001) - KOCH, ALEX>>",
+      "format": "306",
       "core_area": "People",
       "concentrations": [
         "Behavioral Science"
@@ -20102,7 +20102,7 @@
       "professor": "O'Brien, Ed",
       "time": "S 9:00 AM-12:00 PM",
       "location": "Building: TBD",
-      "format": "MANAGERIAL DECISION MAKING (38002) - HASTIE, REID>>",
+      "format": "Location: TBD",
       "core_area": "People",
       "concentrations": [
         "Behavioral Science"
@@ -20202,7 +20202,7 @@
       "professor": "Todorov, Alexander",
       "time": "W 5:00 PM-8:00 PM",
       "location": "Harper Center",
-      "format": "behave if we wish to behave rationally. We will discuss and identify principles",
+      "format": null,
       "core_area": "Decisions",
       "concentrations": [
         "Behavioral Science"
@@ -20278,8 +20278,8 @@
       "year": 2025,
       "professor": "Nussbaum, A.",
       "time": "TH 8:30 AM-11:30 AM",
-      "location": "STRATEGIES AND PROCESSES OF NEGOTIATION (38103) - BURROWS, JOHN>>",
-      "format": "consistently achieve goals.",
+      "location": null,
+      "format": null,
       "core_area": "People",
       "concentrations": [
         "Behavioral Science"
@@ -20500,8 +20500,8 @@
       "year": 2025,
       "professor": "Kirgios, Erika",
       "time": "TH 6:00 PM-9:00 PM",
-      "location": "STRATEGIES AND PROCESSES OF NEGOTIATION (38103) - KOCH, ALEX>>",
-      "format": "MATERIALS",
+      "location": null,
+      "format": null,
       "core_area": null,
       "concentrations": [
         "Behavioral Science"
@@ -20818,7 +20818,7 @@
       "quarter": "Spring",
       "year": 2026,
       "professor": "Wu, George",
-      "time": "negotiation.",
+      "time": null,
       "location": "The course will include advanced topics that expand upon or were not covered",
       "format": "negotiators and difficult negotiations. 38103 introduced the basic ideas of",
       "core_area": null,
@@ -21133,7 +21133,7 @@
       "professor": "Pope, Devin",
       "time": "W 1:30 PM-4:30 PM",
       "location": "Harper Center",
-      "format": "DIVERSITY IN ORGANIZATIONS (38122) - RISEN, JANE>>",
+      "format": "C06",
       "core_area": "Decisions",
       "concentrations": [
         "Behavioral Science",
@@ -21955,7 +21955,7 @@
       "professor": "DeHoratius, Nicole",
       "time": "M 8:30 AM-11:30 AM",
       "location": "Harper Center",
-      "format": "Students will learn how to examine and improve the flow of materials and",
+      "format": null,
       "core_area": "Operations",
       "concentrations": [
         "Operations Management"
@@ -22486,7 +22486,7 @@
       "professor": "Kankanala, Sid",
       "time": "M 6:00 PM-9:00 PM",
       "location": "Gleacher Center",
-      "format": "BUSINESS STATISTICS (41000) - LI, SHUANGNING>>",
+      "format": "406",
       "core_area": "Statistics",
       "concentrations": [
         "Econometrics and Statistics"
@@ -22563,7 +22563,7 @@
       "professor": null,
       "time": "S 9:00 AM-12:00 PM",
       "location": "Gleacher Center",
-      "format": "PREREQUISITES",
+      "format": null,
       "core_area": "Statistics",
       "concentrations": [
         "Econometrics and Statistics"
@@ -23246,7 +23246,7 @@
       "professor": "Polson, Nicholas",
       "time": "TH 8:30 AM-11:30 AM",
       "location": "Harper Center",
-      "format": "CONTEMPORARY BAYESIAN INFERENCE (41919) - ROCKOVA, VERONIKA>>",
+      "format": "C04",
       "core_area": "Statistics",
       "concentrations": [],
       "independent_application_course": false,
@@ -24186,8 +24186,8 @@
       "year": 2026,
       "professor": "Budish, Eric",
       "time": "M 6:00 PM-9:00 PM",
-      "location": "SOCIAL IMPACT STRATEGY (42136) - HACHIKIAN, CHRISTINA>>",
-      "format": "markets, platform economics, financial markets, cryptocurrencies, and",
+      "location": null,
+      "format": null,
       "core_area": "Strategy",
       "concentrations": [
         "Economics",
