@@ -47,7 +47,7 @@ function QuarterColumn({
 }: {
   year: Year; term: Term;
   placements: { slot: string; section_id: string; actual_bid: number | null }[];
-  qb: { available: number; spent: number; remaining: number; courseCount: number };
+  qb: { available: number; spent: number; remaining: number; bidSum: number; courseCount: number };
   onOpenCourse: (c: Course) => void;
   onOpenPrereq: (course_number: string) => void;
 }) {
@@ -132,6 +132,21 @@ function QuarterColumn({
         <Line label="Points available" value={qb.available} />
         <Line label="Estimated cost" value={qb.spent} tone="gold" />
         <Line label="Remaining" value={qb.remaining} bold tone={qb.remaining < 0 ? "warn" : "txt"} />
+        {qb.bidSum > 0 && (
+          <div className="flex items-center justify-between font-medium">
+            <span className="text-muted">Bids placed</span>
+            <span className={`flex items-center gap-1 tabular-nums ${qb.bidSum === qb.available ? "text-good" : qb.bidSum > qb.available ? "text-danger" : "text-warn"}`}>
+              {qb.bidSum.toLocaleString()} <span className="text-[10px] text-muted">pts</span>
+              {qb.bidSum !== qb.available && (
+                <IconDot
+                  symbol="!"
+                  tone={qb.bidSum > qb.available ? "danger" : "warn"}
+                  title={`Total bids should equal available points (${qb.available.toLocaleString()}). You've allocated ${qb.bidSum.toLocaleString()} — ${qb.bidSum > qb.available ? "over" : "under"} by ${Math.abs(qb.bidSum - qb.available).toLocaleString()} pts.`}
+                />
+              )}
+            </span>
+          </div>
+        )}
       </div>
     </div>
   );

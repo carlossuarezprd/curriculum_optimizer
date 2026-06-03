@@ -1,10 +1,37 @@
+import { useRef } from "react";
 import {
   bundle, usePlan, placedCourseNumbers, concentrationProgress, areaCoverage,
 } from "../store";
 
+function exportPlan() {
+  const { placements, flagship } = usePlan.getState();
+  const blob = new Blob([JSON.stringify({ version: 1, placements, flagship }, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `booth-curriculum-plan-${new Date().toISOString().slice(0, 10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
 export function StatusPanel() {
   const placements = usePlan((s) => s.placements);
   const clearAll = usePlan((s) => s.clearAll);
+  const loadPlan = usePlan((s) => s.loadPlan);
+  const setNotice = usePlan((s) => s.setNotice);
+  const fileRef = useRef<HTMLInputElement>(null);
+
+  function importPlan(file: File) {
+    const r = new FileReader();
+    r.onload = () => {
+      try {
+        loadPlan(JSON.parse(String(r.result)));
+      } catch {
+        setNotice("Could not read that plan file.");
+      }
+    };
+    r.readAsText(file);
+  }
   const totalCourses = placedCourseNumbers(placements).length;
   const meta = bundle.meta;
 
@@ -26,9 +53,18 @@ export function StatusPanel() {
           </span>
         </div>
         {totalBad && <p className="mt-1 text-[11px] text-warn">Total must be {meta.min_total_courses}–{meta.max_total_courses} courses.</p>}
-        {placements.length > 0 && (
-          <button onClick={clearAll} className="mt-2 text-xs text-maroon-light hover:underline">Clear plan</button>
-        )}
+        <div className="mt-2 flex flex-wrap items-center gap-2 text-xs">
+          <button onClick={exportPlan} className="rounded-md bg-surface2 px-2 py-1 text-txt ring-1 ring-inset ring-line hover:border-maroon-light">Export</button>
+          <button onClick={() => fileRef.current?.click()} className="rounded-md bg-surface2 px-2 py-1 text-txt ring-1 ring-inset ring-line hover:border-maroon-light">Import</button>
+          {placements.length > 0 && <button onClick={clearAll} className="text-maroon-light hover:underline">Clear</button>}
+          <input
+            ref={fileRef}
+            type="file"
+            accept="application/json,.json"
+            className="hidden"
+            onChange={(e) => { const f = e.target.files?.[0]; if (f) importPlan(f); e.target.value = ""; }}
+          />
+        </div>
       </Section>
 
       <Section title="Degree coverage">

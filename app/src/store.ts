@@ -46,6 +46,7 @@ interface PlanState {
   movePlacement: (fromSlot: string, sectionId: string, toSlot: string, newSectionId: string) => void;
   toggleFlagship: (course_number: string, professor: string | null) => void;
   setNotice: (msg: string | null) => void;
+  loadPlan: (data: { placements?: Placement[]; flagship?: Record<string, boolean> }) => void;
   clearAll: () => void;
 }
 
@@ -91,6 +92,12 @@ export const usePlan = create<PlanState>()(
           return { flagship: { ...st.flagship, [key]: !current } };
         }),
       setNotice: (msg) => set({ notice: msg }),
+      loadPlan: (data) =>
+        set({
+          placements: Array.isArray(data.placements) ? data.placements : [],
+          flagship: data.flagship && typeof data.flagship === "object" ? data.flagship : {},
+          notice: "Plan imported",
+        }),
       clearAll: () => set({ placements: [] }),
     }),
     { name: "booth-curriculum-plan-v2" },
