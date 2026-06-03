@@ -1599,9 +1599,9 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "30000",
         "20100"
       ],
       "prereq_text": "None. Cannot enroll in BUSN 30000 if BUSN 20100 taken previously.",
@@ -1631,15 +1631,17 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "30000",
         "33001",
         "41000",
-        "41100",
+        "41100"
+      ],
+      "not_concurrent": [
         "20101",
         "30001"
       ],
-      "not_concurrent": [],
       "prereq_text": "Business 30000, 33001, 41000 (or 41100) are helpful, but not required. Cannot\nenroll if BUSN 20101 or 30001 taken previously. Non-Booth students require\nfaculty permission.",
       "professors": [
         "COSTELLO, ANNA",
@@ -1662,12 +1664,13 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
-        "30000",
-        "30116",
+        "30000"
+      ],
+      "not_concurrent": [
         "20140"
       ],
-      "not_concurrent": [],
       "prereq_text": "-01 and -02:\u00a0 Booth pre-MBA online accounting class or Bus 30000 or equiv.\nrecommended, not required.\u00a0 Can bid w/o securing a waiver.\u00a0 Cannot enroll in\nBUSN 30116 if BUSN 20140 taken previously.\u00a0 -03 and -04:\u00a0Required class for\nMiF students. No prereqs.",
       "professors": [
         "CHRISTENSEN, HANS"
@@ -1687,12 +1690,14 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "30000",
-        "35200",
+        "35200"
+      ],
+      "not_concurrent": [
         "20170"
       ],
-      "not_concurrent": [],
       "prereq_text": "Business 30000. Business 35200 useful. No prior tax knowledge is needed for\nthis course. Cannot enroll if BUSN 20170 previously taken.",
       "professors": [
         "ERICKSON, MERLE",
@@ -1714,12 +1719,14 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
-        "30000",
+        "30000"
+      ],
+      "not_concurrent": [
         "20160",
         "30835"
       ],
-      "not_concurrent": [],
       "prereq_text": "BUS 30000 Financial Accounting or equivalent. Cannot enroll if BUSN 20160 or\n30835 taken previously.",
       "professors": [
         "BERGER, PHILIP",
@@ -1740,14 +1747,15 @@
         "Accounting"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "30000",
         "30130",
         "30116",
         "30118",
         "30131"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Strict Prerequisites: BUS 30000 - Financial Accounting and at least one of the\nfollowing:\nBUS 30130 - Financial Statement Analysis, BUS 30116 - Accounting and\nFinancial Analysis, BUS 30118 - Taxes & Business Strategy, BUS 30131 -\nAdvanced Financial Analysis and Valuation for Global Firms. I may\ngrant a waiver based on previous work/academic experience\u2013please\ncontact me at hsapra@chicagobooth.edu.\n1st Class Assignment is mandatory. It is meant to gauge your skills in\nfinancial reporting. If you find it difficult, you should not take the\ncourse.\nRecommendations: Proficiency in Excel & Financial Modelling\nTime Commitment: This class is demanding and potentially overwhelming\nand stressful if you have a weak foundation in financial accounting and/or\nare not prepared to dedicate significant amounts of time and energy to\nkeep up with the material. Students should expect 6-8 hours of work per\nweek outside of class for pre-recorded videos, reading, preparation, and\ncases.",
       "professors": [
@@ -1769,12 +1777,11 @@
         "Finance"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "30130",
-        "30000",
-        "35200"
-      ],
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
+        "30000",
+        "35200",
         "35000",
         "20150"
       ],
@@ -1804,6 +1811,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -1826,6 +1834,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "1. I thought Python was a snake, should I take this course?\nYes. Half of each class will be discussion/lecture which you will find useful and\nthe other half a lab where we apply the lecture to a practical problem. If you",
@@ -1844,6 +1853,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only. Instructor permission required for MBA students.",
@@ -1864,6 +1874,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "30131"
@@ -1886,6 +1897,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "20161",
@@ -1909,10 +1921,11 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
+      "not_concurrent": [
         "30122"
       ],
-      "not_concurrent": [],
       "prereq_text": "Students should have a solid foundation in financial accounting. To gauge your\nfinancial accounting skills, you should work on the following self-assessment\nassignment. A solution is provided. Cannot enroll if BUSN 30122 taken\npreviously.",
       "professors": [
         "SAPRA, HARESH"
@@ -1929,6 +1942,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -1947,6 +1961,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only: strict.",
@@ -1965,6 +1980,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "For Booth PhD Students:\u00a0 No strict prereqs. Talk to instructor if unsure.\u00a0 For\nother Booth populations and Non-Booth students (including UChicago grad\nstudents): instructor permission required.",
@@ -1983,6 +1999,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only:\u00a0 strict",
@@ -2001,6 +2018,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -2020,6 +2038,11 @@
       "independent_application_course": false,
       "strict_prereqs": [
         "30930"
+      ],
+      "strict_prereq_groups": [
+        [
+          "30930"
+        ]
       ],
       "recommended_prereqs": [],
       "not_concurrent": [],
@@ -2041,6 +2064,7 @@
       ],
       "independent_application_course": true,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "No non-Booth students.",
@@ -2068,9 +2092,9 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "31001",
-        "31403",
         "31404"
       ],
       "not_concurrent": [],
@@ -2090,9 +2114,9 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "31404",
         "31407"
       ],
       "prereq_text": "No undergraduates.\u00a0Cannot enroll in 31404 if 31407 taken previously: strict.",
@@ -2111,6 +2135,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "No undergraduates allowed. Graduate students from other divisions can enroll\nduring Non-Booth registration period.",
@@ -2128,12 +2153,12 @@
       "core_areas": [],
       "concentrations": [],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "31407",
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
+      "not_concurrent": [
         "31404"
       ],
-      "recommended_prereqs": [],
-      "not_concurrent": [],
       "prereq_text": "No undergraduates. Cannot enroll in 31407 if 31404 was previously taken:\nstrict.",
       "professors": [
         "COLLINS, CHRIS"
@@ -2152,6 +2177,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -2172,6 +2198,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None.",
@@ -2192,6 +2219,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "32120"
       ],
@@ -2213,12 +2241,13 @@
         "Applied Artificial Intelligence"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
+      "not_concurrent": [
         "43100",
         "43800"
       ],
-      "recommended_prereqs": [],
-      "not_concurrent": [],
       "prereq_text": "No programming expertise will be required or\u00a0assumed.\u00a0Cannot take if 43100\nor 43800 taken previously: strict.",
       "professors": [
         "MISRA, SANJOG"
@@ -2239,6 +2268,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Understanding of algebra and basic calculus (derivatives).",
@@ -2266,6 +2296,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Students should be comfortable with algebra and basic calculus.",
@@ -2287,10 +2318,11 @@
         "Economics"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "33001"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Though not a strict prerequisite, students are strongly encouraged to have\ntaken Business 33001 (or a higher level micro course) prior to enrolling in this\ncourse. Auditors must attend Week 1.",
       "professors": [
@@ -2313,13 +2345,18 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [
-        "33001",
-        "33050",
-        "33040",
-        "20200"
+        "33001"
+      ],
+      "strict_prereq_groups": [
+        [
+          "33001"
+        ]
       ],
       "recommended_prereqs": [],
-      "not_concurrent": [],
+      "not_concurrent": [
+        "20200",
+        "33040"
+      ],
       "prereq_text": "Business 33001 or equivalent is a strict prerequisite.\u00a0\u00a0Cannot enroll in BUSN\n33050 if BUSN 33040 or 20200 taken previously: strict.",
       "professors": [
         "FABERMAN, JASON",
@@ -2342,6 +2379,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None",
@@ -2365,6 +2403,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "33001"
       ],
@@ -2388,6 +2427,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "No Non-Booth students. MiM and MiF students can bid in phase 3.",
@@ -2411,6 +2451,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "No Non-Booth students.",
@@ -2438,6 +2479,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None.",
@@ -2458,6 +2500,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Although background in electrical engineering or power systems is not\nrequired, and there are no specific prerequisites for the course, prior\ncoursework in statistical and economic analysis and the pricing financial and\ncommodity derivatives is highly encouraged.",
@@ -2479,6 +2522,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "33001",
         "41000"
@@ -2502,6 +2546,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -2523,6 +2568,11 @@
       "independent_application_course": false,
       "strict_prereqs": [
         "37000"
+      ],
+      "strict_prereq_groups": [
+        [
+          "37000"
+        ]
       ],
       "recommended_prereqs": [
         "42001"
@@ -2547,12 +2597,12 @@
         "Economics"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "33401",
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
+      "not_concurrent": [
         "20232"
       ],
-      "recommended_prereqs": [],
-      "not_concurrent": [],
       "prereq_text": "There are no essential prerequisites.\u00a0Cannot enroll in 33401 if\u00a020232 taken\npreviously: strict.",
       "professors": [
         "HUBER, KILIAN",
@@ -2572,6 +2622,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "33001",
         "35000"
@@ -2597,6 +2648,11 @@
       "strict_prereqs": [
         "33450"
       ],
+      "strict_prereq_groups": [
+        [
+          "33450"
+        ]
+      ],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Business 33450: strict",
@@ -2619,8 +2675,12 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [
-        "20940",
-        "33471"
+        "20940"
+      ],
+      "strict_prereq_groups": [
+        [
+          "20940"
+        ]
       ],
       "recommended_prereqs": [],
       "not_concurrent": [],
@@ -2644,12 +2704,12 @@
         "International Business"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "33001"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [
-        "33501",
         "20231"
       ],
       "prereq_text": "There is no strict requirement, but I assume familiarity with the concepts\ntaught in Microeconomics (Bus 33001). This course employs quantitative\nreasoning.\u00a0 Cannot enroll in BUSN 33501 if 20231 taken previously.",
@@ -2673,12 +2733,13 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
-        "33050",
-        "33502",
+        "33050"
+      ],
+      "not_concurrent": [
         "20230"
       ],
-      "not_concurrent": [],
       "prereq_text": "Business 33050 or equivalent is recommended, but not required. Cannot enroll\nin BUSN 33502 if BUSN 20230 taken previously.",
       "professors": [
         "NEIMAN, BRENT"
@@ -2700,6 +2761,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "33001"
       ],
@@ -2720,10 +2782,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33610",
-        "54300"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "BUSN 33610=ECON 54300. PhD students only. Instructor permission required\nfor MBA students.",
       "professors": [
@@ -2743,10 +2803,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33630",
-        "53000"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only. Instructor permission required for MBA students.\u00a0BUSN\n33630=ECON 53000",
       "professors": [
@@ -2765,10 +2823,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33650",
-        "57000"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Completion of 1st year of PhD Program. PhD students only. Instructor\npermission required for MBA students. BUSN 33650=ECON 57000",
       "professors": [
@@ -2787,6 +2843,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only: strict",
@@ -2805,6 +2862,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only: strict; Non-Booth PhD students require instructor consent",
@@ -2823,6 +2881,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only: strict",
@@ -2840,10 +2899,8 @@
       "core_areas": [],
       "concentrations": [],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "33914",
-        "30680"
-      ],
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "First year PhD micro. PhD students only: strict. BUSN 33914=ECON 30680",
@@ -2862,6 +2919,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "First-year micro theory, especially game theory and basic theory of\nconsumer/producer demand. The problem sets will involve some statistical",
@@ -2880,12 +2938,20 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [
-        "33001",
-        "33101",
-        "33002",
-        "30000",
         "30100",
-        "30200"
+        "30200",
+        "33001",
+        "33002",
+        "33101"
+      ],
+      "strict_prereq_groups": [
+        [
+          "33001",
+          "33101",
+          "33002",
+          "30100",
+          "30200"
+        ]
       ],
       "recommended_prereqs": [],
       "not_concurrent": [],
@@ -2905,15 +2971,14 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "33001",
         "33002",
         "33101",
         "30000",
         "30100",
-        "30200",
-        "33921",
-        "40101"
+        "30200"
       ],
       "not_concurrent": [],
       "prereq_text": "Solid background in microeconomics (e.g., Business 33001, 33002, 33101, or\nEconomics 30000, 30100, or 30200) and preferably econometrics at the PhD\nlevel. PhD students only. BUSN 33921=ECON 40101",
@@ -2932,10 +2997,9 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
-        "33921",
-        "33922",
-        "40201"
+        "33921"
       ],
       "not_concurrent": [],
       "prereq_text": "Bus 33921. BUSN 33922=ECON 40201. PhD students only.",
@@ -2954,11 +3018,10 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "33921",
-        "33922",
-        "33923",
-        "40301"
+        "33922"
       ],
       "not_concurrent": [],
       "prereq_text": "Bus 33921 and 33922.\u00a0 BUSN 33923=ECON 40301.",
@@ -2977,11 +3040,9 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
-      "not_concurrent": [
-        "33930",
-        "36700"
-      ],
+      "not_concurrent": [],
       "prereq_text": "Students should be comfortable with the core material from the first-year\neconomics PhD sequence, especially econometrics, price theory, and basic\ngame theory. Cannot enroll in BUSN 33930 if ECON 36700 taken previously.",
       "professors": [
         "CAMPOS, CHRISTOPHER"
@@ -2998,10 +3059,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
-        "33931",
-        "30540",
-        "30100",
         "30200",
         "30300"
       ],
@@ -3022,6 +3081,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Non-Booth PhD students require instructor permission:\u00a0 strict.",
@@ -3040,10 +3100,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33942",
-        "38001"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD Students only. BUSN 33942=ECON 38001.",
       "professors": [
@@ -3061,10 +3119,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33946",
-        "35101"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "BUSN 33946=ECON 35101. PhD-level course. Non-Booth PhD students may\nenroll. Undergraduates and master\u2019s students require faculty permission.",
       "professors": [
@@ -3088,11 +3144,20 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [
+        "30130",
+        "34106",
         "35200",
         "35201",
-        "35902",
-        "34106",
-        "30130"
+        "35902"
+      ],
+      "strict_prereq_groups": [
+        [
+          "35200",
+          "35201",
+          "35902",
+          "34106",
+          "30130"
+        ]
       ],
       "recommended_prereqs": [],
       "not_concurrent": [],
@@ -3118,6 +3183,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -3141,11 +3207,11 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "34103",
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
+      "not_concurrent": [
         "20330"
       ],
-      "not_concurrent": [],
       "prereq_text": "Students must attend Class 1.\u00a0Cannot enroll in BUSN 34103 if BUSN 20330\ntaken previously.",
       "professors": [
         "BREUER, ALE",
@@ -3169,6 +3235,7 @@
       ],
       "independent_application_course": true,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Advancement to the second round of the New Venture Challenge or (in rare\ncircumstances) consent of the instructor: strict. Students should contact the\ninstructor before the course begins. Grad students from other divisions can\nenroll during Non-Booth registration period. Auditors require instructor\npermission.",
@@ -3191,6 +3258,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -3212,6 +3280,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "No prerequisites required. No undergraduates. Graduate students from other\ndivisions can enroll during Non-Booth registration period.\n1  Class Attendance is mandatory.\u00a0 If you are considering/trying to register for\nthe course, please attend the 1  class even if you aren\u2019t yet registered.\u00a0 Only\nstudents who attend Class 1 will be allowed to register for the class.",
@@ -3231,12 +3300,13 @@
         "Entrepreneurship"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
+      "not_concurrent": [
         "20355",
         "34887"
       ],
-      "recommended_prereqs": [],
-      "not_concurrent": [],
       "prereq_text": "None. Auditors and undergrads need instructor approval: strict.\u00a0\u00a0Cannot enroll\nif 20355 or 34887 taken previously.",
       "professors": [
         "ALTER, MICHAEL"
@@ -3258,6 +3328,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -3280,6 +3351,7 @@
       ],
       "independent_application_course": true,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Application and permission of instructor.",
@@ -3304,6 +3376,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "20920"
@@ -3326,6 +3399,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None. Undergraduates require instructor permission.",
@@ -3346,6 +3420,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None, except for preliminary assignment found in Canvas.",
@@ -3366,10 +3441,11 @@
         "Healthcare"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "34211"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Teams will work together, combining students with scientific/medical/technical\nbackgrounds with those with more traditional business experience. It is not\nnecessary for Booth students to have a background in the sciences or for\nscience students to have a background in business. No undergrads. Non-Booth\nstudents must complete poll: strict.\nThe\npoll,\u00a0https://chicagobooth.az1.qualtrics.com/jfe/form/SV_5ArxFKtW5Cdjc22, will\nopen August 1st at 9am and will close August 20 at 11:59pm. Students will be\nnotified of selection by August 22. After enrollment, students must obtain\nfaculty permission to drop.\u00a0\n\nVALUE CREATION IN SMALL BUSINESSES (34211) - CREMONS, DAN>> ;\nHODGKIN, ALEX>>",
       "professors": [
@@ -3389,6 +3465,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -3409,6 +3486,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -3429,6 +3507,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "No formal prerequisites.\u00a0 Basic knowledge of financial accounting and income\ntax is assumed.",
@@ -3448,13 +3527,14 @@
         "Entrepreneurship"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "34101",
-        "34219",
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
+        "34101"
+      ],
+      "not_concurrent": [
         "34209"
       ],
-      "recommended_prereqs": [],
-      "not_concurrent": [],
       "prereq_text": "Who can attend?\nOpen to Booth graduate students, qualified undergraduates (2nd year+),\nHarris School students, and approved Master's students from other\nprograms.\n\nAttendance at the first class is mandatory for course enrollment. This also\napplies to wait-listed students or non-Booth students that only receive\nconfirmation in week 2.\nNo auditors allowed; the course cannot be taken pass/fail.\nSection Switching: Allowed until the end of week 2. Notify instructor or TA\nto ensure proper recording of attendance and quiz scores.\nWhile the course covers a broad range of topics, it is taught at a professional\nlevel, reflecting the competitive nature of landing jobs in the private markets\nindustry. This class is demanding and requires a high level of commitment and\nproficiency. Students who have previously worked in the financial industry or\nhave taken courses related to private equity or investment have found the\nmost benefit from this class. However, I go at great length to make the subject\naccessible to those who are not familiar with Private Markets but naturally for\nsomebody who is not familiar with the subject the sheer volume of\ninformation is more daunting and may require extra time to digest.\u00a0 If you are\nlooking for an easy-going high-level overview, you will find the detailed content\nof this course to be extremely challenging.\nThis course is designed to be complementary to Entrepreneurial Finance\nclasses such as Entrepreneurial Finance and Private Equity (34101). But there is\nno prerequisite for attending my course.\u00a0 Cannot take BUSN 34219 if BUSN\n34209 taken previously: strict.",
       "professors": [
         "HEPP, STEFAN"
@@ -3474,6 +3554,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "34102"
       ],
@@ -3496,6 +3577,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None.",
@@ -3519,6 +3601,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "34101"
       ],
@@ -3541,6 +3624,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -3562,6 +3646,7 @@
       ],
       "independent_application_course": true,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "35200",
         "34106",
@@ -3590,6 +3675,14 @@
         "33450",
         "33451"
       ],
+      "strict_prereq_groups": [
+        [
+          "33450"
+        ],
+        [
+          "33451"
+        ]
+      ],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "The class prerequisites are having successfully taken Real Estate Investments I\n(#33450) and Real Estate Investments II (#33451): strict. Participation in a\nprevious RE Challenge does not bar students from participating in this year\u2019s\nRE Lab. If you are interested in participating in this year\u2019s RE Lab, please so\nindicate to Professor Pagliari, via an email note (to\njoseph.pagliari@chicagobooth.edu) should contain as attachments: 1) a\nresume and 2) a one paragraph statement as to why you would like to be\ninvolved in this year\u2019s RE Lab and what you might offer to your teammates in\nterms of expertise, perspective, contacts, etc.",
@@ -3611,10 +3704,11 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
+      "not_concurrent": [
         "20350"
       ],
-      "not_concurrent": [],
       "prereq_text": "This class is aimed at Booth\u2019s First-Years who are interested in\nentrepreneurship as a founder, employee, investor or advisor. While there are\nno class-related recommended prerequisites, prior career experience in\nbusiness, technology, design, or product management is valued.\nPlease note that attendance for all nine weeks of the course is very important\nfor your success and for other students' success in this team-based course.\nFor further information on the course outline, course expectations, and other\nuseful information, please refer to the course syllabus. Cannot enroll if 20350\ntaken previously.",
       "professors": [
         "TEBBE, MARK"
@@ -3633,12 +3727,12 @@
         "Healthcare"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "34709",
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
+      "not_concurrent": [
         "34706"
       ],
-      "recommended_prereqs": [],
-      "not_concurrent": [],
       "prereq_text": "Please apply for the class using this link. Applications may be submitted\nanytime and will be reviewed on a rolling basis until the class is filled. Cannot\nenroll in BUSN 34709 if 34706 taken previously: strict. No undergraduate\nstudents.",
       "professors": [
         "BLUMBERG, JASON"
@@ -3655,6 +3749,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -3675,9 +3770,8 @@
       ],
       "independent_application_course": true,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
-        "34715",
-        "53455",
         "33830",
         "32002"
       ],
@@ -3700,10 +3794,11 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "34103",
-        "20330"
+        "20330",
+        "34103"
       ],
       "prereq_text": "Cannot enroll if 34103 or 20330 taken previously.",
       "professors": [
@@ -3724,6 +3819,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -3747,6 +3843,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -3771,17 +3868,20 @@
       "independent_application_course": false,
       "strict_prereqs": [
         "34901",
-        "35904",
-        "31000",
+        "35904"
+      ],
+      "strict_prereq_groups": [
+        [
+          "34901",
+          "35904"
+        ]
+      ],
+      "recommended_prereqs": [
         "31100",
         "31200",
-        "33000",
         "33100",
-        "33200",
-        "34902",
-        "35060"
+        "33200"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Business 34901 (or 35904): strict. Recommended, but not required: Econ\n31000, 31100, 31200 or equivalent, and Econ 33000, 33100, 33200 or\nequivalent. BUSN 34902=ECON 35060",
       "professors": [
@@ -3803,13 +3903,8 @@
         "Analytic Finance"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "30100",
-        "30200",
-        "30300",
-        "34903",
-        "35070"
-      ],
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Econ 30100, Econ 30200, & Econ 30300: strict. BUSN 34903=ECON 35070.",
@@ -3834,9 +3929,13 @@
       "independent_application_course": false,
       "strict_prereqs": [
         "34903",
-        "35902",
-        "34904",
-        "35080"
+        "35902"
+      ],
+      "strict_prereq_groups": [
+        [
+          "34903",
+          "35902"
+        ]
       ],
       "recommended_prereqs": [],
       "not_concurrent": [],
@@ -3860,9 +3959,15 @@
       "independent_application_course": false,
       "strict_prereqs": [
         "34903",
-        "34904",
-        "34906",
-        "35090"
+        "34904"
+      ],
+      "strict_prereq_groups": [
+        [
+          "34903"
+        ],
+        [
+          "34904"
+        ]
       ],
       "recommended_prereqs": [],
       "not_concurrent": [],
@@ -3887,15 +3992,21 @@
       "independent_application_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
+      ],
+      "strict_prereq_groups": [
+        [
+          "41000",
+          "41100"
+        ]
       ],
       "recommended_prereqs": [
         "30000",
         "33001"
       ],
-      "not_concurrent": [],
+      "not_concurrent": [
+        "20400"
+      ],
       "prereq_text": "Business 30000 and 33001 are recommended. Either 41000 or 41100 is\nrequired: strict. This is a quantitative course, meaning that students must be\ncomfortable with statistics, linear algebra, calculus, and microeconomics at the\nlevel of the above courses. In addition, students must be familiar with a\nspreadsheet package such as Excel. Cannot enroll in BUSN 35000 if BUSN\n20400 taken previously.",
       "professors": [
         "BASTIANELLO, FRANCESCA",
@@ -3918,14 +4029,14 @@
       ],
       "concentrations": [],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "35001",
-        "35010"
-      ],
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "30000"
       ],
-      "not_concurrent": [],
+      "not_concurrent": [
+        "35010"
+      ],
       "prereq_text": "It is recommended that students take Business 30000 prior to taking Business\n35001. All Non-Booth students require instructor permission to enroll.\u00a0\u00a0Cannot\nenroll in 35001 if 35010 taken previously: strict.",
       "professors": [
         "CONSTANTINIDES, GEORGE"
@@ -3941,13 +4052,14 @@
       "core_areas": [],
       "concentrations": [],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "30000",
-        "35010",
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
+        "30000"
+      ],
+      "not_concurrent": [
         "35001"
       ],
-      "recommended_prereqs": [],
-      "not_concurrent": [],
       "prereq_text": "Business 30000, not enforced.\u00a0 MiM Only. All Non-Booth students require\ninstructor permission to enroll.\u00a0 Cannot enroll in\u00a035010 if 35001 taken\npreviously: strict.",
       "professors": [
         "CONSTANTINIDES, GEORGE"
@@ -3971,9 +4083,13 @@
       "strict_prereqs": [
         "35000"
       ],
+      "strict_prereq_groups": [
+        [
+          "35000"
+        ]
+      ],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "35100",
         "20405"
       ],
       "prereq_text": "Bus 35000: strict. Cannot enroll in BUSN 35100 if BUSN 20405 taken previously.",
@@ -3996,9 +4112,16 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [
-        "41000",
         "35000",
-        "35200"
+        "35200",
+        "41000"
+      ],
+      "strict_prereq_groups": [
+        [
+          "41000",
+          "35000",
+          "35200"
+        ]
       ],
       "recommended_prereqs": [],
       "not_concurrent": [],
@@ -4025,6 +4148,11 @@
       "strict_prereqs": [
         "35000"
       ],
+      "strict_prereq_groups": [
+        [
+          "35000"
+        ]
+      ],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Bus 35000: strict. No non-Booth students.",
@@ -4045,12 +4173,13 @@
         "Analytic Finance"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "35000",
         "41100",
         "35215"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Business 35000 and Business 41100. This is a quantitative course and students\nare expected to be comfortable applying statistics and multivariate regression\nto data and interpreting the results. Knowledge of a regression package (such\nas Excel) is essential.\nPrerequisite requirements (35000 and 41100) are not strict, so you do not need\nto request a waiver. If you feel confident taking the course without the\nprerequisites you are welcome to, but you are responsible for learning any\nmaterial you might need to make up on your own.\nThis course can be taken before or after 35215 (Behavioral and Institutional\nFinance).\nAs long as you have completed all the coursework, provisional grades are\ngiven.",
       "professors": [
@@ -4072,13 +4201,20 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [
-        "30000",
-        "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
+      "strict_prereq_groups": [
+        [
+          "41000",
+          "41100"
+        ]
+      ],
+      "recommended_prereqs": [
+        "30000",
+        "33001",
+        "35000"
+      ],
       "not_concurrent": [],
       "prereq_text": "Business 30000, 33001, and 35000 are non-strict (non-enforced) prerequisites.\nBusiness 41000 (or 41100) is a strict (enforced) prerequisite. Students must be\ncomfortable with statistics, regression analysis, microeconomics, and\ninvestments at the level of the above courses. No prior knowledge of Python is\nrequired.",
       "professors": [
@@ -4103,6 +4239,11 @@
       "strict_prereqs": [
         "35000"
       ],
+      "strict_prereq_groups": [
+        [
+          "35000"
+        ]
+      ],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Business 35000: strict.",
@@ -4124,6 +4265,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "35135"
@@ -4149,6 +4291,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "41000",
         "41100",
@@ -4174,6 +4317,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Introductory Economics or Finance (recommended).",
@@ -4195,6 +4339,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Students are expected to possess decent calculus skills, and have some\nunderstanding what a partial differential equation is. Students should also\npossess familiarity with Black-Scholes, either via prerequisites or by instructor\napproval of prior study experiences.",
@@ -4215,6 +4360,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "35124"
@@ -4237,9 +4383,9 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "35146",
         "35145"
       ],
       "prereq_text": "Cannot enroll in BUSN 35146 if 35145 taken previously.",
@@ -4263,6 +4409,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -4283,14 +4430,16 @@
         "Analytic Finance"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "41000",
         "41100",
-        "35000",
+        "35000"
+      ],
+      "not_concurrent": [
         "34214"
       ],
-      "recommended_prereqs": [],
-      "not_concurrent": [],
       "prereq_text": "Stats/Regression:\u00a0 strict 41000 (or 41100) and Investments:\u00a0 35000. Cannot take\nif taken BUSN 34214 previously: strict.",
       "professors": [
         "KALCHEVA, GALINA"
@@ -4312,15 +4461,20 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "strict_prereq_groups": [
+        [
+          "35000"
+        ]
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [
-        "35200",
         "20410"
       ],
       "prereq_text": "Sections 03 & 04 are MiF only. Business 30000, 33001, 35000 (strict), and 41000\nor 41100. Cannot enroll in BUSN 35200 if BUSN 20410 taken previously.\nUndergraduates and any non-Booth students require instructor permission\nand you will have to take the Tuesday section.",
@@ -4349,10 +4503,19 @@
       "independent_application_course": false,
       "strict_prereqs": [
         "35000",
+        "35010",
         "35200",
         "35901",
-        "35902",
-        "35010"
+        "35902"
+      ],
+      "strict_prereq_groups": [
+        [
+          "35000",
+          "35200",
+          "35901",
+          "35902",
+          "35010"
+        ]
       ],
       "recommended_prereqs": [],
       "not_concurrent": [],
@@ -4376,11 +4539,12 @@
         "Analytic Finance"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "33001",
         "35200"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "No strict prerequisites. Either 33001 (Microeconomics) or 35200 (Corporation\nFinance) is recommended but not required.",
       "professors": [
@@ -4403,14 +4567,15 @@
         "International Business"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "35200",
         "35201",
         "30130",
         "34101",
         "35902"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Strict prerequisite (not to be taken concurrently): 35200 or any one of 35201,\n30130, 34101, or 35902. An undergraduate equivalent, or a basic corporate\nfinance course elsewhere could work. Email me for permission. CFA or work\nexperience is no substitute. If you have done something equivalent elsewhere\nin a college/university (CPA/CFA courses not acceptable), send the instructor an\nemail with (1) brief course description (2) book used (3) and which\ncollege/university you took the course in, and he will respond.",
       "professors": [
@@ -4433,6 +4598,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "34101"
       ],
@@ -4458,18 +4624,19 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "30000",
         "33001",
         "41000",
         "41100",
         "35000",
-        "35200",
-        "35214",
-        "35824",
-        "35224"
+        "35200"
       ],
-      "not_concurrent": [],
+      "not_concurrent": [
+        "35224",
+        "35824"
+      ],
       "prereq_text": "Business 30000, 33001, 41000 (or 41100), 35000, 35200 strongly\nrecommended for success in this class. Non-Booth students need faculty\npermission.\u00a0Cannot enroll in BUSN 35214 if BUSN 35824 or 35224 taken\npreviously.",
       "professors": [
         "SUFI, AMIR"
@@ -4489,6 +4656,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "35000",
         "35200"
@@ -4513,6 +4681,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "There are no essential prerequisites. Familiarity with Introductory\neconometrics, micro- and macroeconomics is helpful.",
@@ -4533,6 +4702,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "35220"
@@ -4553,6 +4723,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -4571,9 +4742,9 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "35224",
         "35214"
       ],
       "prereq_text": "Cannot enroll in BUSN 35224 if 35214 taken previously: strict.\u00a0 Law school\nstudents and other non-Booth students require instructor consent: strict.",
@@ -4592,10 +4763,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35600",
-        "55600"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only. Instructor permission required for MBA students. BUSN\n35600=ECON 55600",
       "professors": [
@@ -4615,6 +4784,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only. One year in PhD program, and consent of instructor.",
@@ -4637,6 +4807,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "35118"
@@ -4659,10 +4830,11 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "35146",
-        "35145"
+        "35145",
+        "35146"
       ],
       "prereq_text": "Cannot enroll if 35146 or 35145 taken previously.",
       "professors": [
@@ -4683,6 +4855,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Consent of instructor: strict.",
@@ -4703,12 +4876,11 @@
         "Analytic Finance"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "35916",
-        "36330",
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "42540"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "BUSN 35916=ECON 36330/PPHA 42540. PhD student: strict. MBA students\nrequire instructor permission: strict.",
       "professors": [
@@ -4726,10 +4898,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35930",
-        "49700"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "3rd year PhD students only. BUSN 35930=ECON 49700",
       "professors": [
@@ -4748,10 +4918,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35931",
-        "49800"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "3rd year PhD students only. BUSN 35931=ECON 49800",
       "professors": [
@@ -4770,10 +4938,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35932",
-        "49900"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "3rd year PhD students only. BUSN 35932=ECON 49900",
       "professors": [
@@ -4797,11 +4963,11 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "41000"
       ],
       "not_concurrent": [
-        "36106",
         "20510"
       ],
       "prereq_text": "There are NO strict prerequisites. However, the following\npreparation/background is helpful.\n1. Basic Statistics: Any previous or concurrent exposure to statistics at the\nlevel of 41000 will be helpful. Basic statistical concepts such as random\nvariables, probability distributions, variance, covariance will be used. We\nwill briefly review the important concepts when necessary, but will not\nspend a lot of time trying to teach such concepts.\n2. Basic Finance/Accounting: Although the example models discussed in this\nclass cross many functions of business, very little prior background in\nthose areas is sufficient. Basic financial concepts such as net present\nvalue, discounted cash flow analysis, stocks and options, and so on will\noften be used. We will briefly review the important concepts when\nnecessary, but will not spend a lot of time to teach such concepts. Our\nemphasis will be on applying analytical modeling techniques to analyze\nthe business problem on hand and demonstrate how such concepts can\nbe used in our models.\n3. Basic Excel: I will assume that students have some familiarity with Excel,\nbut are not an Excel expert. For example, the following are expected:\nknowing how to enter and copy simple formulas involving relative and\nabsolute cell addresses (A1 and $A$1)\nhow to use general-purpose Excel functions (for example, the IF()\nfunction)\nhow to draw different types of graphs (bar/line) in Excel\n4. Computing: This course heavily relies on hands-on, in-class learning.\nTherefore, it is absolutely essential to bring your laptop to each class, so\nthat you can actively participate in developing and analyzing the example\nproblems during class.\nCannot enroll in BUSN 36106 if BUSN 20510 taken previously.",
@@ -4828,6 +4994,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "36106"
       ],
@@ -4850,9 +5017,9 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "36110",
         "20550"
       ],
       "prereq_text": "None. Cannot enroll in BUSN 36110 if BUSN 20550 taken previously.",
@@ -4871,8 +5038,14 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [
-        "36110",
-        "20550"
+        "20550",
+        "36110"
+      ],
+      "strict_prereq_groups": [
+        [
+          "36110",
+          "20550"
+        ]
       ],
       "recommended_prereqs": [],
       "not_concurrent": [],
@@ -4892,6 +5065,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only. Instructor permission required for MBA students.",
@@ -4911,6 +5085,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only.",
@@ -4929,6 +5104,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Linear and/or nonlinear optimization, Markov chain theory. PhD students only.",
@@ -4947,6 +5123,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -4965,6 +5142,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only.",
@@ -4983,6 +5161,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Basic familiarity with probability theory and stochastic processes will be\nassumed.",
@@ -5001,6 +5180,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Basic probability theory and stochastic processes. PhD students (Booth and\nNon-Booth) only.\u00a0 Non-Booth master's students require instructor permission:\nstrict.",
@@ -5023,11 +5203,11 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
+      "not_concurrent": [
         "20600"
       ],
-      "not_concurrent": [],
       "prereq_text": "None. Expectations for case discussion are set in the first class session so it is\nhighly recommended that you attend the first class session and come\nadequately prepared. No non-Booth students. Cannot enroll in BUSN 37000 if\nBUSN 20600 taken previously.",
       "professors": [
         "DHAR, SANJAY",
@@ -5054,6 +5234,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "37000"
       ],
@@ -5079,18 +5260,18 @@
         "Marketing Management"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "37103",
-        "37105",
-        "20620"
-      ],
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "37000",
         "37100",
         "41000",
         "41100"
       ],
-      "not_concurrent": [],
+      "not_concurrent": [
+        "20620",
+        "37105"
+      ],
       "prereq_text": "Business 37000 (or 37100) and 41000 (or 41100) recommended. Cannot enroll\nin 37103 if 37105 or 20620 taken previously: strict.",
       "professors": [
         "HITSCH, GUENTER"
@@ -5113,13 +5294,19 @@
       "independent_application_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "37105",
-        "37103",
-        "20620"
+        "41100"
+      ],
+      "strict_prereq_groups": [
+        [
+          "41000",
+          "41100"
+        ]
       ],
       "recommended_prereqs": [],
-      "not_concurrent": [],
+      "not_concurrent": [
+        "20620",
+        "37103"
+      ],
       "prereq_text": "Business 41000 (or 41100): strict. Cannot enroll in 37105 if 37103 or 20620\ntaken previously: strict.\nThroughout the class the students will write scripts in R, and correspondingly\nsome programming experience (preferably in R) is necessary.",
       "professors": [
         "COMPIANI, GIOVANNI"
@@ -5143,13 +5330,14 @@
       ],
       "independent_application_course": true,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
-        "37000",
-        "37201",
+        "37000"
+      ],
+      "not_concurrent": [
         "37200",
         "37810"
       ],
-      "not_concurrent": [],
       "prereq_text": "Business 37000: recommended. Application and acceptance into course is\nrequired. Cannot be dropped once enrolled. Cannot take 37201 if 37200 \u201cNew\nProducts and Services\u201d or 37810 \"New Product Development\" has already been\ntaken.",
       "professors": [
         "MIDDLEBROOKS, ARTHUR",
@@ -5175,9 +5363,14 @@
         "33001",
         "37000"
       ],
+      "strict_prereq_groups": [
+        [
+          "33001",
+          "37000"
+        ]
+      ],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "37202",
         "20610"
       ],
       "prereq_text": "Business 33001 or 37000 (either may be concurrent): strict. Students with an\nunderstanding of marketing and microeconomic principles will benefit more\nfrom the course. Cannot enroll in BUSN 37202 if BUSN 20610 taken previously.",
@@ -5201,6 +5394,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None",
@@ -5224,6 +5418,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -5245,6 +5440,11 @@
       "independent_application_course": false,
       "strict_prereqs": [
         "37000"
+      ],
+      "strict_prereq_groups": [
+        [
+          "37000"
+        ]
       ],
       "recommended_prereqs": [],
       "not_concurrent": [],
@@ -5269,6 +5469,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "37000"
       ],
@@ -5289,6 +5490,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Booth PhD students only. Instructor permission required for MBA students.",
@@ -5314,10 +5516,11 @@
         "Marketing Management"
       ],
       "independent_application_course": true,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "37000"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "There are no prerequisites for this course. However, having a basic background\nin marketing (BUSN 37000) is a definite plus. No undergrads allowed.This\ncourse is by application only: strict.",
       "professors": [
@@ -5337,6 +5540,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -5357,6 +5561,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD Students. MBA students with permission: strict",
@@ -5375,6 +5580,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only. Non-Booth PhD students require instructor permission.",
@@ -5393,10 +5599,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37904",
-        "40902"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only. BUSN 37904=ECON 40902",
       "professors": [
@@ -5414,6 +5618,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD Students Only.",
@@ -5432,6 +5637,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only. Undergraduates require instructor consent. Non-Booth\nMasters & PhD students may enroll through the online request poll.",
@@ -5450,6 +5656,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only: strict",
@@ -5469,6 +5676,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only: strict",
@@ -5488,6 +5696,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "MiM Only",
@@ -5510,9 +5719,9 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "38001",
         "20701"
       ],
       "prereq_text": "None. Cannot enroll in BUSN 38001 if BUSN 20701 taken previously.",
@@ -5538,6 +5747,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -5561,6 +5771,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None. All Non-Booth students require instructor consent.",
@@ -5581,6 +5792,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "38001",
         "38002",
@@ -5612,6 +5824,11 @@
       "strict_prereqs": [
         "38103"
       ],
+      "strict_prereq_groups": [
+        [
+          "38103"
+        ]
+      ],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "BUS 38103-Strategies and Processes of Negotiation: strict (cannot be taken\nconcurrently). It is mandatory to attend the first class session.\nNon-Booth students require faculty permission.",
@@ -5632,6 +5849,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "38101",
@@ -5658,6 +5876,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None.",
@@ -5681,6 +5900,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "38870"
@@ -5706,9 +5926,9 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "38120",
         "20710"
       ],
       "prereq_text": "Cannot enroll in BUSN 38120 if BUSN 20710 taken previously.",
@@ -5733,6 +5953,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "20715"
@@ -5757,6 +5978,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None",
@@ -5775,6 +5997,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only. Instructor permission required for MBA students.",
@@ -5797,6 +6020,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -5817,6 +6041,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "38003"
@@ -5837,6 +6062,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Admitted to the Ph.D. program or consent of instructor.",
@@ -5855,6 +6081,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only.",
@@ -5872,10 +6099,8 @@
       "core_areas": [],
       "concentrations": [],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "38916",
-        "41175"
-      ],
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only. MBA students require instructor permission: strict. BUSN\n38916 = ECON 41175",
@@ -5894,10 +6119,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "38917",
-        "41120"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "BUSN 38917=ECON 41120\nNO SYLLABUS AVAILABLE",
       "professors": [
@@ -5918,9 +6141,8 @@
         "Strategic Management"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "39001"
-      ],
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "There are no required classes for Business 39001. This course is suitable for\nfirst-year students. This course has a first-class assignment.\u00a0 Non-Booth\nstudents require faculty permission: strict.",
@@ -5944,8 +6166,14 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [
-        "42001",
-        "39001"
+        "39001",
+        "42001"
+      ],
+      "strict_prereq_groups": [
+        [
+          "42001",
+          "39001"
+        ]
       ],
       "recommended_prereqs": [],
       "not_concurrent": [],
@@ -5969,11 +6197,11 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "40000",
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
+      "not_concurrent": [
         "20500"
       ],
-      "not_concurrent": [],
       "prereq_text": "No Non-Booth students. Any previous or concurrent exposure to basic\nstatistics is helpful. It is mandatory to attend the first class session. Cannot\nenroll in BUSN 40000 if BUSN 20500 taken previously.",
       "professors": [
         "CANDOGAN, OZAN",
@@ -5996,9 +6224,9 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "40101",
         "20520"
       ],
       "prereq_text": "Cannot enroll in BUSN 40101 if BUSN 20520 taken previously.",
@@ -6022,6 +6250,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "33001",
         "41000",
@@ -6049,6 +6278,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Previous or concurrent exposure to basic statistics is helpful. Mandatory to\nattend first class.",
@@ -6069,6 +6299,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Any previous or concurrent exposure to basic statistics is helpful.",
@@ -6090,14 +6321,15 @@
         "Operations Management"
       ],
       "independent_application_course": true,
-      "strict_prereqs": [
-        "40206",
-        "40205",
-        "40201",
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "40721"
       ],
-      "recommended_prereqs": [],
-      "not_concurrent": [],
+      "not_concurrent": [
+        "40201",
+        "40205"
+      ],
       "prereq_text": "Basic introductory statistics. Students will not be required to write code (R or\npython), but occasionally you will be required to run or slightly edit pieces of\ncode provided by the instructor. Almost all numerical work will be conducted\nusing state-of-the-art software tools. Thus, students should have a willingness\nand interest in learning powerful new software tools and working with real-\nworld data to transform it into usable management insights.\nAll Non-Booth students require instructor approval: strict. Enrollment of non-\nBooth students in Bus 40206 Healthcare Data Analytics is by application.\nApplications\n(https://chicagobooth.az1.qualtrics.com/jfe/form/SV_cw2jbFqdrTPbUyO) will be\nreviewed on a rolling basis. Please note: this course is not open to alumni.\u00a0\nCannot enroll in 40206 if you have taken 40205 or 40201: strict.\u00a0\nStudents may take this course and Bus 40721 (Healthcare Analytics\nLaboratory) either concurrently or sequentially in any order. \u00a0These courses are\norganized similarly to typical college-level science courses, with both a lecture\ncomponent (Bus 40206) and a lab component (Bus 40721). \u00a0 Thus, students\nwho take both receive the complete educational experience, but students may\nalso choose to take only one. \u00a0Students in Bus 40206 receive foundational\nlearning in the healthcare industry through the lens of business analyses using\ndata, as well as training in conducting business analyses in an interface that\ndoes not require prior coding or data analysis experience. Students in both\ncourses use Data Science Studio (DSS) by Dataiku, while students who take Bus\n40721 also use Tableau to create data visualizations.\nStudents who choose to take Bus 40721 without having had Bus 40206 will\nneed to complete trainings in both DSS and Tableau. \u00a0Typically, teams in Bus\n40721 include at least some members who have taken Bus 40206, and thus\nthey are able to share any material from that course that is directly relevant to\nthe project with other team members. \u00a0Students who choose to take Bus\n40206 without taking Bus 40721 will not benefit from reinforcing and applying\ntheir learnings to a real-world project and sponsor. Students who take both\ncourses will benefit from having a broad understanding of how business\nanalyses are conducted in the healthcare industry, and how their lab project\nfits into the broader industry landscape. \u00a0 They will be fully prepared to\nconduct business analyses in the healthcare industry from day one of\nemployment as a consultant, analyst, or manager.",
       "professors": [
         "ADELMAN, DAN"
@@ -6118,9 +6350,9 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "40206",
-        "40721",
         "41201",
         "41100",
         "41204",
@@ -6146,6 +6378,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "N/A",
@@ -6168,6 +6401,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "No undergraduates. Other non-Booth students require faculty permission.\nAll registered students must take the pre-MBA quiz before the first day of class.\nPlease see the course syllabus for details.",
@@ -6197,6 +6431,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "41000"
       ],
@@ -6224,9 +6459,9 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "41203",
         "20820"
       ],
       "prereq_text": "Cannot enroll in BUSN 41203 if BUSN 20820 taken previously.",
@@ -6250,6 +6485,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "41000",
         "41100"
@@ -6277,6 +6513,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "41100"
       ],
@@ -6297,6 +6534,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Prerequisites for this course include prior exposure to basic statistics, linear\nalgebra, and proficiency in Python coding.",
@@ -6320,6 +6558,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "41000",
         "41100",
@@ -6333,7 +6572,6 @@
         "41207"
       ],
       "not_concurrent": [
-        "41215",
         "41201"
       ],
       "prereq_text": "OPTIONAL PREREQUISITES\nStudents might benefit most from this course if they have had prior exposure\nto basic concepts in probability, such as random variables and normal\ndistributions. That said, these foundational topics\nare reviewed/introduced during the course, so students without a formal\nbackground in statistics can still succeed\u2013though they may experience a\nsteeper learning curve early on.\nThis course might appeal to students who have already taken Business\nStatistics (BUS 41000) or Applied Regression (BUS 41100). Another possibly\nuseful prerequisite is Data Analysis with R\nand Python (BUS 32100) and Artificial Intelligence (BUS 32200).\nCannot enroll in BUSN 41215 if 41201 taken previously.\nThis course is designed for those with a strong interest in hands-on data\nanalysis using real-world datasets, rather than purely abstract conversations.\nPOSSIBLE POSTREQUISITES\nThis course includes the key concepts and tools that data scientists find\nvaluable in business environments, and it is also designed to act as a primer\nfor continued study.\nThe course may be a useful prerequisite into deep-dive courses and/or field-\nspecific variants such as Machine Learning in Finance (BUS 35137), Machine\nLearning (BUS 41204), Generative\nThinking (BUS 32210), Data Science for Marketing Decision Making (BUS\n37105), Data-driven Marketing (BUS 37103), Causal Inference in Business\nApplications (BUS 41207).",
@@ -6352,10 +6590,8 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "41600",
-        "51400"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "PhD students only. Instructor permission required for MBA students. BUSN\n41600=ECON 51400.",
       "professors": [
@@ -6379,8 +6615,8 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
-        "41901",
         "32400"
       ],
       "not_concurrent": [],
@@ -6404,6 +6640,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "41901"
       ],
@@ -6428,6 +6665,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "41901",
         "41902"
@@ -6453,9 +6691,9 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "41901",
-        "41910",
         "33500"
       ],
       "not_concurrent": [],
@@ -6477,6 +6715,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -6494,11 +6733,11 @@
       "core_areas": [],
       "concentrations": [],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "41919",
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [
         "32419"
       ],
-      "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Open to PhD students only: strict.\u00a0 BUSN 41919=STAT 32419",
       "professors": [
@@ -6521,11 +6760,11 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "33001"
       ],
       "not_concurrent": [
-        "42001",
         "20900"
       ],
       "prereq_text": "Section 03 is MiM and MiF Only. Bus 33001 or equivalent is highly\nrecommended. In short, the course requires an understanding of\nmicroeconomics; otherwise, you will not learn as much and struggle with the\nmaterial.\u00a0\u00a0\nOne cannot enroll in BUSN 42001 if BUSN 20900 was taken previously.",
@@ -6548,11 +6787,9 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "42005"
-      ],
+      "strict_prereq_groups": [],
+      "recommended_prereqs": [],
       "not_concurrent": [
-        "42005",
         "42003",
         "42004"
       ],
@@ -6574,6 +6811,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -6597,6 +6835,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Non-Booth students require instructor consent: strict No auditors.",
@@ -6617,6 +6856,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "42001",
         "35201"
@@ -6640,6 +6880,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -6660,6 +6901,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "No College students. Non-Booth Masters and PhD allowed with instructor\nconsent. 1st class attendance is mandatory. Auditors require instructor\npermission.",
@@ -6680,6 +6922,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Basic principles of Competitive Strategy, Microeconomics, and Corporate\nFinance are assumed to be understood.",
@@ -6698,6 +6941,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "39001",
         "42001"
@@ -6724,6 +6968,12 @@
         "42123",
         "42705"
       ],
+      "strict_prereq_groups": [
+        [
+          "42123",
+          "42705"
+        ]
+      ],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Students who have already taken \"42123 -\u00a0Reputation, Regulation and\nCommunications \u2013 How Media Influences Business\" OR \u201c42705 - Reputation,\nRegulation and Communications \u2013 How Media Influences Business - Lab\u201d\ncannot register for this course: strict. Auditors require instructor permission.",
@@ -6742,6 +6992,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "",
@@ -6765,6 +7016,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [
         "33001",
         "42001"
@@ -6790,13 +7042,13 @@
         "Strategic Management"
       ],
       "independent_application_course": false,
-      "strict_prereqs": [
-        "42136",
-        "42125",
-        "20930"
-      ],
+      "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
-      "not_concurrent": [],
+      "not_concurrent": [
+        "20930",
+        "42125"
+      ],
       "prereq_text": "Undergraduates require instructor consent. Cannot enroll in BUSN 42136 if\nBUSN 42125 or 20930 taken previously: strict.",
       "professors": [
         "HACHIKIAN, CHRISTINA"
@@ -6815,6 +7067,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None.",
@@ -6836,6 +7089,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Application only: strict.",
@@ -6857,6 +7111,7 @@
       ],
       "independent_application_course": true,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "No prerequisites. The course will be by application only for Spring 2026.",
@@ -6879,6 +7134,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None.",
@@ -6901,6 +7157,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Apply here by 11/7 at 11:59pm CT.\nWe expect all students enrolled in the course to commit significant time each\nweek outside of class on developing and testing their venture ideas. You will\nnot be able to drop after the first class session. No undergraduate students.",
@@ -6923,6 +7180,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "First quarter MBA students may not enroll.\u00a0 Attendance is mandatory.\u00a0\nStudents who do not attend week 1 will be dropped.\u00a0 Students who are on the\nwaitlist should attend if they intend to add the class should a spot become\navailable.\nRecommended:\u00a0 We recommend you have taken some (the more the better) of\nthe classes listed below and that you form teams whose combined members\nhave taken all of them.\u00a0\u00a0 We will review some concepts from those courses, but\nyou will be expected to fill in any gaps in your knowledge if you haven't taken\nthe classes.\nOperations\nCorporation Finance\nFinancial Accounting\nManagerial Accounting\nMicroeconomics\nStatistics\nCompetitive Strategy\nMarketing",
@@ -6943,6 +7201,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "42123"
@@ -6966,6 +7225,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "34102",
@@ -6992,9 +7252,9 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
-        "43100",
         "32200",
         "43800"
       ],
@@ -7017,6 +7277,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "No formal prerequisites are required, but students without prior coursework in\nAI, statistics, or competitive strategy should expect a significantly heavier\nworkload, as core concepts in these areas will not be covered during class.",
@@ -7045,6 +7306,16 @@
         "43100",
         "43120"
       ],
+      "strict_prereq_groups": [
+        [
+          "30135",
+          "32210",
+          "35137",
+          "41204",
+          "43100",
+          "43120"
+        ]
+      ],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "At least one of: BUSN 30135, BUSN 32210, BUSN 35137, BUSN 41204, BUSN\n43100 or BUSN 43120\u00a0(strict)",
@@ -7065,6 +7336,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [
         "32210",
@@ -7088,6 +7360,7 @@
       ],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "Non-Booth students require instructor permission to enroll: strict.",
@@ -7106,6 +7379,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "strict_prereqs": [],
+      "strict_prereq_groups": [],
       "recommended_prereqs": [],
       "not_concurrent": [],
       "prereq_text": "None",
@@ -7595,9 +7869,7 @@
         "30000",
         "33001",
         "41000",
-        "41100",
-        "20101",
-        "30001"
+        "41100"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -7627,9 +7899,7 @@
         "30000",
         "33001",
         "41000",
-        "41100",
-        "20101",
-        "30001"
+        "41100"
       ],
       "r1_price_returning": 1500,
       "r1_price_new": 1500,
@@ -7659,9 +7929,7 @@
         "30000",
         "33001",
         "41000",
-        "41100",
-        "20101",
-        "30001"
+        "41100"
       ],
       "r1_price_returning": 1,
       "r1_price_new": 1,
@@ -7691,9 +7959,7 @@
         "30000",
         "33001",
         "41000",
-        "41100",
-        "20101",
-        "30001"
+        "41100"
       ],
       "r1_price_returning": null,
       "r1_price_new": null,
@@ -7725,9 +7991,7 @@
         "30000",
         "33001",
         "41000",
-        "41100",
-        "20101",
-        "30001"
+        "41100"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -7757,9 +8021,7 @@
         "30000",
         "33001",
         "41000",
-        "41100",
-        "20101",
-        "30001"
+        "41100"
       ],
       "r1_price_returning": 2083,
       "r1_price_new": 2083,
@@ -7789,9 +8051,7 @@
         "30000",
         "33001",
         "41000",
-        "41100",
-        "20101",
-        "30001"
+        "41100"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -7818,9 +8078,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "30000",
-        "30116",
-        "20140"
+        "30000"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 508,
@@ -7847,9 +8105,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "30000",
-        "30116",
-        "20140"
+        "30000"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -7876,9 +8132,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "30000",
-        "30116",
-        "20140"
+        "30000"
       ],
       "r1_price_returning": null,
       "r1_price_new": null,
@@ -7905,9 +8159,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "30000",
-        "30116",
-        "20140"
+        "30000"
       ],
       "r1_price_returning": null,
       "r1_price_new": null,
@@ -7936,8 +8188,7 @@
       "strict_prereqs": [],
       "recommended_prereqs": [
         "30000",
-        "35200",
-        "20170"
+        "35200"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -7966,8 +8217,7 @@
       "strict_prereqs": [],
       "recommended_prereqs": [
         "30000",
-        "35200",
-        "20170"
+        "35200"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -7996,8 +8246,7 @@
       "strict_prereqs": [],
       "recommended_prereqs": [
         "30000",
-        "35200",
-        "20170"
+        "35200"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -8026,8 +8275,7 @@
       "strict_prereqs": [],
       "recommended_prereqs": [
         "30000",
-        "35200",
-        "20170"
+        "35200"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -8055,9 +8303,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "30000",
-        "20160",
-        "30835"
+        "30000"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -8085,9 +8331,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "30000",
-        "20160",
-        "30835"
+        "30000"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -8115,9 +8359,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "30000",
-        "20160",
-        "30835"
+        "30000"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -8145,9 +8387,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "30000",
-        "20160",
-        "30835"
+        "30000"
       ],
       "r1_price_returning": 500,
       "r1_price_new": 0,
@@ -8175,9 +8415,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "30000",
-        "20160",
-        "30835"
+        "30000"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -8205,9 +8443,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "30000",
-        "20160",
-        "30835"
+        "30000"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -8235,9 +8471,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "30000",
-        "20160",
-        "30835"
+        "30000"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -8262,14 +8496,14 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "30000",
         "30130",
         "30116",
         "30118",
         "30131"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -8294,12 +8528,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "30130",
-        "30000",
-        "35200"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
+        "30000",
+        "35200",
         "35000",
         "20150"
       ],
@@ -8327,12 +8559,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "30130",
-        "30000",
-        "35200"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
+        "30000",
+        "35200",
         "35000",
         "20150"
       ],
@@ -8360,12 +8590,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "30130",
-        "30000",
-        "35200"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
+        "30000",
+        "35200",
         "35000",
         "20150"
       ],
@@ -8393,12 +8621,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "30130",
-        "30000",
-        "35200"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
+        "30000",
+        "35200",
         "35000",
         "20150"
       ],
@@ -8426,12 +8652,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "30130",
-        "30000",
-        "35200"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
+        "30000",
+        "35200",
         "35000",
         "20150"
       ],
@@ -8459,12 +8683,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "30130",
-        "30000",
-        "35200"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
+        "30000",
+        "35200",
         "35000",
         "20150"
       ],
@@ -8492,12 +8714,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "30130",
-        "30000",
-        "35200"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
+        "30000",
+        "35200",
         "35000",
         "20150"
       ],
@@ -8525,12 +8745,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "30130",
-        "30000",
-        "35200"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
+        "30000",
+        "35200",
         "35000",
         "20150"
       ],
@@ -8558,12 +8776,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "30130",
-        "30000",
-        "35200"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
+        "30000",
+        "35200",
         "35000",
         "20150"
       ],
@@ -8897,9 +9113,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "30122"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
       "bid_matched": false,
@@ -9769,7 +9983,6 @@
       "strict_prereqs": [],
       "recommended_prereqs": [
         "31001",
-        "31403",
         "31404"
       ],
       "r1_price_returning": 0,
@@ -9799,7 +10012,6 @@
       "strict_prereqs": [],
       "recommended_prereqs": [
         "31001",
-        "31403",
         "31404"
       ],
       "r1_price_returning": 0,
@@ -9829,7 +10041,6 @@
       "strict_prereqs": [],
       "recommended_prereqs": [
         "31001",
-        "31403",
         "31404"
       ],
       "r1_price_returning": 0,
@@ -9859,7 +10070,6 @@
       "strict_prereqs": [],
       "recommended_prereqs": [
         "31001",
-        "31403",
         "31404"
       ],
       "r1_price_returning": 0,
@@ -9952,10 +10162,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "31407",
-        "31404"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
@@ -10182,10 +10389,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "43100",
-        "43800"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 5389,
       "r1_price_new": 5389,
@@ -10668,10 +10872,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "33001"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -10695,10 +10899,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "33001"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
       "bid_matched": false,
@@ -10724,10 +10928,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "33001"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 3999,
       "r1_price_new": 3999,
       "bid_matched": true,
@@ -10751,10 +10955,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "33001"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 2200,
       "r1_price_new": 2200,
       "bid_matched": true,
@@ -10778,10 +10982,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "33001"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -10806,10 +11010,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "33001",
-        "33050",
-        "33040",
-        "20200"
+        "33001"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -10836,10 +11037,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "33001",
-        "33050",
-        "33040",
-        "20200"
+        "33001"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -10866,10 +11064,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "33001",
-        "33050",
-        "33040",
-        "20200"
+        "33001"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -10896,10 +11091,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "33001",
-        "33050",
-        "33040",
-        "20200"
+        "33001"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 499,
@@ -10926,10 +11118,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "33001",
-        "33050",
-        "33040",
-        "20200"
+        "33001"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -10956,10 +11145,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "33001",
-        "33050",
-        "33040",
-        "20200"
+        "33001"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -10986,10 +11172,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "33001",
-        "33050",
-        "33040",
-        "20200"
+        "33001"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -11751,10 +11934,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "33401",
-        "20232"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -11779,10 +11959,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "33401",
-        "20232"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -11807,10 +11984,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "33401",
-        "20232"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -11835,10 +12009,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "33401",
-        "20232"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 203,
       "r1_price_new": 0,
@@ -11863,10 +12034,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": true,
-      "strict_prereqs": [
-        "33401",
-        "20232"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 6555,
       "r1_price_new": 6555,
@@ -11891,10 +12059,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": true,
-      "strict_prereqs": [
-        "33401",
-        "20232"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 7492,
       "r1_price_new": 7492,
@@ -11919,10 +12084,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": true,
-      "strict_prereqs": [
-        "33401",
-        "20232"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 321,
       "r1_price_new": 321,
@@ -12059,8 +12221,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "20940",
-        "33471"
+        "20940"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 3500,
@@ -12087,8 +12248,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "20940",
-        "33471"
+        "20940"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 4507,
@@ -12115,8 +12275,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "20940",
-        "33471"
+        "20940"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 2401,
@@ -12143,8 +12302,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "20940",
-        "33471"
+        "20940"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -12171,10 +12329,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "33001"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -12201,9 +12359,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "33050",
-        "33502",
-        "20230"
+        "33050"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -12231,9 +12387,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "33050",
-        "33502",
-        "20230"
+        "33050"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -12261,9 +12415,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "33050",
-        "33502",
-        "20230"
+        "33050"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -12371,10 +12523,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33610",
-        "54300"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -12397,10 +12546,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33610",
-        "54300"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -12423,10 +12569,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33610",
-        "54300"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -12449,10 +12592,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33630",
-        "53000"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -12475,10 +12615,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33630",
-        "53000"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -12501,10 +12638,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33630",
-        "53000"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -12527,10 +12661,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33650",
-        "57000"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -12553,10 +12684,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33650",
-        "57000"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -12579,10 +12707,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33650",
-        "57000"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -12673,10 +12798,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "33914",
-        "30680"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -12723,12 +12845,11 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "33001",
-        "33101",
-        "33002",
-        "30000",
         "30100",
-        "30200"
+        "30200",
+        "33001",
+        "33002",
+        "33101"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -12753,12 +12874,11 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "33001",
-        "33101",
-        "33002",
-        "30000",
         "30100",
-        "30200"
+        "30200",
+        "33001",
+        "33002",
+        "33101"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -12789,9 +12909,7 @@
         "33101",
         "30000",
         "30100",
-        "30200",
-        "33921",
-        "40101"
+        "30200"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -12816,9 +12934,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "33921",
-        "33922",
-        "40201"
+        "33921"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -12844,9 +12960,7 @@
       "strict_prereqs": [],
       "recommended_prereqs": [
         "33921",
-        "33922",
-        "33923",
-        "40301"
+        "33922"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -12894,9 +13008,6 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "33931",
-        "30540",
-        "30100",
         "30200",
         "30300"
       ],
@@ -12945,10 +13056,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33942",
-        "38001"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -12971,10 +13079,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "33946",
-        "35101"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -13001,11 +13106,11 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "30130",
+        "34106",
         "35200",
         "35201",
-        "35902",
-        "34106",
-        "30130"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -13034,11 +13139,11 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "30130",
+        "34106",
         "35200",
         "35201",
-        "35902",
-        "34106",
-        "30130"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -13067,11 +13172,11 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "30130",
+        "34106",
         "35200",
         "35201",
-        "35902",
-        "34106",
-        "30130"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -13100,11 +13205,11 @@
       "independent_application_course": false,
       "flagship_course": true,
       "strict_prereqs": [
+        "30130",
+        "34106",
         "35200",
         "35201",
-        "35902",
-        "34106",
-        "30130"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -13133,11 +13238,11 @@
       "independent_application_course": false,
       "flagship_course": true,
       "strict_prereqs": [
+        "30130",
+        "34106",
         "35200",
         "35201",
-        "35902",
-        "34106",
-        "30130"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 2757,
@@ -13166,11 +13271,11 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "30130",
+        "34106",
         "35200",
         "35201",
-        "35902",
-        "34106",
-        "30130"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 7946,
@@ -13199,11 +13304,11 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "30130",
+        "34106",
         "35200",
         "35201",
-        "35902",
-        "34106",
-        "30130"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -13232,11 +13337,11 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "30130",
+        "34106",
         "35200",
         "35201",
-        "35902",
-        "34106",
-        "30130"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": null,
@@ -13450,10 +13555,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "34103",
-        "20330"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -13479,10 +13581,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "34103",
-        "20330"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -13508,10 +13607,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "34103",
-        "20330"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -13537,10 +13633,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "34103",
-        "20330"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -13566,10 +13659,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "34103",
-        "20330"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -13805,10 +13895,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "20355",
-        "34887"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 202,
       "r1_price_new": 0,
@@ -13833,10 +13920,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "20355",
-        "34887"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -13861,10 +13945,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "20355",
-        "34887"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 1007,
       "r1_price_new": 1007,
@@ -13889,10 +13970,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "20355",
-        "34887"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -13917,10 +13995,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "20355",
-        "34887"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
@@ -14129,10 +14204,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "34211"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -14231,12 +14306,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "34101",
-        "34219",
-        "34209"
+      "strict_prereqs": [],
+      "recommended_prereqs": [
+        "34101"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -14626,9 +14699,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "20350"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -14654,9 +14725,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "20350"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 186,
       "bid_matched": true,
@@ -14681,10 +14750,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "34709",
-        "34706"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
@@ -14734,8 +14800,6 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "34715",
-        "53455",
         "33830",
         "32002"
       ],
@@ -14842,17 +14906,14 @@
       "flagship_course": false,
       "strict_prereqs": [
         "34901",
-        "35904",
-        "31000",
+        "35904"
+      ],
+      "recommended_prereqs": [
         "31100",
         "31200",
-        "33000",
         "33100",
-        "33200",
-        "34902",
-        "35060"
+        "33200"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -14877,13 +14938,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "30100",
-        "30200",
-        "30300",
-        "34903",
-        "35070"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -14911,9 +14966,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "34903",
-        "35902",
-        "34904",
-        "35080"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -14942,9 +14995,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "34903",
-        "34904",
-        "34906",
-        "35090"
+        "34904"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -14972,9 +15023,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15005,9 +15054,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15038,9 +15085,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15071,9 +15116,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15104,9 +15147,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15137,9 +15178,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15170,9 +15209,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15203,9 +15240,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15238,9 +15273,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15271,9 +15304,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15304,9 +15335,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15337,9 +15366,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15370,9 +15397,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15403,9 +15428,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15436,9 +15459,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15471,9 +15492,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "35000",
-        "20400"
+        "41100"
       ],
       "recommended_prereqs": [
         "30000",
@@ -15502,10 +15521,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "35001",
-        "35010"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
         "30000"
       ],
@@ -15530,10 +15546,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "35001",
-        "35010"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
         "30000"
       ],
@@ -15558,12 +15571,10 @@
       "concentrations": [],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "30000",
-        "35010",
-        "35001"
+      "strict_prereqs": [],
+      "recommended_prereqs": [
+        "30000"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -15618,9 +15629,9 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "41000",
         "35000",
-        "35200"
+        "35200",
+        "41000"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -15731,12 +15742,12 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "35000",
         "41100",
         "35215"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -15763,13 +15774,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "30000",
-        "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
+      "recommended_prereqs": [
+        "30000",
+        "33001",
+        "35000"
+      ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -15796,13 +15808,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "30000",
-        "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
+      "recommended_prereqs": [
+        "30000",
+        "33001",
+        "35000"
+      ],
       "r1_price_returning": 1001,
       "r1_price_new": 1001,
       "bid_matched": true,
@@ -15829,13 +15842,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "30000",
-        "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
+      "recommended_prereqs": [
+        "30000",
+        "33001",
+        "35000"
+      ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -16160,13 +16174,12 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "41000",
         "41100",
-        "35000",
-        "34214"
+        "35000"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -16192,13 +16205,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
       "bid_matched": false,
@@ -16226,13 +16240,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
       "bid_matched": false,
@@ -16260,13 +16275,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -16292,13 +16308,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -16324,13 +16341,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -16356,13 +16374,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 1012,
       "r1_price_new": 1012,
       "bid_matched": true,
@@ -16388,13 +16407,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -16420,13 +16440,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 2504,
       "r1_price_new": 2504,
       "bid_matched": true,
@@ -16452,13 +16473,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 3033,
       "r1_price_new": 3033,
       "bid_matched": true,
@@ -16484,13 +16506,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
       "bid_matched": false,
@@ -16518,13 +16541,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 1234,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -16550,13 +16574,14 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
+        "35000"
+      ],
+      "recommended_prereqs": [
         "30000",
         "33001",
-        "35000",
         "41000",
         "41100"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -16583,10 +16608,10 @@
       "flagship_course": false,
       "strict_prereqs": [
         "35000",
+        "35010",
         "35200",
         "35901",
-        "35902",
-        "35010"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -16615,10 +16640,10 @@
       "flagship_course": true,
       "strict_prereqs": [
         "35000",
+        "35010",
         "35200",
         "35901",
-        "35902",
-        "35010"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 7103,
@@ -16647,10 +16672,10 @@
       "flagship_course": true,
       "strict_prereqs": [
         "35000",
+        "35010",
         "35200",
         "35901",
-        "35902",
-        "35010"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 5000,
@@ -16679,10 +16704,10 @@
       "flagship_course": true,
       "strict_prereqs": [
         "35000",
+        "35010",
         "35200",
         "35901",
-        "35902",
-        "35010"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 9290,
@@ -16711,10 +16736,10 @@
       "flagship_course": false,
       "strict_prereqs": [
         "35000",
+        "35010",
         "35200",
         "35901",
-        "35902",
-        "35010"
+        "35902"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -16741,11 +16766,11 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "33001",
         "35200"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 578,
       "r1_price_new": 578,
       "bid_matched": true,
@@ -16770,11 +16795,11 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "33001",
         "35200"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -16800,14 +16825,14 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "35200",
         "35201",
         "30130",
         "34101",
         "35902"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 604,
       "r1_price_new": 604,
       "bid_matched": true,
@@ -16833,14 +16858,14 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "35200",
         "35201",
         "30130",
         "34101",
         "35902"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -16902,10 +16927,7 @@
         "41000",
         "41100",
         "35000",
-        "35200",
-        "35214",
-        "35824",
-        "35224"
+        "35200"
       ],
       "r1_price_returning": 7934,
       "r1_price_new": 7934,
@@ -16938,10 +16960,7 @@
         "41000",
         "41100",
         "35000",
-        "35200",
-        "35214",
-        "35824",
-        "35224"
+        "35200"
       ],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -17120,10 +17139,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35600",
-        "55600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -17146,10 +17162,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35600",
-        "55600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -17172,10 +17185,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35600",
-        "55600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -17323,12 +17333,10 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "35916",
-        "36330",
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "42540"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -17351,10 +17359,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35930",
-        "49700"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -17377,10 +17382,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35930",
-        "49700"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -17403,10 +17405,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35931",
-        "49800"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -17429,10 +17428,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35931",
-        "49800"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -17455,10 +17451,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35932",
-        "49900"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -17481,10 +17474,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "35932",
-        "49900"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18057,8 +18047,8 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "36110",
-        "20550"
+        "20550",
+        "36110"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -18292,10 +18282,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
       "bid_matched": false,
@@ -18322,10 +18309,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
       "bid_matched": false,
@@ -18352,10 +18336,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18380,10 +18361,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18408,10 +18386,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18436,10 +18411,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18464,10 +18436,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18492,10 +18461,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18520,10 +18486,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18548,10 +18511,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 4500,
       "bid_matched": true,
@@ -18576,10 +18536,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18604,10 +18561,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18632,10 +18586,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18660,10 +18611,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18688,10 +18636,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18716,10 +18661,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37000",
-        "20600"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -18933,11 +18875,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "37103",
-        "37105",
-        "20620"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [
         "37000",
         "37100",
@@ -18970,10 +18908,7 @@
       "flagship_course": false,
       "strict_prereqs": [
         "41000",
-        "41100",
-        "37105",
-        "37103",
-        "20620"
+        "41100"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -19004,10 +18939,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "37000",
-        "37201",
-        "37200",
-        "37810"
+        "37000"
       ],
       "r1_price_returning": null,
       "r1_price_new": null,
@@ -19039,10 +18971,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "37000",
-        "37201",
-        "37200",
-        "37810"
+        "37000"
       ],
       "r1_price_returning": null,
       "r1_price_new": null,
@@ -19074,10 +19003,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "37000",
-        "37201",
-        "37200",
-        "37810"
+        "37000"
       ],
       "r1_price_returning": null,
       "r1_price_new": null,
@@ -19109,10 +19035,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "37000",
-        "37201",
-        "37200",
-        "37810"
+        "37000"
       ],
       "r1_price_returning": null,
       "r1_price_new": null,
@@ -19144,10 +19067,7 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "37000",
-        "37201",
-        "37200",
-        "37810"
+        "37000"
       ],
       "r1_price_returning": null,
       "r1_price_new": null,
@@ -19570,10 +19490,10 @@
       ],
       "independent_application_course": true,
       "flagship_course": false,
-      "strict_prereqs": [
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "37000"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
       "bid_matched": false,
@@ -19669,10 +19589,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "37904",
-        "40902"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -21482,10 +21399,7 @@
       "concentrations": [],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "38916",
-        "41175"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -21509,10 +21423,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "38917",
-        "41120"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -21536,9 +21447,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "39001"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -21563,9 +21472,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "39001"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
@@ -21592,8 +21499,8 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "42001",
-        "39001"
+        "39001",
+        "42001"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -21621,8 +21528,8 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "42001",
-        "39001"
+        "39001",
+        "42001"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -21650,8 +21557,8 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "42001",
-        "39001"
+        "39001",
+        "42001"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 1,
@@ -21679,8 +21586,8 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [
-        "42001",
-        "39001"
+        "39001",
+        "42001"
       ],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
@@ -21707,10 +21614,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "40000",
-        "20500"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -21735,10 +21639,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "40000",
-        "20500"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 11,
       "r1_price_new": 11,
       "bid_matched": true,
@@ -21763,10 +21664,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "40000",
-        "20500"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -21791,10 +21689,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "40000",
-        "20500"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -21819,10 +21714,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "40000",
-        "20500"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
       "bid_matched": false,
@@ -21849,10 +21741,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "40000",
-        "20500"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": null,
       "r1_price_new": null,
       "bid_matched": false,
@@ -21879,10 +21768,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "40000",
-        "20500"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -21907,10 +21793,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "40000",
-        "20500"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -21935,10 +21818,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "40000",
-        "20500"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -22196,13 +22076,10 @@
       ],
       "independent_application_course": true,
       "flagship_course": false,
-      "strict_prereqs": [
-        "40206",
-        "40205",
-        "40201",
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "40721"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -22228,13 +22105,10 @@
       ],
       "independent_application_course": true,
       "flagship_course": false,
-      "strict_prereqs": [
-        "40206",
-        "40205",
-        "40201",
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "40721"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -22263,7 +22137,6 @@
       "strict_prereqs": [],
       "recommended_prereqs": [
         "40206",
-        "40721",
         "41201",
         "41100",
         "41204",
@@ -23062,10 +22935,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "41600",
-        "51400"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -23088,10 +22958,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "41600",
-        "51400"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -23114,10 +22981,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "41600",
-        "51400"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -23143,7 +23007,6 @@
       "flagship_course": false,
       "strict_prereqs": [],
       "recommended_prereqs": [
-        "41901",
         "32400"
       ],
       "r1_price_returning": 0,
@@ -23227,7 +23090,6 @@
       "strict_prereqs": [],
       "recommended_prereqs": [
         "41901",
-        "41910",
         "33500"
       ],
       "r1_price_returning": 1,
@@ -23274,11 +23136,10 @@
       "concentrations": [],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "41919",
+      "strict_prereqs": [],
+      "recommended_prereqs": [
         "32419"
       ],
-      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -23723,9 +23584,7 @@
       "independent_application_course": false,
       "flagship_course": false,
       "strict_prereqs": [],
-      "recommended_prereqs": [
-        "42005"
-      ],
+      "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,
       "bid_matched": true,
@@ -24224,11 +24083,7 @@
       ],
       "independent_application_course": false,
       "flagship_course": false,
-      "strict_prereqs": [
-        "42136",
-        "42125",
-        "20930"
-      ],
+      "strict_prereqs": [],
       "recommended_prereqs": [],
       "r1_price_returning": 0,
       "r1_price_new": 0,

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {
   bundle, usePlan, placementsBySlot, sectionById, sectionsByCourse, courseByNum,
-  priceFor, bidByQuarter, isFlagship, missingStrictPrereqs,
+  priceFor, bidByQuarter, isFlagship, missingStrictGroups,
 } from "../store";
 import { TERMS, YEARS, slotId, Section, Term, Year, Course } from "../types";
 import { parseSchedule, overlaps } from "../schedule";
@@ -162,8 +162,8 @@ function PlacedCard({
   const price = priceFor(section, slot) ?? 0;
   const bidLow = !app && bid != null && bid < price;
   const sched = parseSchedule(section.time);
-  const hasPrereqs = (courseByNum.get(section.course_number)?.strict_prereqs.length ?? 0) > 0;
-  const missing = hasPrereqs ? missingStrictPrereqs(section.course_number, slot, placements) : [];
+  const hasPrereqs = (courseByNum.get(section.course_number)?.strict_prereq_groups.length ?? 0) > 0;
+  const missing = hasPrereqs ? missingStrictGroups(section.course_number, slot, placements) : [];
 
   const stop = (e: React.MouseEvent) => e.stopPropagation();
 
@@ -198,7 +198,7 @@ function PlacedCard({
           <IconDot
             symbol="P"
             tone={missing.length ? "danger" : "warn"}
-            title={missing.length ? `Missing prerequisite(s): ${missing.join(", ")}` : "Has prerequisites — click for details"}
+            title={missing.length ? `Missing prerequisite(s): ${missing.map((g) => g.join(" or ")).join("; ")}` : "Has prerequisites — click for details"}
             onClick={(e) => { stop(e); onOpenPrereq(section.course_number); }}
           />
         )}
@@ -238,7 +238,12 @@ function PrereqPopup({ course_number, slot, onClose }: { course_number: string; 
   const placements = usePlan((s) => s.placements);
   const co = courseByNum.get(course_number);
   if (!co) return null;
-  const missing = new Set(missingStrictPrereqs(course_number, slot, placements));
+  const missing = missingStrictGroups(course_number, slot, placements);
+  const missingKeys = new Set(missing.map((g) => g.join("+")));
+  const label = (n: string) => {
+    const nm = courseByNum.get(n)?.course_name;
+    return nm ? `${n} ${titleCase(nm).slice(0, 20)}` : n;
+  };
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4" onClick={onClose}>
       <div className="w-full max-w-md rounded-2xl border border-line bg-surface p-5 shadow-2xl" onClick={(e) => e.stopPropagation()}>
@@ -246,22 +251,19 @@ function PrereqPopup({ course_number, slot, onClose }: { course_number: string; 
           <h3 className="text-sm font-semibold text-txt">Prerequisites — {titleCase(co.course_name)}</h3>
           <button onClick={onClose} className="text-muted hover:text-txt">✕</button>
         </div>
-        <p className="mb-3 text-[11px] text-muted">Strict prereqs must be taken in an <em>earlier</em> quarter. Missing ones are flagged red.</p>
-        {co.strict_prereqs.length > 0 ? (
-          <div className="mb-3">
-            <div className="mb-1 text-xs font-semibold text-maroon-light">Strict</div>
-            <div className="flex flex-wrap gap-1">
-              {co.strict_prereqs.map((n) => {
-                const m = missing.has(n);
-                const name = courseByNum.get(n)?.course_name;
-                return (
-                  <span key={n} title={name ? titleCase(name) : undefined}
-                    className={`rounded-full px-2 py-0.5 text-[11px] ring-1 ring-inset ${m ? "bg-danger/20 text-danger ring-danger/40" : "bg-good/15 text-good ring-good/30"}`}>
-                    {m ? "✗" : "✓"} {n}{name ? ` · ${titleCase(name).slice(0, 22)}` : ""}
-                  </span>
-                );
-              })}
-            </div>
+        <p className="mb-3 text-[11px] text-muted">Strict prereqs must be taken in an <em>earlier</em> quarter. A group joined by “or” needs just one. Unmet groups are red.</p>
+        {co.strict_prereq_groups.length > 0 ? (
+          <div className="mb-3 space-y-1.5">
+            <div className="text-xs font-semibold text-maroon-light">Strict</div>
+            {co.strict_prereq_groups.map((g, i) => {
+              const unmet = missingKeys.has(g.join("+"));
+              return (
+                <div key={i} className={`rounded-lg px-2 py-1.5 text-[11px] ring-1 ring-inset ${unmet ? "bg-danger/15 text-danger ring-danger/40" : "bg-good/10 text-good ring-good/30"}`}>
+                  {unmet ? "✗ " : "✓ "}
+                  {g.map(label).join("  or  ")}
+                </div>
+              );
+            })}
           </div>
         ) : <p className="text-xs text-muted">No strict prerequisites.</p>}
         {co.recommended_prereqs.length > 0 && (

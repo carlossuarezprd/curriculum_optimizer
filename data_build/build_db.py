@@ -24,11 +24,17 @@ from data_build.parse_concentrations import parse_concentrations
 from data_build.flagship_seed import FLAGSHIP_SEED, APPLICATION_SEED_NAMES
 
 OUT = Path("build")
-RECOMMEND_RE = re.compile(r"recommend|would benefit|helpful|familiar|background|"
-                          r"exposure|suggested|prior knowledge", re.I)
-STRICT_RE = re.compile(r"\bstrict\b|\(strict\)|is required|are required|"
-                       r"must have (?:taken|completed)|prerequisite is", re.I)
-NOTCONC_RE = re.compile(r"cannot enroll.*?if.*?taken previously", re.I)
+# A strict prereq is ONLY one explicitly notated as such, per prereq_explanation
+# and the catalog grammar:
+#   "<clause>: strict"  | "<course> (strict)"  | "<clause> is/are (a) strict ..."
+# The notation attaches to the clause on its LEFT. Lists joined by "or"/"one of"
+# are OR-groups (any one satisfies). Everything unnotated is recommended.
+STRICT_COLON = re.compile(r"([^.;]*?):\s*\(?strict\b", re.I)
+STRICT_PAREN = re.compile(r"([^.;]*?)\(strict\)", re.I)
+STRICT_PHRASE = re.compile(r"([^.;]*?)\b(?:is|are)\s+(?:an?\s+)?strict\b", re.I)
+OR_RE = re.compile(r"\b(?:or|either|one of|at least one)\b", re.I)
+NOTCONC_RE = re.compile(r"cannot\s+(?:enroll|take|bid)[^.;]*?(?:taken previously|previously taken|if\b)", re.I)
+ALL_RE = re.compile(r"\b(?:all|both)\b.*\bstrict\b", re.I)
 
 
 def _norm(s: str) -> str:
@@ -37,42 +43,74 @@ def _norm(s: str) -> str:
 
 # ---------- prerequisite classification ----------
 
-def classify_prereqs(text: str) -> dict:
-    """Split a prereq blob into strict / recommended / not-concurrent course
-    numbers + raw text, per prereq_explanation. Heuristic; low-confidence cases
-    are flagged by the caller when nothing is classified but numbers exist."""
-    out = {"strict": [], "recommended": [], "not_concurrent": [], "raw": text.strip()}
-    if not text or re.match(r"\s*none\b", text, re.I) and not re.search(r"\d{5}", text):
+def classify_prereqs(text: str, self_num: str | None = None) -> dict:
+    """Split a prereq blob into strict OR-groups / recommended / not-concurrent.
+
+    Returns strict_groups: list of OR-groups (each a list of course numbers; the
+    requirement is satisfied if ANY member is taken earlier). A plain AND of two
+    strict courses is two singleton groups. strict is the flat union (display)."""
+    out = {"strict_groups": [], "strict": [], "recommended": [],
+           "not_concurrent": [], "raw": (text or "").strip()}
+    if not text:
         return out
-    sentences = re.split(r"(?<=[.;])\s+|\n", text)
-    has_strict_word = bool(re.search(r"\bstrict\b", text, re.I))
-    for s in sentences:
-        nums = _expand_numbers(s)
+    flat = re.sub(r"\s+", " ", text).strip()
+
+    def booth_nums(clause: str) -> list[str]:
+        nums: list[str] = []
+        for m in re.finditer(r"(ECON|LAWS|Econ)?\s*\b(\d{5})\b", clause):
+            if m.group(1):
+                continue  # non-Booth (ECON/LAWS) — can't be planned, skip gating
+            n = m.group(2)
+            if n != self_num and n not in nums:
+                nums.append(n)
+        return nums
+
+    def add_clause(clause: str, paren: bool):
+        if NOTCONC_RE.search(clause):
+            out["not_concurrent"].extend(booth_nums(clause))
+            return
+        nums = booth_nums(clause)
         if not nums:
-            continue
-        if NOTCONC_RE.search(s):
-            out["not_concurrent"].extend(nums)
-        elif STRICT_RE.search(s):
-            out["strict"].extend(nums)
-        elif RECOMMEND_RE.search(s):
-            out["recommended"].extend(nums)
-        elif has_strict_word:
-            # course listed alongside a strict requirement elsewhere → treat strict
-            out["strict"].extend(nums)
+            return  # population/permission restriction, no course
+        if OR_RE.search(clause) and not ALL_RE.search(clause):
+            out["strict_groups"].append(nums)            # one OR-group
+        elif paren and not ALL_RE.search(clause):
+            out["strict_groups"].append([nums[-1]])      # nearest course to the left
         else:
-            out["recommended"].extend(nums)  # unnotated → recommended
-    for k in ("strict", "recommended", "not_concurrent"):
-        out[k] = list(dict.fromkeys(out[k]))  # dedup, keep order
-    # a course can't be both strict and recommended; strict wins
-    out["recommended"] = [n for n in out["recommended"] if n not in out["strict"]]
+            for n in nums:                               # AND → singleton groups
+                out["strict_groups"].append([n])
+
+    for m in STRICT_COLON.finditer(flat):
+        add_clause(m.group(1), paren=False)
+    for m in STRICT_PAREN.finditer(flat):
+        add_clause(m.group(1), paren=True)
+    for m in STRICT_PHRASE.finditer(flat):
+        add_clause(m.group(1), paren=False)
+
+    # anti-requisites anywhere ("cannot enroll ... if X taken previously")
+    for sent in re.split(r"(?<=[.;])\s+", flat):
+        if NOTCONC_RE.search(sent):
+            out["not_concurrent"].extend(booth_nums(sent))
+
+    # dedup groups
+    seen = set()
+    groups = []
+    for g in out["strict_groups"]:
+        key = tuple(sorted(g))
+        if g and key not in seen:
+            seen.add(key)
+            groups.append(g)
+    out["strict_groups"] = groups
+    strict_union = sorted({n for g in groups for n in g})
+    out["strict"] = strict_union
+    out["not_concurrent"] = sorted(set(out["not_concurrent"]))
+
+    # everything else mentioned (and not strict/anti-req) → recommended
+    strict_set = set(strict_union)
+    nc_set = set(out["not_concurrent"])
+    rec = [n for n in booth_nums(flat) if n not in strict_set and n not in nc_set]
+    out["recommended"] = list(dict.fromkeys(rec))
     return out
-
-
-def _expand_numbers(s: str) -> list[str]:
-    nums: list[str] = []
-    for m in re.finditer(r"\b(\d{5})\b", s):
-        nums.append(m.group(1))
-    return nums
 
 
 # ---------- core area / concentration membership ----------
@@ -147,7 +185,7 @@ def build():
         name = co.course_name or bid_title.get(num, "")
         if not co.course_name:
             report.append(f"- name from bid fallback: {num} → {name!r}")
-        pq = classify_prereqs(co.prereq_text)
+        pq = classify_prereqs(co.prereq_text, num)
         if co.prereq_text and not (pq["strict"] or pq["recommended"] or pq["not_concurrent"]) \
                 and re.search(r"\d{5}", co.prereq_text):
             prereq_low_conf.append(num)
@@ -162,6 +200,7 @@ def build():
             "concentrations": conc_of.get(num, []),
             "independent_application_course": app,
             "strict_prereqs": pq["strict"],
+            "strict_prereq_groups": pq["strict_groups"],
             "recommended_prereqs": pq["recommended"],
             "not_concurrent": pq["not_concurrent"],
             "prereq_text": pq["raw"],

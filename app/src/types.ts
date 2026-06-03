@@ -46,6 +46,7 @@ export interface Course {
   concentrations: string[];
   independent_application_course: boolean;
   strict_prereqs: string[];
+  strict_prereq_groups: string[][];
   recommended_prereqs: string[];
   not_concurrent: string[];
   prereq_text: string;

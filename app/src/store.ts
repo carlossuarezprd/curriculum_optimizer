@@ -124,10 +124,11 @@ export function flagshipPairs(overrides: Record<string, boolean>): { course_numb
   return out.sort((a, b) => a.course_name.localeCompare(b.course_name));
 }
 
-// strict prereqs of a course not satisfied by an earlier quarter in the plan
-export function missingStrictPrereqs(course_number: string, slot: string, placements: Placement[]): string[] {
+// strict-prereq OR-groups not satisfied by an earlier quarter in the plan.
+// A group is satisfied if ANY of its alternative courses is taken earlier.
+export function missingStrictGroups(course_number: string, slot: string, placements: Placement[]): string[][] {
   const co = courseByNum.get(course_number);
-  if (!co || co.strict_prereqs.length === 0) return [];
+  if (!co || !co.strict_prereq_groups?.length) return [];
   const slotIdx = SLOT_ORDER.indexOf(slot);
   const earlier = new Set<string>();
   for (const p of placements) {
@@ -136,7 +137,7 @@ export function missingStrictPrereqs(course_number: string, slot: string, placem
       if (sec) earlier.add(sec.course_number);
     }
   }
-  return co.strict_prereqs.filter((n) => !earlier.has(n));
+  return co.strict_prereq_groups.filter((g) => !g.some((n) => earlier.has(n)));
 }
 
 // ---------- derived helpers (pure) ----------

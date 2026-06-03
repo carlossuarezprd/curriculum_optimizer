@@ -26,7 +26,7 @@
 
 ## Flagged TODOs
 
-- Prereq text has course numbers but none classified (low confidence): none
+- Prereq text has course numbers but none classified (low confidence): ['33610', '33630', '33650', '33914', '33930', '33942', '33946', '34903', '35600', '35930', '35931', '35932', '37904', '38916', '38917', '39001', '41600']
 
 ## Known source discrepancies (surfaced, not patched)
 
