@@ -13,6 +13,11 @@ const DAY_LABEL: Record<string, string> = {
 };
 
 function parseDays(s: string): string[] {
+  // normalize full weekday names (bid format: "Wednesday, 08:30 am - 11:30 am")
+  s = s.toUpperCase()
+    .replace(/MONDAY/g, " M ").replace(/TUESDAY/g, " T ").replace(/WEDNESDAY/g, " W ")
+    .replace(/THURSDAY/g, " TH ").replace(/FRIDAY/g, " F ")
+    .replace(/SATURDAY/g, " SA ").replace(/SUNDAY/g, " SU ");
   const out: string[] = [];
   const re = /TH|TU|SA|SU|M|W|F|T|S/g;
   let m: RegExpExecArray | null;

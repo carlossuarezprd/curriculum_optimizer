@@ -161,6 +161,14 @@ export function priceFor(section: Section, slot: string): number | null {
   return section.r1_price_returning ?? section.r1_price_new;
 }
 
+// A section is "unavailable" in a slot when it closed in round 1 with no clearing
+// price for that population (CLO @ 0). New students (Year 1) use the new-student
+// column; returning students (Year 2) use Phase 1.
+export function isUnavailable(section: Section, slot: string): boolean {
+  if (section.independent_application_course) return false;
+  return slot.startsWith("Y1") ? section.unavailable_new : section.unavailable_returning;
+}
+
 export interface QuarterBid {
   available: number;
   spent: number;
@@ -189,8 +197,7 @@ export function bidByQuarter(
     for (const p of ps) {
       const sec = sectionById.get(p.section_id);
       if (!sec) continue;
-      const price = priceFor(sec, slot) ?? 0;
-      spent += price;
+      if (!isUnavailable(sec, slot)) spent += priceFor(sec, slot) ?? 0; // unknown cost if unavailable
       bidSum += p.actual_bid ?? 0;
     }
     const remaining = available - spent;

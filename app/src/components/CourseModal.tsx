@@ -82,6 +82,7 @@ function SectionRow({ section, term }: { section: Section; term: Term }) {
       <div className="text-right text-xs">
         <div className="text-muted">est. cost</div>
         <div className="font-semibold tabular-nums text-gold">{price != null ? `${price.toLocaleString()} pts` : "—"}</div>
+        {section.unavailable_new && <div className="text-[10px] text-danger" title="Closed in round 1 for new students (CLO)">Y1: unavailable</div>}
       </div>
       <button
         onClick={() => toggleFlag(section.course_number, section.professor)}

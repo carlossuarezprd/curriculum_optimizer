@@ -74,6 +74,8 @@ export interface Section {
   recommended_prereqs: string[];
   r1_price_returning: number | null;
   r1_price_new: number | null;
+  unavailable_returning: boolean;
+  unavailable_new: boolean;
   bid_matched: boolean;
   flags: string[];
 }

@@ -214,8 +214,9 @@ def build():
             b = bid_by_key.get(key)
             matched_bid_keys.add(key)
             prof = (b.instructor if b else None) or (co.professors[0] if len(co.professors) == 1 else None)
+            time = s.time or (b.day_time if b else None)   # fall back to the bid day/time
             section_rows.append(_section_row(num, name, co.units, _sid(s.section_code, s.quarter, s.year),
-                                              s.section_code, s.quarter, s.year, prof, s.time, s.location,
+                                              s.section_code, s.quarter, s.year, prof, time, s.location,
                                               s.fmt, b, app,
                                               section_is_flagship(num, prof),
                                               area_of.get(num, []), conc_of.get(num, []),
@@ -314,6 +315,8 @@ def _section_row(num, name, units, section_id, code, quarter, year, prof, time, 
         flags.append("professor unknown")
     if extra_flag:
         flags.append(extra_flag)
+    unavailable_returning = bool(b.unavailable_returning) if b else False
+    unavailable_new = bool(b.unavailable_new) if b else False
     return {
         "section_id": section_id,
         "course_number": num,
@@ -334,6 +337,8 @@ def _section_row(num, name, units, section_id, code, quarter, year, prof, time, 
         "recommended_prereqs": pq["recommended"],
         "r1_price_returning": b.r1_price_returning if b else None,
         "r1_price_new": b.r1_price_new if b else None,
+        "unavailable_returning": unavailable_returning,
+        "unavailable_new": unavailable_new,
         "bid_matched": bid_matched,
         "flags": flags,
     }

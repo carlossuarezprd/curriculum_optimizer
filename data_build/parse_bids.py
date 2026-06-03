@@ -34,6 +34,10 @@ class Bid:
     day_time: str
     r1_price_returning: int | None
     r1_price_new: int | None
+    # "CLO" (closed) in the seats column with no clearing price ⇒ the course filled
+    # before that population could bid in round 1 → cost is unavailable, not 0.
+    unavailable_returning: bool
+    unavailable_new: bool
 
 
 def _price(val: str) -> int | None:
@@ -55,9 +59,20 @@ def parse_bids(files: dict[str, str] = BID_FILES) -> list[Bid]:
                 phase1 = _price(r.get("Phase 1 Price"))
                 if quarter == "Autumn":
                     new = _price(r.get("Phase 1 New Students Price"))
+                    new_seats = r.get("Seats Available after Phase 1 New Students")
+                    new_price_for_avail = new
                 else:
-                    # Winter/Spring: new-student price == Phase 1 Price.
+                    # Winter/Spring: new-student price == Phase 1 Price (per brief),
+                    # but availability for new students comes from the New Students column.
                     new = phase1
+                    new_seats = r.get("Seats Available after New Students")
+                    new_price_for_avail = _price(r.get("New Students Price"))
+
+                def _clo(v: str | None) -> bool:
+                    return (v or "").strip().upper() == "CLO"
+
+                unavailable_returning = _clo(r.get("Seats Available after Phase 1")) and phase1 in (None, 0)
+                unavailable_new = _clo(new_seats) and new_price_for_avail in (None, 0)
                 out.append(Bid(
                     course_number=r["Course"].split("-")[0],
                     section_code=r["Course"],
@@ -68,6 +83,8 @@ def parse_bids(files: dict[str, str] = BID_FILES) -> list[Bid]:
                     day_time=r.get("Day and Time", "").strip(),
                     r1_price_returning=phase1,
                     r1_price_new=new,
+                    unavailable_returning=unavailable_returning,
+                    unavailable_new=unavailable_new,
                 ))
     return out
 

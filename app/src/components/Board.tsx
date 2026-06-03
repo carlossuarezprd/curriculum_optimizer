@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {
   bundle, usePlan, placementsBySlot, sectionById, sectionsByCourse, courseByNum,
-  priceFor, bidByQuarter, isFlagship, missingStrictGroups,
+  priceFor, isUnavailable, bidByQuarter, isFlagship, missingStrictGroups,
 } from "../store";
 import { TERMS, YEARS, slotId, Section, Term, Year, Course } from "../types";
 import { parseSchedule, overlaps } from "../schedule";
@@ -160,7 +160,8 @@ function PlacedCard({
   const flag = isFlagship(section.course_number, section.professor, overrides);
   const app = section.independent_application_course;
   const price = priceFor(section, slot) ?? 0;
-  const bidLow = !app && bid != null && bid < price;
+  const unavailable = isUnavailable(section, slot);
+  const bidLow = !app && !unavailable && bid != null && bid < price;
   const sched = parseSchedule(section.time);
   const hasPrereqs = (courseByNum.get(section.course_number)?.strict_prereq_groups.length ?? 0) > 0;
   const missing = hasPrereqs ? missingStrictGroups(section.course_number, slot, placements) : [];
@@ -209,7 +210,18 @@ function PlacedCard({
         {app && <Badge tone="blue">by application</Badge>}
       </div>
 
-      {!app && (
+      {!app && unavailable && (
+        <div className="mt-1.5 flex items-center justify-between border-t border-line pt-1.5" onClick={stop}>
+          <span className="text-[10px] text-muted">Round-1 cost</span>
+          <span className="flex items-center gap-1 font-semibold text-danger">
+            Unavailable
+            <IconDot symbol="!" tone="danger"
+              title={`Closed (CLO) in round 1 with no clearing price — a ${slot.startsWith("Y1") ? "first-year / new" : "second-year"} student couldn't bid this. True cost unknown.`}
+              onClick={stop} />
+          </span>
+        </div>
+      )}
+      {!app && !unavailable && (
         <div className="mt-1.5 space-y-1 border-t border-line pt-1.5">
           <div className="flex items-center justify-between">
             <span className="text-[10px] text-muted">Est. cost</span>

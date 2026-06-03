@@ -72,6 +72,51 @@ def load_text(pdf_path: str = CATALOG_PDF) -> str:
     return txt.replace(PAGE_HEADER, "")
 
 
+# The catalog is two-column: content/description on the left (x0 ~42-373) and the
+# SCHEDULE on the right (x0 ~410+). Default text extraction interleaves them, which
+# truncates long descriptions. Reading the LEFT column alone, top-to-bottom, yields
+# contiguous descriptions. We use this only for descriptions; sections still come
+# from the section-code keying on the full text.
+COL_SPLIT = 395
+
+def _columns_text(pdf_path: str = CATALOG_PDF) -> str:
+    doc = fitz.open(pdf_path)
+    parts = []
+    for page in doc:
+        blocks = [b for b in page.get_text("blocks") if b[0] < COL_SPLIT]
+        blocks.sort(key=lambda b: (round(b[1]), b[0]))
+        parts.append("\n".join(b[4] for b in blocks))
+    return "\n".join(parts).replace(PAGE_HEADER, "")
+
+
+def parse_descriptions(pdf_path: str = CATALOG_PDF) -> dict[str, str]:
+    """course_number -> full description, from the left-column text (first block
+    per course). Avoids the schedule-interleaving that truncated descriptions."""
+    txt = _columns_text(pdf_path)
+    toks = list(HEADER_TOKEN.finditer(txt))
+    out: dict[str, str] = {}
+    for i, m in enumerate(toks):
+        num = m.group("num")
+        if num in out:
+            continue
+        body = txt[m.end():toks[i + 1].start() if i + 1 < len(toks) else len(txt)]
+        ci = body.find("CONTENT")
+        if ci < 0:
+            continue
+        after = body[ci + len("CONTENT"):]
+        end = len(after)
+        for h in ("PREREQUISITES", "MATERIALS", "GRADES", "RESTRICTIONS",
+                  "SCHEDULE", "SYLLABUS", "CONTENT"):
+            p = after.find("\n" + h)
+            if 0 <= p < end:
+                end = p
+        desc = re.sub(r"[ \t]+", " ", after[:end]).strip()
+        desc = re.sub(r"\n{3,}", "\n\n", desc)
+        if len(desc) > 40:
+            out[num] = desc
+    return out
+
+
 # ---------- Pass A: headers -> names / units / professors ----------
 
 def parse_headers(txt: str) -> dict[str, dict]:
@@ -248,6 +293,12 @@ def parse_catalog(pdf_path: str = CATALOG_PDF) -> dict[str, Course]:
         c.course_name = h["name"]
         c.units = h["units"]
         c.professors = h["professors"]
+
+    # Prefer the column-aware (untruncated) descriptions; keep the old one as fallback.
+    clean_desc = parse_descriptions(pdf_path)
+    for num, c in courses.items():
+        if clean_desc.get(num):
+            c.description = clean_desc[num]
 
     for num, c in courses.items():
         if not c.course_name:
