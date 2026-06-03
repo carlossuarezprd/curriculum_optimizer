@@ -8,7 +8,7 @@
 
 ## Summary
 
-- Courses: **237**  |  Sections: **469**
+- Courses: **237**  |  Sections: **641**
 - Core areas: 11 (3 foundations + 8 functions, 7 required)
 - Concentrations: 16 (derived from source)
 - Flagship (course,professor) pairs resolved: 15
@@ -18,7 +18,11 @@
 ## Catalog ↔ bid reconciliation
 
 - Bid courses not found in catalog: none
-- Sections with historical price data: 397
+- Distinct bid sections (code+quarter): 526
+- **Bid sections NOT captured in the DB: none — every bid section is present ✓**
+- Bid-only sections added (in bids but absent from the catalog PDF): none
+- Catalog sections matched to a bid price: 526
+- Sections with a numeric clearing price: 526
 
 ## Flagged TODOs
 

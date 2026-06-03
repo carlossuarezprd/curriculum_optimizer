@@ -149,12 +149,15 @@ def parse_content_units(txt: str) -> dict[str, Course]:
             c.description = desc.strip()
             c.prereq_text = pq.strip()
         sched_start = unit.find("SCHEDULE")
-        # A course's sections repeat across its per-professor blocks; dedup by code.
-        seen = {s.section_code for s in c.sections}
+        # A section is identified by (code, quarter, year): the SAME section code
+        # is reused across quarters (e.g. 43120-01 runs Autumn AND Winter), so we
+        # must NOT dedup on code alone.
+        seen = {(s.section_code, s.quarter, s.year) for s in c.sections}
         for s in _parse_sections(unit[sched_start:] if sched_start >= 0 else unit):
-            if s.section_code not in seen:
+            key = (s.section_code, s.quarter, s.year)
+            if key not in seen:
                 c.sections.append(s)
-                seen.add(s.section_code)
+                seen.add(key)
     return courses
 
 

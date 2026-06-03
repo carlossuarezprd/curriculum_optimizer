@@ -1,4 +1,4 @@
-import { bundle, usePlan, placementsBySlot, sectionByCode, priceFor, bidByQuarter } from "../store";
+import { bundle, usePlan, placementsBySlot, sectionById, priceFor, bidByQuarter } from "../store";
 import { TERMS, YEARS, slotId, Section } from "../types";
 import { Badge, Flag } from "./Badges";
 import { titleCase } from "./Pool";
@@ -34,9 +34,9 @@ export function Board() {
                   </p>
                 )}
                 {ps.map((p) => {
-                  const sec = sectionByCode.get(p.section_code);
+                  const sec = sectionById.get(p.section_id);
                   if (!sec) return null;
-                  return <PlacedCard key={p.section_code} slot={slot} section={sec} bid={p.actual_bid} />;
+                  return <PlacedCard key={p.section_id} slot={slot} section={sec} bid={p.actual_bid} />;
                 })}
               </div>
 
@@ -78,7 +78,7 @@ function PlacedCard({ slot, section, bid }: { slot: string; section: Section; bi
           <div className="text-[10px] text-ink-muted">{section.section_code} · {section.professor ?? "TBD"}</div>
         </div>
         <button
-          onClick={() => remove(slot, section.section_code)}
+          onClick={() => remove(slot, section.section_id)}
           className="shrink-0 rounded px-1 text-ink-muted opacity-0 transition group-hover:opacity-100 hover:text-maroon"
           title="Remove"
         >✕</button>
@@ -99,7 +99,7 @@ function PlacedCard({ slot, section, bid }: { slot: string; section: Section; bi
             type="number"
             value={bid ?? ""}
             placeholder={String(price)}
-            onChange={(e) => setBid(slot, section.section_code, e.target.value === "" ? null : Number(e.target.value))}
+            onChange={(e) => setBid(slot, section.section_id, e.target.value === "" ? null : Number(e.target.value))}
             className="w-20 rounded border border-gray-300 px-1.5 py-0.5 text-[11px] tabular-nums"
           />
           {bidLow && <Flag label={`Bid below estimated cost (${price.toLocaleString()})`} />}

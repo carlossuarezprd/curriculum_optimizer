@@ -1,5 +1,5 @@
 course_number,course_name,units,core_area,concentrations,application,strict_prereqs,recommended_prereqs,not_concurrent,n_sections,description
-30000,FINANCIAL ACCOUNTING,100,Financial Accounting,Accounting,,,,30000 20100,11,"This course provides an introduction to financial statements and the financial
+30000,FINANCIAL ACCOUNTING,100,Financial Accounting,Accounting,,,,30000 20100,18,"This course provides an introduction to financial statements and the financial
 reporting process from a user's perspective. The focus of the course is on
 fundamental accounting concepts and principles. Students learn how the
 economic transactions of a firm are reported in the financial statements and
@@ -11,7 +11,7 @@ accounting concepts and practice. A number of cases involving corporate
 financial statements are used to illustrate accounting concepts and to explore
 disclosure strategies of companies. Students are expected to complete
 assigned problems, readings, and cases in preparation for each class."
-30005,INTERNAL INFORMATION FOR STRATEGIC DECISIONS,100,Decisions,Accounting,,,30000 33001 41000 41100 20101 30001,,5,"SCHEDULE
+30005,INTERNAL INFORMATION FOR STRATEGIC DECISIONS,100,Decisions,Accounting,,,30000 33001 41000 41100 20101 30001,,7,"SCHEDULE
 
 INTERNAL INFORMATION FOR STRATEGIC DECISIONS (30005) - HANNA, J.>>
 We develop your ability to analyze the economic costs of important
@@ -35,7 +35,7 @@ which financial statements are produced. It will benefit students that want to
 become bankers, investors, analysts, or any other job that requires more than
 a superficial understanding of financial reporting. The course is also a good
 replacement for B30000 for MBA students that have already taken an"
-30118,TAXES AND BUSINESS STRATEGY,100,,Accounting; Entrepreneurship,,,30000 35200 20170,,3,"This course provides students with a framework for thinking about tax
+30118,TAXES AND BUSINESS STRATEGY,100,,Accounting; Entrepreneurship,,,30000 35200 20170,,4,"This course provides students with a framework for thinking about tax
 planning. This framework has two principal advantages. First, it is designed to
 have value long after the recent and next tax law change. Second, the
 framework is portable, in that it can be applied to any set of tax laws - those of
@@ -56,7 +56,7 @@ Topics include the following: tax planning for mergers, acquisitions, and
 divestitures; taxation of structures for new businesses (e.g., C Corps, and LLCs);
 tax planning for financing transactions, including cross-border financing,
 executive compensation (e.g., incentive stock options); and others."
-30121,ACCOUNTING FOR ENTREPRENEURSHIP: FROM START-UP THROUGH IPO,100,,Accounting; Entrepreneurship,,,30000 20160 30835,,4,"This course develops and illustrates a set of tools needed to provide
+30121,ACCOUNTING FOR ENTREPRENEURSHIP: FROM START-UP THROUGH IPO,100,,Accounting; Entrepreneurship,,,30000 20160 30835,,7,"This course develops and illustrates a set of tools needed to provide
 accounting and related functions for private, entrepreneurial firms. The class
 follows the life-cycle of a business that originates as a start-up and will cover
 the accounting-related financial metrics, and the managerial, financial and tax
@@ -93,7 +93,7 @@ investments.
 Main topics to be covered include: (1) Financial Reporting and Tax implications
 of influence and control situations; (2) Financial reporting and Tax Implications
 of M&A deals; (3) Financial reporting and tax implications for restructuring via"
-30130,FINANCIAL STATEMENT ANALYSIS,100,Financial Accounting,Accounting; Finance,,30130 30000 35200,35000 20150,,5,"Hello!  I’m delighted to teach you Financial Statement Analysis & Valuation (=
+30130,FINANCIAL STATEMENT ANALYSIS,100,Financial Accounting,Accounting; Finance,,30130 30000 35200,35000 20150,,9,"Hello!  I’m delighted to teach you Financial Statement Analysis & Valuation (=
 FSAV) because I believe that strong FSAV skills will help you better understand
 firms’ financial statements, disclosures, business strategies/decisions, and
 equity valuations.  FSAV is especially designed for students who are seeking an
@@ -128,7 +128,7 @@ proximity to financial distress.
 [6]   Sensibly Forecast Full Sets of Financial Statements.  Learn how to sensibly
 construct full sets of forecasted financial statements in order to arrive at
 economically well-founded quantitative answers to financing, investing or"
-30131,ADVANCED FINANCIAL ANALYSIS AND VALUATION FOR GLOBAL FIRMS,100,Financial Accounting,Accounting; Finance; International Business,,,,,4,"The course covers advanced financial analysis and valuation for global firms. It
+30131,ADVANCED FINANCIAL ANALYSIS AND VALUATION FOR GLOBAL FIRMS,100,Financial Accounting,Accounting; Finance; International Business,,,,,5,"The course covers advanced financial analysis and valuation for global firms. It
 is designed for students that already have a basic familiarity with corporate
 valuation and DCF analysis (e.g., from corporate finance class or a prior job) as
 well as solid accounting knowledge. We cover financial analysis of different
@@ -155,7 +155,7 @@ each one fits into the big picture of “AI.” Hands-on experience with the top
 will result from applying methods to processing large volumes of financial
 information. That said, most of these methods are general, and even students
 interested in other domains will gain valuable experience."
-30600,WORKSHOP IN ACCOUNTING RESEARCH,100,,,,,,,1,"Workshops in each academic area provide a forum for faculty, PhD students,
+30600,WORKSHOP IN ACCOUNTING RESEARCH,100,,,,,,,3,"Workshops in each academic area provide a forum for faculty, PhD students,
 and invited guests to present, discuss, and debate new research."
 30831,FINANCIAL ANALYSIS AND VALUATION OF FIRMS IN GLOBAL MARKETS,50,,Accounting,,,,30131,1,"The course covers advanced financial analysis and valuation for global firms. It
 is designed for students that already have a basic familiarity with corporate
@@ -267,7 +267,7 @@ is meant to provide students feedback from multiple faculty so they can
 further develop research ideas into a high-quality dissertation. In the process,
 Ph.D. students also learn how to present ideas and give feedback to
 classmates."
-31401,INTERPERSONAL DYNAMICS,100,,Entrepreneurship,Y,,,,9,"31401-04 and 05 – Interpersonal Dynamics
+31401,INTERPERSONAL DYNAMICS,100,,Entrepreneurship,Y,,,,26,"31401-04 and 05 – Interpersonal Dynamics
 Spring 2026 - Carpenter
 In Interpersonal Dynamics, you will embark on a learning journey different
 from any you are likely to have experienced before. The class uses the well-
@@ -301,7 +301,7 @@ order to present yourself such that others’ perceptions more accurately reflec
 what you intend.
 • To identify your emotions and how to utilize them as an important source of
 information and guide to your interpersonal choices."
-31403,LEADERSHIP STUDIO,100,People,Behavioral Science; Entrepreneurship,,,31001 31403 31404,,3,"The Leadership Studio is designed around four guiding principles that we ask
+31403,LEADERSHIP STUDIO,100,People,Behavioral Science; Entrepreneurship,,,31001 31403 31404,,4,"The Leadership Studio is designed around four guiding principles that we ask
 those who enroll to embrace and make them their own. Simply stated:
 1. I am agile. My current leadership abilities do not define or limit me. I can
 play very different roles as needed and display different leadership
@@ -310,7 +310,7 @@ qualities at the right time with the right audience.
 and adopt new leadership qualities that are rooted in my personal values.
 3. I am self-driven. I take personal responsibility for doing the work and
 expanding my leadership qualities."
-31404,LEADERSHIP LAB,100,,,,,,31404 31407,1,"As a leader there are few things more vital to your success and fulfillment than
+31404,LEADERSHIP LAB,100,,,,,,31404 31407,2,"As a leader there are few things more vital to your success and fulfillment than
 the ability to grow as you encounter new challenges or become aware of
 outdated patterns of behaviors."
 31405,LEADING WITH AUTHENTICITY,100,,,,,,,1,"Today’s most effective leaders are not just competent—they are congruent.
@@ -374,7 +374,7 @@ lack of equity and the widening wealth gap in America's most vulnerable
 neighborhoods.
 Aided by current social, political and economic constructs, developers
 contribute to gentrification through large investments that build structures,"
-32120,DATA ANALYSIS WITH PYTHON AND SQL,100,,Business Analytics,,,,,4,"TL;DR:
+32120,DATA ANALYSIS WITH PYTHON AND SQL,100,,Business Analytics,,,,,6,"TL;DR:
 This course requires/expects no background in coding. However, those
 with a coding background are welcome and can scale up the difficulty of all
 assignments
@@ -451,7 +451,7 @@ page and data that moves your audience to action.
 How are customers reacting to your ad spend, and can you make changes to"
 32210,GENERATIVE THINKING,100,,Applied Artificial Intelligence,,43100 43800,,,1,"Generative AI is a pivotal advancement in the realm of artificial intelligence that
 has the potential to transform various industries, from entertainment and"
-33001,MICROECONOMICS,100,Microeconomics,Economics,,,,,11,"This course teaches the core principles of modern microeconomics and
+33001,MICROECONOMICS,100,Microeconomics,Economics,,,,,16,"This course teaches the core principles of modern microeconomics and
 illustrates their application to understanding business decisions and the"
 33002,ACCELERATED MICROECONOMICS,100,Microeconomics,Economics,,,,,2,"This course is an accelerated alternative to Microeconomics 33001, intended
 for students with some prior exposure to economics or simply the ambition to
@@ -464,13 +464,13 @@ Given the faster pace, we will have time to apply these tools to additional
 topics not typically covered in Microeconomics 33001, including labor markets,
 compensating differentials, discrimination, inequality, redistribution,
 education, signaling, human capital, and intergenerational mobility."
-33032,MANAGING THE WORKPLACE,100,People,Economics,,33001,,,3,"This course examines foundational topics in human resource management
+33032,MANAGING THE WORKPLACE,100,People,Economics,,33001,,,5,"This course examines foundational topics in human resource management
 with a focus on coordinating human resource practices and business strategy.
 Topics covered include employee selection and retention, training and
 development, performance evaluation, compensation, job design and
 communications within the firm. Classes will combine case discussions with
 lectures, blending theory and application."
-33050,MACROECONOMICS AND THE BUSINESS ENVIRONMENT,100,Economy,Economics,,33001 33050 33040 20200,,,4,"This MBA course will introduce students to macroeconomics with an analysis
+33050,MACROECONOMICS AND THE BUSINESS ENVIRONMENT,100,Economy,Economics,,33001 33050 33040 20200,,,7,"This MBA course will introduce students to macroeconomics with an analysis
 of the aggregate outcomes of the decisions made by households, firms and
 policymakers.
 We will study both short-run business cycle fluctuations and longer-run secular
@@ -624,7 +624,7 @@ targeting, positioning, pricing, and go-to-market strategy apply in the life
 sciences context. We will explore how companies create and sustain
 competitive advantage in markets where customers include patients
 providers, payers, advocacy groups and regulators."
-33401,MONEY AND BANKING,100,Economy,Economics,,33401 20232,,,4,"This course is about money, central banks, and financial institutions. We focus
+33401,MONEY AND BANKING,100,Economy,Economics,,33401 20232,,,7,"This course is about money, central banks, and financial institutions. We focus
 on how they affect businesses, how they help companies grow, and what can
 go wrong.
 One focus of the course is monetary policy. We study how modern central
@@ -710,7 +710,7 @@ international borrowing/lending and current accounts, and financial crises. We
 will also touch on policy-relevant areas, such as how IMF programs and central
 bank swap lines work, cross-border payments, the global role of the dollar,
 trade policy, sanctions, and geoeconomics."
-33520,THE WEALTH OF NATIONS,100,Economy,Economics; International Business,,,33001,,2,"Why is the United States the wealthiest country in the world? How can we
+33520,THE WEALTH OF NATIONS,100,Economy,Economics; International Business,,,33001,,3,"Why is the United States the wealthiest country in the world? How can we
 understand the emergence of China and India in the last two decades? What
 explains growth disasters of countries such as Venezuela?  This class will
 develop quantitative analytical frameworks and use case studies to examine
@@ -718,11 +718,11 @@ the role of resource allocation and technological innovation in understanding
 the performance of firms in emerging markets vs wealthy countries.  We will
 examine the elements of successful and disastrous growth strategies in
 selected emerging markets."
-33610,APPLIED ECONOMICS WORKSHOP,100,,,,,33610 54300,,1,"Workshops in each academic area provide a forum for faculty, PhD students,
+33610,APPLIED ECONOMICS WORKSHOP,100,,,,,33610 54300,,3,"Workshops in each academic area provide a forum for faculty, PhD students,
 and invited guests to present, discuss, and debate new research."
-33630,WORKSHOP: MONEY AND BANKING,100,,,,,33630 53000,,1,"Workshops in each academic area provide a forum for faculty, PhD students,
+33630,WORKSHOP: MONEY AND BANKING,100,,,,,33630 53000,,3,"Workshops in each academic area provide a forum for faculty, PhD students,
 and invited guests to present, discuss, and debate new research."
-33650,WORKSHOP IN MACRO AND INTERNATIONAL ECONOMICS,100,,,,,33650 57000,,1,"Workshops in each academic area provide a forum for faculty, PhD students,
+33650,WORKSHOP IN MACRO AND INTERNATIONAL ECONOMICS,100,,,,,33650 57000,,3,"Workshops in each academic area provide a forum for faculty, PhD students,
 and invited guests to present, discuss, and debate new research."
 33903,WORKSHOP IN MACRO AND INTERNATIONAL ECONOMICS (33650) - STAFF MICROECONOMICS READING AND RESEARCH SEMINAR,50,,,,,,,1,"Intensive year-long research and writing seminar for Booth Economics PhD
 students in the 3rd year and up."
@@ -739,7 +739,7 @@ in labor economics and will survey recent work on gender discrimination, racial
 discrimination, gender and racial gaps in labor market outcomes, applied
 econometric tools in the economics of education, inequality, organizational
 economics, and minimum wages."
-33920,HEALTH ECONOMICS LITERATURE SEMINAR,50,,,,33001 33101 33002 30000 30100 30200,,,1,"This is a literature seminar in which students present recent papers in health
+33920,HEALTH ECONOMICS LITERATURE SEMINAR,50,,,,33001 33101 33002 30000 30100 30200,,,2,"This is a literature seminar in which students present recent papers in health
 economics.  The goal is for students to understand the literature at the frontier
 of the field, its limitations, and opportunities to improve it.  Topics vary by year
 as the field progresses."
@@ -803,7 +803,7 @@ strategies."
 33946,INTERNATIONAL MACROECONOMICS AND TRADE,100,,,,,33946 35101,,1,"This is a graduate course in international trade. It introduces the fundamental
 concepts and tools of international trade and economic geography to prepare
 students to tackle research questions in these areas."
-34101,ENTREPRENEURIAL FINANCE AND PRIVATE EQUITY,100,Finance,Entrepreneurship; Finance; Analytic Finance,,35200 35201 35902 34106 30130,,,4,"This course uses the case method to study entrepreneurial and private equity
+34101,ENTREPRENEURIAL FINANCE AND PRIVATE EQUITY,100,Finance,Entrepreneurship; Finance; Analytic Finance,,35200 35201 35902 34106 30130,,,8,"This course uses the case method to study entrepreneurial and private equity
 finance.  Private equity in all its forms has become a meaningful and growing
 component of the global economy.  On the supply side, the amount of private
 equity under management - by partnerships investing in venture capital,
@@ -818,7 +818,7 @@ comprehensive. We will explore private equity from a number of perspectives,
 beginning with the entrepreneur/issuer, moving to private equity - venture
 capital, growth equity and leveraged buyout - partnerships, and finishing with
 investors in private equity partnerships."
-34102,NEW VENTURE STRATEGY,100,,Entrepreneurship; Strategic Management,,,,,3,"New Venture Strategy: How to Judge Ideas and Build Great Companies
+34102,NEW VENTURE STRATEGY,100,,Entrepreneurship; Strategic Management,,,,,7,"New Venture Strategy: How to Judge Ideas and Build Great Companies
 This course is for students who want to become expert decision-makers in the
 uncertain, high-stakes world of entrepreneurship and growth-stage company
 building. Whether you plan to participate in Booth's New Venture Challenge,
@@ -828,7 +828,7 @@ strategic thinking skills, this course will change how you see new ideas—and
 yourself.
 At the heart of the class are nine battle-tested and tried-and-true strategy
 models and the Four Basic Questions that help you quickly and confidently"
-34103,BUILDING THE NEW VENTURE,100,,Entrepreneurship; Strategic Management,,,34103 20330,,3,"Course Description
+34103,BUILDING THE NEW VENTURE,100,,Entrepreneurship; Strategic Management,,,34103 20330,,5,"Course Description
 This course is intended for students who are interested in learning about what
 it takes to start a new entrepreneurial business in an AI-native world. It is a
 tactical and hands-on class that covers the nuts and bolts of starting a
@@ -869,7 +869,7 @@ capitalists, private investors, and entrepreneurs will help critique and improve
 the ideas and businesses during the presentations. The class meetings also will
 include sessions on presentation skills, financial modeling, and legal
 considerations in a new venture."
-34106,COMMERCIALIZING INNOVATION: TOOLS TO RESEARCH AND ANALYZE PRIVATE ENTERPRISES,100,,Entrepreneurship; Strategic Management,,,,,3,"Commercializing Innovation delivers useful “cross-training” to students
+34106,COMMERCIALIZING INNOVATION: TOOLS TO RESEARCH AND ANALYZE PRIVATE ENTERPRISES,100,,Entrepreneurship; Strategic Management,,,,,4,"Commercializing Innovation delivers useful “cross-training” to students
 interested in starting, leading or investing in entrepreneurial enterprises.
 Throughout the quarter, students learn how to effectively evaluate and
 communicate the fundamentals of novel business opportunities. More than a
@@ -929,7 +929,7 @@ and a lack of practical frameworks for success. Outperformers have learned to
 develop a deeper understanding of what motivates (and irritates) end users,
 challenge biases in their organizations and themselves, and follow a
 repeatable and scalable path to new insights and reduced innovation risks."
-34111,ENTREPRENEURIAL SELLING,100,,Entrepreneurship,,20355 34887,,,4,"Overview
+34111,ENTREPRENEURIAL SELLING,100,,Entrepreneurship,,20355 34887,,,5,"Overview
 Selling is a life skill. At the core, this is a course in persuasion which is just a
 fancier word for selling. Persuasion is a skill you need to be good at in anything
 you do in life….which is why many students without near term plans to start a
@@ -1131,7 +1131,7 @@ initial operating period, Unicorns blessed with vast amounts of capital for rapi
 expansion yet in need of ideas and data on how to best spend it, private
 businesses looking for growth, and turnaround opportunities which can make
 good acquisition targets for buy-out entrepreneurs."
-34302,ENTREPRENEURSHIP THROUGH ACQUISITION,100,,Entrepreneurship,,,,,2,"Entrepreneurship Through Acquisition (“ETA”) will give students frameworks
+34302,ENTREPRENEURSHIP THROUGH ACQUISITION,100,,Entrepreneurship,,,,,4,"Entrepreneurship Through Acquisition (“ETA”) will give students frameworks
 and real world solutions to use if they decide to pursue an acquisition of and
 lead a company. The class will walk through the life cycle of a typical path
 toward finding and running a business including information on fund
@@ -1205,7 +1205,7 @@ player in a deal. 
 We will focus on how the business issues and legal issues interface with each
 other, the economic and control significance of legal issues, and how these
 issues have monetary value to various stakeholders."
-34702,PRIVATE EQUITY/VENTURE CAPITAL LAB,100,,Entrepreneurship; Healthcare,Y,,35200 34106 34101,,2,"The private equity and venture capital lab is an experiential program intended
+34702,PRIVATE EQUITY/VENTURE CAPITAL LAB,100,,Entrepreneurship; Healthcare,Y,,35200 34106 34101,,4,"The private equity and venture capital lab is an experiential program intended
 for students who want to learn more about what it is like to work in private
 equity or venture capital industries. The program is comprised of (a) an
 internship and (b) an academic course. Internships are hosted by private
@@ -1413,7 +1413,7 @@ development and regulation of the financial system.   Related topics include
 the links between financial intermediaries, central banks, regulators, financial
 markets and corporate finance.  The course will cover both empirical and
 theoretical work."
-35000,INVESTMENTS,100,Finance,Finance,,41000 41100 35000 20400,30000 33001,,7,"This course offers the financial theory and quantitative analytical tools
+35000,INVESTMENTS,100,Finance,Finance,,41000 41100 35000 20400,30000 33001,,16,"This course offers the financial theory and quantitative analytical tools
 necessary for understanding how stock, bond, and option prices are
 determined, and provides the skills required to make sound investment
 decisions. The course combines a theoretical framework with applied analysis.
@@ -1642,7 +1642,7 @@ broker-dealers, and sovereign funds exhibit strong demand for these
 securities. We first discuss recent trends and the investment opportunities
 offered by corporate and sovereign bonds, including callable, convertible and
 other structured securities, their risks and their expected returns. We will then"
-35200,CORPORATION FINANCE,100,Finance,Finance; Analytic Finance,,30000 33001 35000 41000 41100,,35200 20410,6,"This course analyzes the major decisions facing corporate financial managers.
+35200,CORPORATION FINANCE,100,Finance,Finance; Analytic Finance,,30000 33001 35000 41000 41100,,35200 20410,12,"This course analyzes the major decisions facing corporate financial managers.
 It examines investment decisions, capital structure choice, and mergers and
 acquisitions. My primary objective is to teach you how to value a corporation. A
 revised detailed week by week syllabus and answers to a set of frequently
@@ -1658,7 +1658,7 @@ your request and indicate the more advanced class you will be taking instead
 of 35000.  
 Frequently asked questions about Kashyap’s B35200 (Corporation Finance)
 How does your course differ from other instructors?"
-35201,CASES IN FINANCIAL MANAGEMENT,100,Finance,Finance; Analytic Finance,,35000 35200 35901 35902 35010,,,3,"A case-based corporate finance course designed to apply and enhance
+35201,CASES IN FINANCIAL MANAGEMENT,100,Finance,Finance; Analytic Finance,,35000 35200 35901 35902 35010,,,5,"A case-based corporate finance course designed to apply and enhance
 concepts learned in introductory classes (35200 or 35010). The course is
 structured to provide practical examples and real-world business situations,
 making it ideal for students considering careers in investment banking and
@@ -1797,9 +1797,9 @@ proceeds, and litigation-oriented credit investments. The seminar will feature
 leading lawyers, credit investors, and investment bankers as guest lecturers.
 The course will benefit students who are interested in asset management,
 credit investing, private equity, and restructuring/turnarounds."
-35600,SEMINAR: FINANCE,100,,,,,35600 55600,,1,"Workshops in each academic area provide a forum for faculty, PhD students,
+35600,SEMINAR: FINANCE,100,,,,,35600 55600,,3,"Workshops in each academic area provide a forum for faculty, PhD students,
 and invited guests to present, discuss, and debate new research."
-35601,APPLIED THEORY WORKSHOP,100,,,,,,,1,"Workshops in each academic area provide a forum for faculty, PhD students,
+35601,APPLIED THEORY WORKSHOP,100,,,,,,,2,"Workshops in each academic area provide a forum for faculty, PhD students,
 and invited guests to present, discuss, and debate new research."
 35817,HEALTHCARE FINANCE,50,,Finance; Healthcare,,,,35118,1,"SCHEDULE
 
@@ -1862,7 +1862,7 @@ academic year students are expected to finish at least one research paper."
 Financial Economics PhD program.
 The course will meet for 80 minutes each week, and at the end of the
 academic year students are expected to finish at least one research paper."
-36106,ESTEBAN MANAGERIAL DECISION MODELING,100,Decisions,Business Analytics; Operations Management,,,41000,36106 20510,6,"SCHEDULE
+36106,ESTEBAN MANAGERIAL DECISION MODELING,100,Decisions,Business Analytics; Operations Management,,,41000,36106 20510,11,"SCHEDULE
 
 Note: If the above link to my faculty page is not working, please click on this
 link.
@@ -1939,7 +1939,7 @@ of Uber drivers to customers. There are various options for us to consider of
 how to model such a decision. And with our ability to utilize Google’s API to get
 travel time data we are able to build a decision tool that can be used in the
 enterprise."
-36110,APPLICATION DEVELOPMENT,100,,Entrepreneurship,,,,36110 20550,3,"Note: Due to the intensive support requirements and volume of requests, we
+36110,APPLICATION DEVELOPMENT,100,,Entrepreneurship,,,,36110 20550,6,"Note: Due to the intensive support requirements and volume of requests, we
 can’t allow auditors for this course. We have many more sections available this
 year, so please plan ahead and enroll as usual through your program (or Take
 3 for alums). If you are on the waitlist, you are welcome to attend Day 1 so that
@@ -1987,7 +1987,7 @@ With that, you will be well-positioned to join the community of professional
 developers, and continue learning whatever you need to ship your ideas on
 your own.
 Specifically, we will:"
-36600,WORKSHOP IN OPERATIONS/MANAGEMENT SCIENCE,100,,,,,,,1,"Workshops in each academic area provide a forum for faculty, PhD students,
+36600,WORKSHOP IN OPERATIONS/MANAGEMENT SCIENCE,100,,,,,,,3,"Workshops in each academic area provide a forum for faculty, PhD students,
 and invited guests to present, discuss, and debate new research."
 36900,LINEAR PROGRAMMING,100,,,,,,,1,"This course provides a rigorous treatment of linear optimization. It is designed
 for students who want to build large-scale optimization models and need an
@@ -2040,7 +2040,7 @@ networks, with applications to service systems, computer systems, and
 manufacturing. The course will expose students to both classical and modern
 application of queueing theory, and aims to equip students with the basic
 methodological tools for system performance analysis and policy design."
-37000,MARKETING STRATEGY,100,Marketing,Marketing Management,,,37000 20600,,7,"I use a framework-based approach to teach this course. The first half of the
+37000,MARKETING STRATEGY,100,Marketing,Marketing Management,,,37000 20600,,16,"I use a framework-based approach to teach this course. The first half of the
 class is spent on building a structured approach using customer analysis
 (assessing how the firm could provide unique benefits to an attractive target
 market segment); company analysis (assessing strategic fit based on long-term
@@ -2062,7 +2062,7 @@ the last 25 years and hope that students will also share their experiences in
 class discussions. Finally, in order to expose you to different types of marketing
 careers where concepts taught in this class can be leveraged, I typically invite
 1-2 guest speakers from a variety of industries."
-37101,CONSUMER BEHAVIOR,100,Marketing,Marketing Management,,,37000,,5,"The purpose of this course is to inform future managers, analysts, consultants,
+37101,CONSUMER BEHAVIOR,100,Marketing,Marketing Management,,,37000,,7,"The purpose of this course is to inform future managers, analysts, consultants,
 and advisors of the psychological processes and biases underlying consumer
 behavior, with emphasis on how to incorporate such insights into marketing
 and business strategies. Contemporary approaches to business emphasize the"
@@ -2114,7 +2114,7 @@ Note: The broad set of topics in this class overlaps with the topics covered in
 pace and emphasize state-of-the-art techniques that are only briefly surveyed
 or not covered in 37103. Also, the main goal of the data assignments in 37103
 is to make the students familiar with some key concepts in data-"
-37201,LAB IN DEVELOPING NEW PRODUCTS AND SERVICES,100,Marketing,Entrepreneurship; Healthcare; Marketing Management; Strategic Management,Y,,37000 37201 37200 37810,,3,"This course provides an in-depth understanding of state-of-the-art practices in
+37201,LAB IN DEVELOPING NEW PRODUCTS AND SERVICES,100,Marketing,Entrepreneurship; Healthcare; Marketing Management; Strategic Management,Y,,37000 37201 37200 37810,,5,"This course provides an in-depth understanding of state-of-the-art practices in
 new product/service innovation using Design Thinking methods. It offers
 extensive, hands-on, practical innovation experience.
 Topics covered include: Design Thinking, agile innovation processes,
@@ -2122,7 +2122,7 @@ opportunity identification, qualitative and quantitative agile user research,
 customer insights, idea generation and evaluation, new product
 prototyping/testing/optimization, forecasting, new product branding, and
 business cases."
-37202,PRICING STRATEGIES,100,Marketing,Business Analytics; Marketing Management,,33001 37000,,37202 20610,3,"The surge in access to detailed marketing data and analytic tools has elevated
+37202,PRICING STRATEGIES,100,Marketing,Business Analytics; Marketing Management,,33001 37000,,37202 20610,4,"The surge in access to detailed marketing data and analytic tools has elevated
 pricing to the forefront of corporate strategy and the driving force of strategic
 revenue growth. Emerging roles like the Chief Growth Officer (CGO) and Chief
 Revenue Officer (CRO) focus predominantly on pricing decisions. For most"
@@ -2205,7 +2205,7 @@ and practical utility. Note that we will not have the bandwidth to deep-dive int
 specific tactical marketing campaign implementations. Students who already
 have extensive prior experience with DM and AI techniques in DM should
 consult with me before signing up for this class."
-37601,MARKETING WORKSHOP,100,,,,,,,1,"Workshops in each academic area provide a forum for faculty, PhD students,
+37601,MARKETING WORKSHOP,100,,,,,,,3,"Workshops in each academic area provide a forum for faculty, PhD students,
 and invited guests to present, discuss, and debate new research."
 37703,DIGITAL MARKETING LAB,100,Marketing,Entrepreneurship; Healthcare; Marketing Management,Y,37000,,,1,"Companies today expect their marketing professionals to understand what it
 takes to design, execute and manage digital marketing strategies and
@@ -2281,7 +2281,7 @@ individual, interpersonal and group behaviors as they relate to organizational
 performance using the lens of social psychology. We will work together to
 develop a more complex understanding of processes such as motivation, social
 perception, interpersonal influence, effective communication, interpersonal"
-38001,MANAGING IN ORGANIZATIONS,100,People,Behavioral Science,,,,38001 20701,5,"Success in management requires understanding the factors that shape
+38001,MANAGING IN ORGANIZATIONS,100,People,Behavioral Science,,,,38001 20701,10,"Success in management requires understanding the factors that shape
 individual and group behaviors and attitudes. This course deals with the
 people part of management; we will develop a complex view of organizational
 behavior at the individual, interpersonal, and group levels of analysis. We will
@@ -2295,7 +2295,7 @@ causes of behavior, including your own.
 Classes consist of lectures, individual and group exercises, case discussions,
 and other activities that provide opportunities to apply analytical frameworks
 to concrete organizational problems."
-38002,MANAGERIAL DECISION MAKING,100,Decisions,Behavioral Science,,,,,4,"This course is designed to make you a better decision maker. Good decision
+38002,MANAGERIAL DECISION MAKING,100,Decisions,Behavioral Science,,,,,6,"This course is designed to make you a better decision maker. Good decision
 makers know how to recognize decision situations, then how to represent the
 essential structure of the situations, and how to analyze them with the formal
 tools from decision theory. But, perhaps more important, they need to be able
@@ -2308,7 +2308,7 @@ models and behavioral, descriptive models to help you understand and
 improve your native decision making abilities."
 38003,POWER AND INFLUENCE IN ORGANIZATIONS,100,People,Behavioral Science,,,,,3,"Every effective manager needs to know how to wisely manage power and
 influence. Skill in doing so enables managers to win the cooperation of others,"
-38103,STRATEGIES AND PROCESSES OF NEGOTIATION,100,,Behavioral Science,,,38001 38002 38003,,7,"This course will help you become a more effective negotiator by developing
+38103,STRATEGIES AND PROCESSES OF NEGOTIATION,100,,Behavioral Science,,,38001 38002 38003,,16,"This course will help you become a more effective negotiator by developing
 your “tool kit” of negotiation tactics and strategies. You will learn from an
 extensive set of negotiation experiences in class, practice your skills, and
 benefit from feedback. In the early class sessions, we introduce basic
@@ -2388,7 +2388,7 @@ Course Format:
 This course will involve a combination of lecture, class discussion, in-class and
 out-of-class exercises, and occasional case discussion.  There will be a take-
 home (open-book) midterm exam that you will have two hours to complete"
-38120,THE STUDY OF BEHAVIORAL ECONOMICS,100,Decisions,Behavioral Science; Economics,,,,38120 20710,4,"Behavioral economics applies psychological insights to economic markets and
+38120,THE STUDY OF BEHAVIORAL ECONOMICS,100,Decisions,Behavioral Science; Economics,,,,38120 20710,5,"Behavioral economics applies psychological insights to economic markets and
 decision making. In this class, we will discuss the recent theoretical and
 empirical advances that have been made in this increasingly important field of
 economics. Being thoughtful about the role of psychology can lead to a greater
@@ -2429,7 +2429,7 @@ than erasing cultural differences. You'll learn through case challenges,
 fieldwork, and measuring real-world cultural differences. With these tools, you
 will be able to better navigate life abroad, negotiate better, and build the
 culture of the teams you lead."
-38601,WORKSHOP IN BEHAVIORAL SCIENCE,100,,,,,,,1,"Workshops in each academic area provide a forum for faculty, PhD students,
+38601,WORKSHOP IN BEHAVIORAL SCIENCE,100,,,,,,,3,"Workshops in each academic area provide a forum for faculty, PhD students,
 and invited guests to present, discuss, and debate new research."
 38820,LEADERSHIP CAPITAL,50,,Behavioral Science,,,,,1,"Leadership Capital is a new approach to leadership development, defined as
 “the wisdom to decide when to manage and when to lead, together with the
@@ -2544,7 +2544,7 @@ opportunity for students to gain critical-thinking skills and decision-making
 experience by putting themselves into the shoes of a specific manager
 operating at a given firm with a particular, often incomplete, set of
 information."
-39101,TECHNOLOGY STRATEGY,100,Strategy,Entrepreneurship; Strategic Management,,42001 39001,,,3,"This course focuses on business strategy in the context of technology change. 
+39101,TECHNOLOGY STRATEGY,100,Strategy,Entrepreneurship; Strategic Management,,42001 39001,,,4,"This course focuses on business strategy in the context of technology change. 
 In the past, the class focused on a short list of relatively technology intensive
 industries.  But under the current digital/AI revolution, the concepts and
 frameworks covered in the class apply to almost all industries.  The
@@ -2558,7 +2558,7 @@ this type of strategy process requires a deeper set of concepts than those
 provided in a traditional strategy class.
 While technological change is at the heart of the course, a background in
 technology is not required."
-40000,OPERATIONS MANAGEMENT: BUSINESS PROCESS FUNDAMENTALS,100,Operations,Operations Management,,,40000 20500,,6,"This core course focuses on the levers for structuring, managing, and
+40000,OPERATIONS MANAGEMENT: BUSINESS PROCESS FUNDAMENTALS,100,Operations,Operations Management,,,40000 20500,,9,"This core course focuses on the levers for structuring, managing, and
 improving a firm’s recurring business processes to achieve competitive
 advantage in customer responsiveness, price, quality, and product or service
 variety. These levers are as relevant to banks, hospitals, and brokerage firms as
@@ -2578,7 +2578,7 @@ investment professionals.
 Most sessions feature in-depth case discussions integrated with theory. This
 structure makes the course excellent preparation for the types of cases often
 encountered in internship and full-time job interviews."
-40101,SUPPLY CHAIN STRATEGY AND PRACTICE,100,Operations,Operations Management,,,,40101 20520,3,"The supply chain of a firm is critical to its performance. Supply chains are
+40101,SUPPLY CHAIN STRATEGY AND PRACTICE,100,Operations,Operations Management,,,,40101 20520,5,"The supply chain of a firm is critical to its performance. Supply chains are
 networks of organizations that supply and transform materials and distribute
 final products to consumers. If designed and managed properly, these
 networks can be a crucial source of competitive advantage for both
@@ -2676,7 +2676,7 @@ experimentation, and optimization enhanced by AI tools. The course concludes
 with reinforcement learning and its growing role in operational decision-
 making. Sessions combine discussion of recent research, student and
 instructor presentations, and guest lectures from leading scholars in the field."
-41000,BUSINESS STATISTICS,100,Statistics,Econometrics and Statistics,,,,,9,"Data science. Machine learning. Statistics. Predictive Analytics. No matter what
+41000,BUSINESS STATISTICS,100,Statistics,Econometrics and Statistics,,,,,17,"Data science. Machine learning. Statistics. Predictive Analytics. No matter what
 it’s called, modern business runs on data. This course is an introduction to the
 fundamentals of probability and statistics with an aim towards building
 foundational skills in modern data science. Topics to be covered include 1)
@@ -2685,7 +2685,7 @@ common pitfalls and fallacies, 3) Statistical modeling, inference, p-values, and
 A/B testing, and 4) Prediction, regression, and classification. Emphasis will be
 placed on ethics and privacy in data analysis as well as real-world applications
 and case studies."
-41100,Applied Regression Analysis,100,Statistics,Econometrics and Statistics,,,41000,,2,"This course is about regression, a powerful and widely used data analysis
+41100,Applied Regression Analysis,100,Statistics,Econometrics and Statistics,,,41000,,4,"This course is about regression, a powerful and widely used data analysis
 technique which is used to understand how different random quantities relate
 to one another. Students will learn how to use regression to analyze a variety
 of complex real-world problems, with the aim of gaining insights from the data
@@ -2767,7 +2767,7 @@ large-scale testing and false discovery rates, modern regression and model
 choice, machine-learning based classification,
 network analysis, language and topic models, principal components,
 clustering, Bayesian analysis, deep learning, transformers and attention."
-41600,ECONOMETRICS AND STATISTICS COLLOQUIUM,100,,,,,41600 51400,,1,"Workshops in each academic area provide a forum for faculty, PhD students,
+41600,ECONOMETRICS AND STATISTICS COLLOQUIUM,100,,,,,41600 51400,,3,"Workshops in each academic area provide a forum for faculty, PhD students,
 and invited guests to present, discuss, and debate new research."
 41901,PROBABILITY AND STATISTICS,100,Statistics,Econometrics and Statistics,,,41901 32400,,1,"This is a PhD course that introduces fundamental statistical concepts for
 academic research in business and economics. The topics include linear
@@ -2833,7 +2833,7 @@ uncompromising, choices of priors and likelihoods.
 Throughout the course, we will explore key principles that underpin or alleviate
 such choices towards meaningful and theoretically sound Bayesian data
 analysis."
-42001,COMPETITIVE STRATEGY,100,Strategy,Economics; Strategic Management,,,33001,42001 20900,6,"The course applies microeconomics—mainly the economics of industrial
+42001,COMPETITIVE STRATEGY,100,Strategy,Economics; Strategic Management,,,33001,42001 20900,15,"The course applies microeconomics—mainly the economics of industrial
 organization—to analyze decisions managers face in business environments. It
 focuses on strategic decisions that drive profits. 
 The class is interactive. Roughly one-half of each class is devoted to lecture,
@@ -2923,7 +2923,7 @@ environments are games. Game theory is a framework for analyzing games.
 The course will focus on two questions: (i) how to design games (i.e., how to
 structure the business environment), and (ii) how to play games (i.e., how to
 predict what others will do and respond appropriately)."
-42121,MERGER & ACQUISITION STRATEGY,100,,Strategic Management,,,42001 35201,,1,"This course provides an overview of mergers and acquisitions with a focus on
+42121,MERGER & ACQUISITION STRATEGY,100,,Strategic Management,,,42001 35201,,2,"This course provides an overview of mergers and acquisitions with a focus on
 the role MA plays in the development and implementation of a firm’s strategy.
 Students will develop an analytical and theoretical framework to understand
 the MA process and will also use cases and real-world applications to develop
@@ -3295,7 +3295,7 @@ state-of-the-art AI technologies. Specifically, it places emphases on the
 philosophy and intuition behind these technologies, as well as their promises
 and perils, but not on the technical details.
 View welcome/overview video."
-43120,BUILDING AN AI COMPANY,100,,Applied Artificial Intelligence; Entrepreneurship,,,,,1,"AI is transforming industries at an unprecedented pace, creating new
+43120,BUILDING AN AI COMPANY,100,,Applied Artificial Intelligence; Entrepreneurship,,,,,2,"AI is transforming industries at an unprecedented pace, creating new
 opportunities for startups and established businesses alike. It represents a
 fundamental shift in how businesses operate. Yet, while AI’s potential is widely
 discussed, far less attention is given to how to actually build and scale AI

@@ -92,7 +92,7 @@ function SectionRow({ section, term }: { section: Section; term: Term }) {
         {([1, 2] as Year[]).map((y) => (
           <button
             key={y}
-            onClick={() => add(y, term, section.section_code)}
+            onClick={() => add(y, term, section.section_id)}
             className="rounded-md bg-maroon px-2 py-1 text-xs font-medium text-white hover:bg-maroon-600"
           >
             + Y{y}

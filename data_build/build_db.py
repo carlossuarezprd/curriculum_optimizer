@@ -86,10 +86,9 @@ def build():
 
     report: list[str] = ["# Curriculum DB — validation report", ""]
 
-    # bid lookup by section code + by course
-    bid_by_code = {b.section_code: b for b in bids}
+    # A section is keyed by (code, quarter): the same code recurs across quarters.
+    bid_by_key = {(b.section_code, b.quarter): b for b in bids}
     bid_courses = {b.course_number for b in bids}
-    bid_instructor = {b.section_code: b.instructor for b in bids}
 
     # name fallback from bids
     bid_title = {}
@@ -142,6 +141,8 @@ def build():
     course_rows = []
     section_rows = []
     prereq_low_conf = []
+    matched_bid_keys: set = set()   # (code, quarter) keys consumed
+    bid_only_added: list = []       # bid sections not present in the catalog
     for num, co in sorted(courses.items()):
         name = co.course_name or bid_title.get(num, "")
         if not co.course_name:
@@ -167,31 +168,37 @@ def build():
             "professors": co.professors,
             "flags": list(co.flags),
         })
-        # sections: union of catalog sections, enriched with bid prices/instructor
-        seen_codes = set()
+        # sections: union of catalog sections, enriched with bid prices/instructor.
+        # Key on (code, quarter) so the same code in different quarters is distinct.
         for s in co.sections:
-            seen_codes.add(s.section_code)
-            b = bid_by_code.get(s.section_code)
-            prof = bid_instructor.get(s.section_code) or (co.professors[0] if len(co.professors) == 1 else None)
-            section_rows.append(_section_row(num, name, co.units, s.section_code,
-                                              s.quarter, s.year, prof, s.time, s.location,
+            key = (s.section_code, s.quarter)
+            b = bid_by_key.get(key)
+            matched_bid_keys.add(key)
+            prof = (b.instructor if b else None) or (co.professors[0] if len(co.professors) == 1 else None)
+            section_rows.append(_section_row(num, name, co.units, _sid(s.section_code, s.quarter, s.year),
+                                              s.section_code, s.quarter, s.year, prof, s.time, s.location,
                                               s.fmt, b, app,
                                               section_is_flagship(num, prof),
                                               area_of.get(num, []), conc_of.get(num, []),
                                               pq, bid_matched=b is not None))
-        # sections only in bids (catalog missed/truncated) → add with flag
+        # sections present in the bids but NOT in the catalog → add them (they exist)
         for b in bids:
-            if b.course_number == num and b.section_code not in seen_codes:
-                section_rows.append(_section_row(num, name, co.units, b.section_code,
-                                                  b.quarter, b.year, b.instructor, b.day_time,
+            key = (b.section_code, b.quarter)
+            if b.course_number == num and key not in matched_bid_keys:
+                matched_bid_keys.add(key)
+                bid_only_added.append(f"{b.section_code} {b.quarter}")
+                section_rows.append(_section_row(num, name, co.units, _sid(b.section_code, b.quarter, b.year),
+                                                  b.section_code, b.quarter, b.year, b.instructor, b.day_time,
                                                   None, None, b, app,
                                                   section_is_flagship(num, b.instructor),
                                                   area_of.get(num, []), conc_of.get(num, []),
                                                   pq, bid_matched=True,
-                                                  extra_flag="bid-only section (not in catalog)"))
+                                                  extra_flag="bid-only section (not in catalog PDF)"))
 
-    # ---- reconciliation: bid courses/sections missing from catalog ----
-    cat_codes = {s["section_code"] for s in section_rows}
+    # ---- reconciliation: every bid section must be captured ----
+    all_bid_keys = {(b.section_code, b.quarter) for b in bids}
+    section_keys = {(s["section_code"], s["quarter"]) for s in section_rows}
+    bid_not_captured = sorted(f"{c} {q}" for (c, q) in all_bid_keys - section_keys)
     missing_courses = sorted(bid_courses - set(courses.keys()))
     app_courses = [c["course_number"] for c in course_rows if c["independent_application_course"]]
 
@@ -205,7 +212,11 @@ def build():
         f"- 50-unit courses: {sorted(n for n,co in courses.items() if co.units==50)}",
         "", "## Catalog ↔ bid reconciliation", "",
         f"- Bid courses not found in catalog: {missing_courses or 'none'}",
-        f"- Sections with historical price data: {sum(1 for s in section_rows if s['r1_price_returning'] is not None)}",
+        f"- Distinct bid sections (code+quarter): {len(all_bid_keys)}",
+        f"- **Bid sections NOT captured in the DB: {bid_not_captured or 'none — every bid section is present ✓'}**",
+        f"- Bid-only sections added (in bids but absent from the catalog PDF): {bid_only_added or 'none'}",
+        f"- Catalog sections matched to a bid price: {sum(1 for s in section_rows if s['bid_matched'])}",
+        f"- Sections with a numeric clearing price: {sum(1 for s in section_rows if s['r1_price_returning'] is not None)}",
         "", "## Flagged TODOs", "",
         f"- Prereq text has course numbers but none classified (low confidence): {prereq_low_conf or 'none'}",
         "", "## Known source discrepancies (surfaced, not patched)", "",
@@ -252,7 +263,12 @@ def build():
     return bundle
 
 
-def _section_row(num, name, units, code, quarter, year, prof, time, loc, fmt, b, app,
+def _sid(code: str, quarter, year) -> str:
+    """Unique section id: code is reused across quarters, so qualify it."""
+    return f"{code}@{quarter or '?'}{year or ''}"
+
+
+def _section_row(num, name, units, section_id, code, quarter, year, prof, time, loc, fmt, b, app,
                  flagship, areas, concs, pq, bid_matched, extra_flag=None):
     flags = []
     if prof is None:
@@ -260,7 +276,7 @@ def _section_row(num, name, units, code, quarter, year, prof, time, loc, fmt, b,
     if extra_flag:
         flags.append(extra_flag)
     return {
-        "section_id": code,
+        "section_id": section_id,
         "course_number": num,
         "course_name": name,
         "units": units,
@@ -304,8 +320,8 @@ def write_sqlite(path, areas, concs, course_rows, section_rows, flagship_pairs):
         CREATE TABLE course(course_number TEXT PRIMARY KEY, course_name TEXT, units INT,
             description TEXT, core_area TEXT, independent_application_course INT,
             prereq_text TEXT);
-        CREATE TABLE section(section_code TEXT PRIMARY KEY, course_number TEXT, quarter TEXT,
-            year INT, professor TEXT, time TEXT, location TEXT, format TEXT,
+        CREATE TABLE section(section_id TEXT PRIMARY KEY, section_code TEXT, course_number TEXT,
+            quarter TEXT, year INT, professor TEXT, time TEXT, location TEXT, format TEXT,
             flagship_course INT, r1_price_new INT, r1_price_returning INT, bid_matched INT);
         CREATE TABLE prereq(course_number TEXT, kind TEXT, prereq_course_number TEXT);
         CREATE TABLE core_area(name TEXT, type TEXT);
@@ -324,8 +340,8 @@ def write_sqlite(path, areas, concs, course_rows, section_rows, flagship_pairs):
                 cur.execute("INSERT INTO prereq VALUES(?,?,?)",
                             (c["course_number"], kind.replace("_prereqs", ""), p))
     for s in section_rows:
-        cur.execute("INSERT OR IGNORE INTO section VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",
-                    (s["section_code"], s["course_number"], s["quarter"], s["year"],
+        cur.execute("INSERT OR IGNORE INTO section VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                    (s["section_id"], s["section_code"], s["course_number"], s["quarter"], s["year"],
                      s["professor"], s["time"], s["location"], s["format"],
                      int(s["flagship_course"]), s["r1_price_new"], s["r1_price_returning"],
                      int(s["bid_matched"])))

@@ -11,8 +11,8 @@ export const bundle = bundleJson as unknown as Bundle;
 export const courseByNum = new Map<string, Course>(
   bundle.courses.map((c) => [c.course_number, c]),
 );
-export const sectionByCode = new Map<string, Section>(
-  bundle.sections.map((s) => [s.section_code, s]),
+export const sectionById = new Map<string, Section>(
+  bundle.sections.map((s) => [s.section_id, s]),
 );
 export const sectionsByCourse = new Map<string, Section[]>();
 for (const s of bundle.sections) {
@@ -35,9 +35,9 @@ export function offeredTerms(course_number: string): Set<string> {
 
 interface PlanState {
   placements: Placement[];
-  addSection: (year: Year, term: Term, section_code: string) => void;
-  removeSection: (slot: string, section_code: string) => void;
-  setBid: (slot: string, section_code: string, bid: number | null) => void;
+  addSection: (year: Year, term: Term, section_id: string) => void;
+  removeSection: (slot: string, section_id: string) => void;
+  setBid: (slot: string, section_id: string, bid: number | null) => void;
   clearAll: () => void;
 }
 
@@ -45,28 +45,28 @@ export const usePlan = create<PlanState>()(
   persist(
     (set) => ({
       placements: [],
-      addSection: (year, term, section_code) =>
+      addSection: (year, term, section_id) =>
         set((st) => {
           const slot = slotId(year, term);
-          if (st.placements.some((p) => p.slot === slot && p.section_code === section_code))
+          if (st.placements.some((p) => p.slot === slot && p.section_id === section_id))
             return st;
-          return { placements: [...st.placements, { slot, section_code, actual_bid: null }] };
+          return { placements: [...st.placements, { slot, section_id, actual_bid: null }] };
         }),
-      removeSection: (slot, section_code) =>
+      removeSection: (slot, section_id) =>
         set((st) => ({
           placements: st.placements.filter(
-            (p) => !(p.slot === slot && p.section_code === section_code),
+            (p) => !(p.slot === slot && p.section_id === section_id),
           ),
         })),
-      setBid: (slot, section_code, bid) =>
+      setBid: (slot, section_id, bid) =>
         set((st) => ({
           placements: st.placements.map((p) =>
-            p.slot === slot && p.section_code === section_code ? { ...p, actual_bid: bid } : p,
+            p.slot === slot && p.section_id === section_id ? { ...p, actual_bid: bid } : p,
           ),
         })),
       clearAll: () => set({ placements: [] }),
     }),
-    { name: "booth-curriculum-plan" },
+    { name: "booth-curriculum-plan-v2" },
   ),
 );
 
@@ -117,7 +117,7 @@ export function bidByQuarter(
     let spent = 0;
     let bidSum = 0;
     for (const p of ps) {
-      const sec = sectionByCode.get(p.section_code);
+      const sec = sectionById.get(p.section_id);
       if (!sec) continue;
       const price = priceFor(sec, slot) ?? 0;
       spent += price;
@@ -135,7 +135,7 @@ export function bidByQuarter(
 export function placedCourseNumbers(placements: Placement[]): string[] {
   const set = new Set<string>();
   for (const p of placements) {
-    const sec = sectionByCode.get(p.section_code);
+    const sec = sectionById.get(p.section_id);
     if (sec) set.add(sec.course_number);
   }
   return [...set];

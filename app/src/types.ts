@@ -100,8 +100,9 @@ export const SLOT_ORDER: string[] = [
 ];
 
 // A placed course: a chosen section dropped into a specific quarter slot.
+// section_id is the composite (code@quarter+year) key — codes repeat across quarters.
 export interface Placement {
   slot: string;
-  section_code: string;
+  section_id: string;
   actual_bid: number | null;
 }
