@@ -1,0 +1,2 @@
+pymupdf>=1.27
+openpyxl>=3.1
